@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		957321E12568543C00F21BEF /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957321E02568543C00F21BEF /* LoadingViewController.swift */; };
 		95C1F342255BAFF400B9123C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1F341255BAFF400B9123C /* CoreDataManager.swift */; };
 		95C1F348255BB79000B9123C /* ManagedCounter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1F346255BB79000B9123C /* ManagedCounter+CoreDataClass.swift */; };
+		95C667D825AFF3B5000FA27B /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C667D725AFF3B5000FA27B /* DoneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		957321E02568543C00F21BEF /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		95C1F341255BAFF400B9123C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		95C1F346255BB79000B9123C /* ManagedCounter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedCounter+CoreDataClass.swift"; sourceTree = "<group>"; };
+		95C667D725AFF3B5000FA27B /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				953B08BE2556D1AB008F9D3E /* IntroViewController.swift */,
 				955247312563579000B059CB /* CounterViewController.swift */,
 				95602DBB25725FC300AD648A /* SettingsViewController.swift */,
+				95C667D725AFF3B5000FA27B /* DoneViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,7 +150,6 @@
 				366C4F8CFAD8E27CCB2B0B4F /* Pods-MMM.debug.xcconfig */,
 				11545567E27B1BF83F8D3BA9 /* Pods-MMM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -271,6 +273,7 @@
 				953B08BF2556D1AB008F9D3E /* IntroViewController.swift in Sources */,
 				953B08BB2556D1AB008F9D3E /* AppDelegate.swift in Sources */,
 				95C1F348255BB79000B9123C /* ManagedCounter+CoreDataClass.swift in Sources */,
+				95C667D825AFF3B5000FA27B /* DoneViewController.swift in Sources */,
 				95602DBC25725FC300AD648A /* SettingsViewController.swift in Sources */,
 				951BCA96258E0A7300FB43B6 /* ManagedCounter+CoreDataProperties.swift in Sources */,
 				953B08BD2556D1AB008F9D3E /* SceneDelegate.swift in Sources */,
