@@ -9,7 +9,9 @@
 import UIKit
 
 enum UIConstants {
-    static let btnColor = UIColor(red: 39/255, green: 96/255, blue: 64/255, alpha: 1)
+    static let btnColor = UIColor(red: 57/255, green: 150/255, blue: 100/255, alpha: 1)
+    static let bgColor = UIColor(red: 255/255, green: 252/255, blue: 240/255, alpha: 1)
+    static let customBlue = UIColor(red: 92/255, green: 117/255, blue: 182/255, alpha: 1)
     
     enum Button {
         static let buttonIconSize = CGSize.init(width: 44, height: 44)

@@ -8,6 +8,29 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NewYorkExtraLarge-Semibold.otf">
+            <string>NewYorkExtraLarge-Semibold</string>
+        </array>
+        <array key="NewYorkItalic.ttf">
+            <string>NewYork-RegularItalic</string>
+        </array>
+        <array key="NewYorkLarge-Bold.otf">
+            <string>NewYorkLarge-Bold</string>
+        </array>
+        <array key="NewYorkLarge-MediumItalic.otf">
+            <string>NewYorkLarge-MediumItalic</string>
+        </array>
+        <array key="NewYorkLarge-Regular.otf">
+            <string>NewYorkLarge-Regular</string>
+        </array>
+        <array key="NewYorkLarge-SemiboldItalic.otf">
+            <string>NewYorkLarge-SemiboldItalic</string>
+        </array>
+        <array key="NewYorkMedium-Semibold.otf">
+            <string>NewYorkMedium-Semibold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Loading View Controller-->
         <scene sceneID="1vM-GG-1gq">
@@ -17,7 +40,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6jR-77-6Lp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <segue destination="Djx-7X-Pk5" kind="show" identifier="toCounter" id="oal-CB-pZS"/>
@@ -38,17 +61,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mn-yP-wu1" userLabel="Introduction">
-                                <rect key="frame" x="41.5" y="378" width="331" height="86"/>
+                                <rect key="frame" x="41.5" y="335" width="331" height="172"/>
                                 <string key="text">For those who want to contribute to protecting our environment,
 and would not hesitate to pick up any rubbish and put it in the appropriate bin...</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
+                                <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAb-bs-2t7" userLabel="StartBtn" customClass="yButton" customModule="MMM" customModuleProvider="target">
-                                <rect key="frame" x="41.5" y="734" width="331" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="START">
+                                <rect key="frame" x="41.5" y="728" width="331" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8eR-ip-Nkm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NewYorkMedium-Semibold" family="New York Medium" pointSize="20"/>
+                                <state key="normal" title="⭢ ">
                                     <color key="titleColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="highlighted">
@@ -60,7 +86,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SBk-BK-rfJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="1Mn-yP-wu1" firstAttribute="centerX" secondItem="6FY-hU-pCU" secondAttribute="centerX" id="8As-x8-P4u"/>
                             <constraint firstItem="SBk-BK-rfJ" firstAttribute="bottom" secondItem="lAb-bs-2t7" secondAttribute="bottom" constant="40" id="9FA-2J-Izk"/>
@@ -88,17 +114,20 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="... this app will remind you to do so once a day, every single day." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l2-zy-Uvs" userLabel="Remind">
-                                <rect key="frame" x="41.5" y="400.5" width="331" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="... this app will remind you to do so once a day, every single day." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l2-zy-Uvs" userLabel="Remind">
+                                <rect key="frame" x="41.5" y="392.5" width="331" height="57.5"/>
+                                <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
+                                <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHj-I1-yMZ" userLabel="StartBtn" customClass="yButton" customModule="MMM" customModuleProvider="target">
-                                <rect key="frame" x="41.5" y="734" width="331" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="41.5" y="728" width="331" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mbc-9P-h6K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NewYorkMedium-Semibold" family="New York Medium" pointSize="20"/>
                                 <state key="normal" title="Let's start">
-                                    <color key="titleColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleShadowColor" systemColor="opaqueSeparatorColor"/>
@@ -109,7 +138,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qYd-Fl-GXu"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="qYd-Fl-GXu" firstAttribute="bottom" secondItem="VHj-I1-yMZ" secondAttribute="bottom" constant="40" id="0aa-7s-N1u"/>
                             <constraint firstItem="4l2-zy-Uvs" firstAttribute="centerX" secondItem="UiL-b4-Xli" secondAttribute="centerX" id="EwU-Bd-GZN"/>
@@ -141,9 +170,9 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="VzV-mE-wWC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="NewYorkMedium-Semibold" family="New York Medium" pointSize="20"/>
                                 <state key="normal" title="Set reminder">
-                                    <color key="titleColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleShadowColor" systemColor="opaqueSeparatorColor"/>
@@ -153,28 +182,28 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set the time, you would like to be reminded." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb7-h0-nCO" userLabel="Remind">
-                                <rect key="frame" x="41.5" y="40" width="331" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="41.5" y="40" width="331" height="57.5"/>
+                                <fontDescription key="fontDescription" name="NewYorkLarge-Regular" family="New York Large" pointSize="24"/>
+                                <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-eR-jM7">
-                                <rect key="frame" x="41.5" y="331.5" width="331" height="356.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-eR-jM7">
+                                <rect key="frame" x="41.5" y="343" width="331" height="345"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You'll be reminded at " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrn-LR-kpd" userLabel="Second">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="29"/>
+                                        <fontDescription key="fontDescription" name="NewYork-RegularItalic" family="New York" pointSize="24"/>
+                                        <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imn-5f-Kq4" userLabel="Time">
-                                        <rect key="frame" x="0.0" y="50.5" width="331" height="60"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="49" width="331" height="60"/>
+                                        <fontDescription key="fontDescription" name="NewYorkExtraLarge-Semibold" family="New York Extra Large" pointSize="50"/>
+                                        <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker alpha="0.0" contentMode="scaleToFill" verticalHuggingPriority="750" horizontalCompressionResistancePriority="550" verticalCompressionResistancePriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="9jC-YL-XvP">
-                                        <rect key="frame" x="0.0" y="140.5" width="331" height="216"/>
+                                        <rect key="frame" x="0.0" y="129" width="331" height="216"/>
                                         <color key="tintColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="setTimeForNotification:" destination="gUQ-2o-Znb" eventType="valueChanged" id="gV9-ds-CVo"/>
@@ -184,7 +213,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ra9-lO-xE8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Ra9-lO-xE8" firstAttribute="bottom" secondItem="sbY-co-GS0" secondAttribute="bottom" constant="40" id="3dY-x1-FTZ"/>
                             <constraint firstItem="sbY-co-GS0" firstAttribute="centerX" secondItem="sBE-9v-8Fu" secondAttribute="centerX" id="7U8-3j-VlV"/>
@@ -217,55 +246,59 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PIC-Fi-xYA">
-                                <rect key="frame" x="41.5" y="276.5" width="331" height="209.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PIC-Fi-xYA">
+                                <rect key="frame" x="41.5" y="290" width="331" height="182"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have contributed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QC-NZ-rrP">
-                                        <rect key="frame" x="85" y="0.0" width="161.5" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="57" y="0.0" width="217.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
+                                        <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaT-Zc-Bx0" userLabel="CountLb">
-                                        <rect key="frame" x="151" y="76.5" width="29" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaT-Zc-Bx0" userLabel="CountLb">
+                                        <rect key="frame" x="140.5" y="49" width="50" height="56.5"/>
+                                        <fontDescription key="fontDescription" name="NewYorkExtraLarge-Semibold" family="New York Extra Large" pointSize="90"/>
+                                        <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaA-m5-Bov" userLabel="TimesLb">
-                                        <rect key="frame" x="140.5" y="153" width="50" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="140.5" y="125.5" width="50" height="56.5"/>
+                                        <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
+                                        <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="HOc-Hv-rlj">
-                                <rect key="frame" x="41.5" y="668" width="331" height="100"/>
+                                <rect key="frame" x="41.5" y="648" width="331" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you contribute today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvW-Uu-WAE">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="40"/>
+                                        <fontDescription key="fontDescription" name="NewYorkLarge-Regular" family="New York Large" pointSize="24"/>
+                                        <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="nZQ-mv-Rh1">
-                                        <rect key="frame" x="0.0" y="70" width="331" height="30"/>
+                                        <rect key="frame" x="0.0" y="80" width="331" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7c-zy-ApF" customClass="yButtonApp" customModule="MMM" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="145.5" height="30"/>
-                                                <state key="normal" title="No">
-                                                    <color key="titleColor" systemColor="systemPinkColor"/>
-                                                </state>
+                                                <rect key="frame" x="0.0" y="0.0" width="145.5" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="6ab-hE-LlH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NewYorkMedium-Semibold" family="New York Medium" pointSize="20"/>
+                                                <state key="normal" title="No"/>
                                                 <connections>
                                                     <segue destination="UnY-GC-M3t" kind="presentation" modalPresentationStyle="fullScreen" id="9R2-vh-ChX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpW-YS-eqU" customClass="yButtonApp" customModule="MMM" customModuleProvider="target">
-                                                <rect key="frame" x="185.5" y="0.0" width="145.5" height="30"/>
-                                                <state key="normal" title="Yes">
-                                                    <color key="titleColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
+                                                <rect key="frame" x="185.5" y="0.0" width="145.5" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Lj1-ec-gwd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NewYorkMedium-Semibold" family="New York Medium" pointSize="20"/>
+                                                <state key="normal" title="Yes"/>
                                                 <connections>
                                                     <action selector="btnPressed:" destination="Djx-7X-Pk5" eventType="touchUpInside" id="pla-n9-wiZ"/>
                                                     <segue destination="UnY-GC-M3t" kind="presentation" modalPresentationStyle="fullScreen" id="6Q8-Y8-Vr2"/>
@@ -277,7 +310,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1WQ-SF-xm0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="PIC-Fi-xYA" firstAttribute="centerX" secondItem="K8u-Ue-tz7" secondAttribute="centerX" id="7lb-4S-mMi"/>
                             <constraint firstItem="HOc-Hv-rlj" firstAttribute="width" secondItem="K8u-Ue-tz7" secondAttribute="width" multiplier="0.8" id="FMY-Ef-RPZ"/>
@@ -327,7 +360,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4xl-eD-M9E"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="0vB-HE-c1j" firstAttribute="centerX" secondItem="AyW-0f-eGx" secondAttribute="centerX" id="6j0-jA-QQu"/>
                             <constraint firstItem="4xl-eD-M9E" firstAttribute="bottom" secondItem="0vB-HE-c1j" secondAttribute="bottom" constant="40" id="8PN-Lr-DRu"/>
@@ -354,44 +387,48 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXz-eN-atd" customClass="yButtonApp" customModule="MMM" customModuleProvider="target">
-                                <rect key="frame" x="41.5" y="792" width="331" height="30"/>
+                                <rect key="frame" x="41.5" y="782" width="331" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ibq-3J-uc4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NewYorkLarge-Bold" family="New York Large" pointSize="20"/>
                                 <state key="normal" title="See world's total contribution"/>
                                 <connections>
                                     <action selector="visitWeb:" destination="UnY-GC-M3t" eventType="touchUpInside" id="3bu-9k-r5f"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6vC-ZE-8vS">
-                                <rect key="frame" x="41.5" y="312.5" width="331" height="271"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6vC-ZE-8vS">
+                                <rect key="frame" x="41.5" y="317.5" width="331" height="261.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have done the best you could for today. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wib-YS-I3f">
-                                        <rect key="frame" x="35" y="0.0" width="261" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="21" y="0.0" width="289.5" height="57.5"/>
+                                        <fontDescription key="fontDescription" name="NewYorkLarge-SemiboldItalic" family="New York Large" pointSize="24"/>
+                                        <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have contributed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKS-84-hrq">
-                                        <rect key="frame" x="85" y="71.5" width="161.5" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="57" y="77.5" width="217.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
+                                        <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaU-xw-ARu" userLabel="CountLb">
-                                        <rect key="frame" x="151" y="143" width="29" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaU-xw-ARu" userLabel="CountLb">
+                                        <rect key="frame" x="140.5" y="126.5" width="50" height="57.5"/>
+                                        <fontDescription key="fontDescription" name="NewYorkExtraLarge-Semibold" family="New York Extra Large" pointSize="90"/>
+                                        <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22i-dW-mRp">
-                                        <rect key="frame" x="140.5" y="214.5" width="50" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="140.5" y="204" width="50" height="57.5"/>
+                                        <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
+                                        <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="H9c-jM-cRx"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6vC-ZE-8vS" firstAttribute="width" secondItem="3XG-Sk-Dj7" secondAttribute="width" multiplier="0.8" id="2op-HI-D4O"/>
                             <constraint firstItem="6vC-ZE-8vS" firstAttribute="centerX" secondItem="3XG-Sk-Dj7" secondAttribute="centerX" id="ICX-dY-yd0"/>
@@ -414,18 +451,12 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6Q8-Y8-Vr2"/>
+        <segue reference="9R2-vh-ChX"/>
         <segue reference="748-rU-OV6"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

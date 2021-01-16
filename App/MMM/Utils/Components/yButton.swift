@@ -17,9 +17,8 @@ class yButton: UIButton {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.tintColor = .white
-        self.titleLabel?.font = UIFont(name: "Optima Regular", size: 25)
         self.setTitleColor(.white, for: .normal)
-        self.backgroundColor = UIColor(red: 39/255, green: 96/255, blue: 64/255, alpha: 1)
+        self.backgroundColor = UIColor(red: 57/255, green: 150/255, blue: 100/255, alpha: 1)
         self.contentEdgeInsets = UIEdgeInsets(top: 4.0, left: 8.0, bottom: 4.0, right: 8.0)
         
         self.layer.cornerRadius = self.bounds.height / 2
