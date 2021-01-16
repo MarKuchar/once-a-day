@@ -12,7 +12,6 @@
 		951BCA96258E0A7300FB43B6 /* ManagedCounter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951BCA95258E0A7300FB43B6 /* ManagedCounter+CoreDataProperties.swift */; };
 		953B08BB2556D1AB008F9D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B08BA2556D1AB008F9D3E /* AppDelegate.swift */; };
 		953B08BD2556D1AB008F9D3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B08BC2556D1AB008F9D3E /* SceneDelegate.swift */; };
-		953B08BF2556D1AB008F9D3E /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B08BE2556D1AB008F9D3E /* IntroViewController.swift */; };
 		953B08C22556D1AB008F9D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953B08C02556D1AB008F9D3E /* Main.storyboard */; };
 		953B08C52556D1AB008F9D3E /* MMM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 953B08C32556D1AB008F9D3E /* MMM.xcdatamodeld */; };
 		953B08C72556D1AC008F9D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953B08C62556D1AC008F9D3E /* Assets.xcassets */; };
@@ -20,6 +19,14 @@
 		955247322563579000B059CB /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955247312563579000B059CB /* CounterViewController.swift */; };
 		9552473A25635B8000B059CB /* roboto in Resources */ = {isa = PBXBuildFile; fileRef = 9552473925635B8000B059CB /* roboto */; };
 		95602DBC25725FC300AD648A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95602DBB25725FC300AD648A /* SettingsViewController.swift */; };
+		95724A9725B2687400EF6088 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724A9625B2687400EF6088 /* IntroductionViewController.swift */; };
+		95724AA925B26C3100EF6088 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724AA825B26C3100EF6088 /* StartViewController.swift */; };
+		95724AAC25B26E7B00EF6088 /* NavController+NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724AAB25B26E7B00EF6088 /* NavController+NavBar.swift */; };
+		95724ABE25B26F6300EF6088 /* yButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724ABD25B26F6300EF6088 /* yButton.swift */; };
+		95724AC225B26F8600EF6088 /* UIButton+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724AC125B26F8600EF6088 /* UIButton+Animation.swift */; };
+		95724AE125B2765900EF6088 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724AE025B2765900EF6088 /* ReminderViewController.swift */; };
+		95724AF225B27DAF00EF6088 /* yButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724AF125B27DAF00EF6088 /* yButtonApp.swift */; };
+		95724AF625B2817800EF6088 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724AF525B2817800EF6088 /* Constants.swift */; };
 		957321E12568543C00F21BEF /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957321E02568543C00F21BEF /* LoadingViewController.swift */; };
 		95C1F342255BAFF400B9123C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1F341255BAFF400B9123C /* CoreDataManager.swift */; };
 		95C1F348255BB79000B9123C /* ManagedCounter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1F346255BB79000B9123C /* ManagedCounter+CoreDataClass.swift */; };
@@ -35,7 +42,6 @@
 		953B08B72556D1AA008F9D3E /* MMM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953B08BA2556D1AB008F9D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		953B08BC2556D1AB008F9D3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		953B08BE2556D1AB008F9D3E /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		953B08C12556D1AB008F9D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		953B08C42556D1AB008F9D3E /* MMM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MMM.xcdatamodel; sourceTree = "<group>"; };
 		953B08C62556D1AC008F9D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +50,14 @@
 		955247312563579000B059CB /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		9552473925635B8000B059CB /* roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = roboto; sourceTree = "<group>"; };
 		95602DBB25725FC300AD648A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		95724A9625B2687400EF6088 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
+		95724AA825B26C3100EF6088 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		95724AAB25B26E7B00EF6088 /* NavController+NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavController+NavBar.swift"; sourceTree = "<group>"; };
+		95724ABD25B26F6300EF6088 /* yButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yButton.swift; sourceTree = "<group>"; };
+		95724AC125B26F8600EF6088 /* UIButton+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Animation.swift"; sourceTree = "<group>"; };
+		95724AE025B2765900EF6088 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		95724AF125B27DAF00EF6088 /* yButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yButtonApp.swift; sourceTree = "<group>"; };
+		95724AF525B2817800EF6088 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		957321E02568543C00F21BEF /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		95C1F341255BAFF400B9123C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		95C1F346255BB79000B9123C /* ManagedCounter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedCounter+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -105,8 +119,8 @@
 		9552473625635B3C00B059CB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				95724A9525B2682A00EF6088 /* StartUp */,
 				957321E02568543C00F21BEF /* LoadingViewController.swift */,
-				953B08BE2556D1AB008F9D3E /* IntroViewController.swift */,
 				955247312563579000B059CB /* CounterViewController.swift */,
 				95602DBB25725FC300AD648A /* SettingsViewController.swift */,
 				95C667D725AFF3B5000FA27B /* DoneViewController.swift */,
@@ -139,9 +153,32 @@
 		9552473C25635B8800B059CB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				95724ABC25B26F5100EF6088 /* Components */,
 				9552473925635B8000B059CB /* roboto */,
+				95724AAB25B26E7B00EF6088 /* NavController+NavBar.swift */,
+				95724AC125B26F8600EF6088 /* UIButton+Animation.swift */,
+				95724AF525B2817800EF6088 /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		95724A9525B2682A00EF6088 /* StartUp */ = {
+			isa = PBXGroup;
+			children = (
+				95724A9625B2687400EF6088 /* IntroductionViewController.swift */,
+				95724AA825B26C3100EF6088 /* StartViewController.swift */,
+				95724AE025B2765900EF6088 /* ReminderViewController.swift */,
+			);
+			path = StartUp;
+			sourceTree = "<group>";
+		};
+		95724ABC25B26F5100EF6088 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				95724ABD25B26F6300EF6088 /* yButton.swift */,
+				95724AF125B27DAF00EF6088 /* yButtonApp.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F286CB4F27972DF48FA27132 /* Pods */ = {
@@ -270,17 +307,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				953B08BF2556D1AB008F9D3E /* IntroViewController.swift in Sources */,
+				95724AAC25B26E7B00EF6088 /* NavController+NavBar.swift in Sources */,
 				953B08BB2556D1AB008F9D3E /* AppDelegate.swift in Sources */,
 				95C1F348255BB79000B9123C /* ManagedCounter+CoreDataClass.swift in Sources */,
 				95C667D825AFF3B5000FA27B /* DoneViewController.swift in Sources */,
+				95724A9725B2687400EF6088 /* IntroductionViewController.swift in Sources */,
+				95724ABE25B26F6300EF6088 /* yButton.swift in Sources */,
 				95602DBC25725FC300AD648A /* SettingsViewController.swift in Sources */,
+				95724AC225B26F8600EF6088 /* UIButton+Animation.swift in Sources */,
+				95724AF225B27DAF00EF6088 /* yButtonApp.swift in Sources */,
 				951BCA96258E0A7300FB43B6 /* ManagedCounter+CoreDataProperties.swift in Sources */,
 				953B08BD2556D1AB008F9D3E /* SceneDelegate.swift in Sources */,
+				95724AE125B2765900EF6088 /* ReminderViewController.swift in Sources */,
+				95724AA925B26C3100EF6088 /* StartViewController.swift in Sources */,
 				95C1F342255BAFF400B9123C /* CoreDataManager.swift in Sources */,
 				957321E12568543C00F21BEF /* LoadingViewController.swift in Sources */,
 				953B08C52556D1AB008F9D3E /* MMM.xcdatamodeld in Sources */,
 				955247322563579000B059CB /* CounterViewController.swift in Sources */,
+				95724AF625B2817800EF6088 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

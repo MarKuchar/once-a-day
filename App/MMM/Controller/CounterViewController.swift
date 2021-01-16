@@ -14,7 +14,7 @@ class CounterViewController: UIViewController {
     
     @IBOutlet var countLb: UILabel!
     
-    @IBOutlet var missCountBtn: UIButton!
+    @IBOutlet var timeLb: UILabel!
     
     private let container = CoreDataManager.shared.persistentContainer
     
@@ -23,6 +23,11 @@ class CounterViewController: UIViewController {
     private var counter: ManagedCounter! {
         didSet {
             countLb.text = String(counter.currentCount)
+            if counter.currentCount < 1 {
+                timeLb.text = "time."
+            } else {
+                timeLb.text = "times."
+            }
         }
     }
     
