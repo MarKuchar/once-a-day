@@ -11,6 +11,7 @@ import CoreData
 
 class IntroductionViewController: UIViewController {
     
+
     @IBOutlet var introLb: UILabel!
     
     @IBOutlet var startBtn: yButton!
@@ -18,6 +19,8 @@ class IntroductionViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem?.tintColor = .yBtnColor
     }
     
     override func viewDidLoad() {
@@ -29,11 +32,5 @@ class IntroductionViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        navigationController?.navigationBar.isHidden = false
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        self.navigationItem.backBarButtonItem?.tintColor = .yBtnColor
-    }
-    
-    @IBAction func setTimeForNotification(_ sender: Any) {
     }
 }

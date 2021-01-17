@@ -84,4 +84,10 @@ class CounterViewController: UIViewController {
             }
         }
     }
+    
+    
+    @IBAction func visitWeb(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "http://once-a-day.xyz")!)
+    }
+    
 }

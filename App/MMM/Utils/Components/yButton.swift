@@ -27,6 +27,8 @@ class yButton: UIButton {
         self.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
         self.layer.borderWidth = 0.05
         self.translatesAutoresizingMaskIntoConstraints = false
+        self.titleLabel?.adjustsFontSizeToFitWidth = true
+        self.titleLabel?.minimumScaleFactor = 0.5
         
         self.startAnimatingPressActions()
     }

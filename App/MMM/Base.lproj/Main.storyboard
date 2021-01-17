@@ -57,11 +57,11 @@
             <objects>
                 <viewController id="0Uj-2S-izP" customClass="IntroductionViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6FY-hU-pCU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mn-yP-wu1" userLabel="Introduction">
-                                <rect key="frame" x="41.5" y="335" width="331" height="172"/>
+                                <rect key="frame" x="41.5" y="362" width="331" height="172"/>
                                 <string key="text">For those who want to contribute to protecting our environment,
 and would not hesitate to pick up any rubbish and put it in the appropriate bin...</string>
                                 <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
@@ -69,7 +69,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAb-bs-2t7" userLabel="StartBtn" customClass="yButton" customModule="MMM" customModuleProvider="target">
-                                <rect key="frame" x="41.5" y="728" width="331" height="40"/>
+                                <rect key="frame" x="41.5" y="782" width="331" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8eR-ip-Nkm"/>
                                 </constraints>
@@ -98,7 +98,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                     </view>
                     <navigationItem key="navigationItem" id="M02-on-31G"/>
                     <connections>
-                        <outlet property="IntroLb" destination="1Mn-yP-wu1" id="1Xv-Hd-rRM"/>
+                        <outlet property="introLb" destination="1Mn-yP-wu1" id="Rvp-b1-jRl"/>
                         <outlet property="startBtn" destination="lAb-bs-2t7" id="D2Y-g4-YI4"/>
                     </connections>
                 </viewController>
@@ -111,17 +111,17 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
             <objects>
                 <viewController id="1ah-8G-Bdm" customClass="StartViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UiL-b4-Xli">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="... this app will remind you to do so once a day, every single day." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l2-zy-Uvs" userLabel="Remind">
-                                <rect key="frame" x="41.5" y="392.5" width="331" height="57.5"/>
+                                <rect key="frame" x="41.5" y="419.5" width="331" height="57.5"/>
                                 <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
                                 <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHj-I1-yMZ" userLabel="StartBtn" customClass="yButton" customModule="MMM" customModuleProvider="target">
-                                <rect key="frame" x="41.5" y="728" width="331" height="40"/>
+                                <rect key="frame" x="41.5" y="782" width="331" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="mbc-9P-h6K"/>
                                 </constraints>
@@ -162,11 +162,46 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
             <objects>
                 <viewController id="gUQ-2o-Znb" customClass="ReminderViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sBE-9v-8Fu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tC6-66-94d">
+                                <rect key="frame" x="41.5" y="154" width="331" height="588"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set the time, you would like to be reminded." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb7-h0-nCO" userLabel="Remind">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="57.5"/>
+                                        <fontDescription key="fontDescription" name="NewYorkLarge-Regular" family="New York Large" pointSize="24"/>
+                                        <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-eR-jM7">
+                                        <rect key="frame" x="0.0" y="243" width="331" height="345"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You'll be reminded at " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrn-LR-kpd" userLabel="Second">
+                                                <rect key="frame" x="0.0" y="0.0" width="331" height="29"/>
+                                                <fontDescription key="fontDescription" name="NewYork-RegularItalic" family="New York" pointSize="24"/>
+                                                <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imn-5f-Kq4" userLabel="Time">
+                                                <rect key="frame" x="0.0" y="49" width="331" height="60"/>
+                                                <fontDescription key="fontDescription" name="NewYorkExtraLarge-Semibold" family="New York Extra Large" pointSize="50"/>
+                                                <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker alpha="0.0" contentMode="scaleToFill" verticalHuggingPriority="750" horizontalCompressionResistancePriority="550" verticalCompressionResistancePriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="9jC-YL-XvP">
+                                                <rect key="frame" x="0.0" y="129" width="331" height="216"/>
+                                                <color key="tintColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="setTimeForNotification:" destination="gUQ-2o-Znb" eventType="valueChanged" id="gV9-ds-CVo"/>
+                                                </connections>
+                                            </datePicker>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbY-co-GS0" userLabel="StartBtn" customClass="yButton" customModule="MMM" customModuleProvider="target">
-                                <rect key="frame" x="41.5" y="728" width="331" height="40"/>
+                                <rect key="frame" x="41.5" y="782" width="331" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="VzV-mE-wWC"/>
                                 </constraints>
@@ -181,49 +216,17 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                     <segue destination="Djx-7X-Pk5" kind="show" identifier="toApp" id="748-rU-OV6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set the time, you would like to be reminded." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb7-h0-nCO" userLabel="Remind">
-                                <rect key="frame" x="41.5" y="40" width="331" height="57.5"/>
-                                <fontDescription key="fontDescription" name="NewYorkLarge-Regular" family="New York Large" pointSize="24"/>
-                                <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-eR-jM7">
-                                <rect key="frame" x="41.5" y="343" width="331" height="345"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You'll be reminded at " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrn-LR-kpd" userLabel="Second">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="29"/>
-                                        <fontDescription key="fontDescription" name="NewYork-RegularItalic" family="New York" pointSize="24"/>
-                                        <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imn-5f-Kq4" userLabel="Time">
-                                        <rect key="frame" x="0.0" y="49" width="331" height="60"/>
-                                        <fontDescription key="fontDescription" name="NewYorkExtraLarge-Semibold" family="New York Extra Large" pointSize="50"/>
-                                        <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <datePicker alpha="0.0" contentMode="scaleToFill" verticalHuggingPriority="750" horizontalCompressionResistancePriority="550" verticalCompressionResistancePriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="9jC-YL-XvP">
-                                        <rect key="frame" x="0.0" y="129" width="331" height="216"/>
-                                        <color key="tintColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <action selector="setTimeForNotification:" destination="gUQ-2o-Znb" eventType="valueChanged" id="gV9-ds-CVo"/>
-                                        </connections>
-                                    </datePicker>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ra9-lO-xE8"/>
                         <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Ra9-lO-xE8" firstAttribute="bottom" secondItem="sbY-co-GS0" secondAttribute="bottom" constant="40" id="3dY-x1-FTZ"/>
                             <constraint firstItem="sbY-co-GS0" firstAttribute="centerX" secondItem="sBE-9v-8Fu" secondAttribute="centerX" id="7U8-3j-VlV"/>
-                            <constraint firstItem="Cb7-h0-nCO" firstAttribute="top" secondItem="Ra9-lO-xE8" secondAttribute="top" constant="40" id="NpS-iw-JHi"/>
-                            <constraint firstItem="Cb7-h0-nCO" firstAttribute="width" secondItem="sBE-9v-8Fu" secondAttribute="width" multiplier="0.8" id="Rar-EM-UB6"/>
-                            <constraint firstItem="Cb7-h0-nCO" firstAttribute="centerX" secondItem="sBE-9v-8Fu" secondAttribute="centerX" id="TXg-jO-D35"/>
+                            <constraint firstItem="tC6-66-94d" firstAttribute="centerY" secondItem="sBE-9v-8Fu" secondAttribute="centerY" id="XrG-uD-T6x"/>
                             <constraint firstItem="sbY-co-GS0" firstAttribute="width" secondItem="sBE-9v-8Fu" secondAttribute="width" multiplier="0.8" id="YWI-Ax-I8z"/>
-                            <constraint firstItem="sbY-co-GS0" firstAttribute="top" secondItem="KFS-eR-jM7" secondAttribute="bottom" constant="40" id="cle-tw-E3a"/>
-                            <constraint firstItem="KFS-eR-jM7" firstAttribute="centerX" secondItem="sBE-9v-8Fu" secondAttribute="centerX" id="qVV-LV-elV"/>
-                            <constraint firstItem="KFS-eR-jM7" firstAttribute="width" secondItem="sBE-9v-8Fu" secondAttribute="width" multiplier="0.8" id="s6M-Yz-POe"/>
+                            <constraint firstItem="tC6-66-94d" firstAttribute="centerX" secondItem="sBE-9v-8Fu" secondAttribute="centerX" id="hT5-Vn-B7K"/>
+                            <constraint firstItem="tC6-66-94d" firstAttribute="width" secondItem="sBE-9v-8Fu" secondAttribute="width" multiplier="0.8" id="v8N-Ce-uJf"/>
+                            <constraint firstItem="sbY-co-GS0" firstAttribute="top" secondItem="tC6-66-94d" secondAttribute="bottom" constant="40" id="vEC-jE-6js"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fGw-rs-ecG"/>
@@ -243,11 +246,11 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
             <objects>
                 <viewController id="Djx-7X-Pk5" customClass="CounterViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8u-Ue-tz7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PIC-Fi-xYA">
-                                <rect key="frame" x="41.5" y="290" width="331" height="182"/>
+                                <rect key="frame" x="41.5" y="317" width="331" height="182"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have contributed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QC-NZ-rrP">
                                         <rect key="frame" x="57" y="0.0" width="217.5" height="29"/>
@@ -270,9 +273,9 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="HOc-Hv-rlj">
-                                <rect key="frame" x="41.5" y="648" width="331" height="120"/>
+                                <rect key="frame" x="41.5" y="702" width="331" height="120"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you contribute today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvW-Uu-WAE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you contribute today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hvW-Uu-WAE">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="40"/>
                                         <fontDescription key="fontDescription" name="NewYorkLarge-Regular" family="New York Large" pointSize="24"/>
                                         <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
@@ -321,11 +324,23 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cOy-ky-h9u">
-                        <barButtonItem key="rightBarButtonItem" title="Change time" id="E0b-am-7S2" userLabel="Change time">
+                        <barButtonItem key="leftBarButtonItem" title="Recap" id="Hln-I0-YoD">
                             <connections>
-                                <segue destination="KGT-Qv-DR6" kind="presentation" id="67I-Or-ArY"/>
+                                <segue destination="0Uj-2S-izP" kind="show" id="s4x-5e-QdQ"/>
                             </connections>
                         </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" id="gL2-e4-gK4" userLabel="World">
+                                <connections>
+                                    <action selector="visitWeb:" destination="Djx-7X-Pk5" id="3FO-SK-Q5Q"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Change time" id="E0b-am-7S2" userLabel="Notification">
+                                <connections>
+                                    <segue destination="KGT-Qv-DR6" kind="presentation" id="67I-Or-ArY"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
@@ -342,34 +357,38 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
             <objects>
                 <viewController id="KGT-Qv-DR6" customClass="SettingsViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AyW-0f-eGx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vB-HE-c1j" customClass="yButton" customModule="MMM" customModuleProvider="target">
-                                <rect key="frame" x="41.5" y="738" width="331" height="30"/>
-                                <state key="normal" title="Set reminder">
-                                    <color key="titleColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="setNewTime:" destination="KGT-Qv-DR6" eventType="touchUpInside" id="PkU-Va-cv0"/>
-                                </connections>
-                            </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="utj-Pl-OKn">
-                                <rect key="frame" x="41.5" y="313" width="331" height="216"/>
+                                <rect key="frame" x="41.5" y="340" width="331" height="216"/>
                                 <color key="tintColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2O-ML-4d9" customClass="yButtonApp" customModule="MMM" customModuleProvider="target">
+                                <rect key="frame" x="61.5" y="782" width="291" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="HKM-JO-azT"/>
+                                    <constraint firstAttribute="height" constant="40" id="p9n-4i-obq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NewYorkLarge-Bold" family="New York Large" pointSize="20"/>
+                                <state key="normal" title="Set reminder"/>
+                                <connections>
+                                    <action selector="visitWeb:" destination="UnY-GC-M3t" eventType="touchUpInside" id="6ND-Aw-Ffz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4xl-eD-M9E"/>
                         <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="0vB-HE-c1j" firstAttribute="centerX" secondItem="AyW-0f-eGx" secondAttribute="centerX" id="6j0-jA-QQu"/>
-                            <constraint firstItem="4xl-eD-M9E" firstAttribute="bottom" secondItem="0vB-HE-c1j" secondAttribute="bottom" constant="40" id="8PN-Lr-DRu"/>
                             <constraint firstItem="utj-Pl-OKn" firstAttribute="centerX" secondItem="AyW-0f-eGx" secondAttribute="centerX" id="CuQ-J4-yUY"/>
-                            <constraint firstItem="0vB-HE-c1j" firstAttribute="width" secondItem="AyW-0f-eGx" secondAttribute="width" multiplier="0.8" id="VIP-iN-7fr"/>
+                            <constraint firstItem="4xl-eD-M9E" firstAttribute="bottom" secondItem="K2O-ML-4d9" secondAttribute="bottom" constant="40" id="EI8-9t-JvF"/>
+                            <constraint firstItem="K2O-ML-4d9" firstAttribute="width" secondItem="AyW-0f-eGx" secondAttribute="width" multiplier="0.702899" id="Onk-BO-GOb"/>
+                            <constraint firstItem="K2O-ML-4d9" firstAttribute="centerX" secondItem="AyW-0f-eGx" secondAttribute="centerX" id="RA2-Cr-nsH"/>
                             <constraint firstItem="utj-Pl-OKn" firstAttribute="centerY" secondItem="AyW-0f-eGx" secondAttribute="centerY" id="gEx-id-4Or"/>
                             <constraint firstItem="utj-Pl-OKn" firstAttribute="width" secondItem="AyW-0f-eGx" secondAttribute="width" multiplier="0.8" id="pUc-iM-Ac2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="MGr-f8-zDU"/>
                     <connections>
                         <outlet property="timePicker" destination="utj-Pl-OKn" id="0H4-g7-5FS"/>
                     </connections>
@@ -438,7 +457,14 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                             <constraint firstItem="H9c-jM-cRx" firstAttribute="bottom" secondItem="wXz-eN-atd" secondAttribute="bottom" constant="40" id="yEB-HI-FTB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VmH-nI-0it" propertyAccessControl="none"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="VmH-nI-0it" propertyAccessControl="none">
+                        <barButtonItem key="rightBarButtonItem" title="Notification" style="done" id="5EG-vV-COg" userLabel="Notification">
+                            <color key="tintColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="KGT-Qv-DR6" kind="show" id="XC5-fp-bbc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="countLb" destination="vaU-xw-ARu" id="2dg-SU-4M0"/>
@@ -451,8 +477,10 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9R2-vh-ChX"/>
+        <segue reference="6Q8-Y8-Vr2"/>
+        <segue reference="XC5-fp-bbc"/>
         <segue reference="748-rU-OV6"/>
+        <segue reference="s4x-5e-QdQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">

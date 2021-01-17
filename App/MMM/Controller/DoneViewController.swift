@@ -27,6 +27,11 @@ class DoneViewController: UIViewController {
         }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let _ = self.navigationController?.translucentNavController()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let context = container.viewContext
