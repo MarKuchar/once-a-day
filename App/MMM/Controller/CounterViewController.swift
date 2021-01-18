@@ -85,6 +85,14 @@ class CounterViewController: UIViewController {
         }
     }
     
+    @IBAction func btnNoPressed(_ sender: Any) {
+        let context = container.viewContext
+        let date = Date()
+        do {
+            counter.setValue(date, forKey: "todayDone")
+            try? context.save()
+        }
+    }
     
     @IBAction func visitWeb(_ sender: Any) {
         UIApplication.shared.open(URL(string: "http://once-a-day.xyz")!)

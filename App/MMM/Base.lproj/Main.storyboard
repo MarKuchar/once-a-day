@@ -44,7 +44,7 @@
                     </view>
                     <connections>
                         <segue destination="Djx-7X-Pk5" kind="show" identifier="toCounter" id="oal-CB-pZS"/>
-                        <segue destination="UnY-GC-M3t" kind="presentation" identifier="alreadyDone" modalPresentationStyle="fullScreen" id="FIr-FB-nMK"/>
+                        <segue destination="UnY-GC-M3t" kind="show" identifier="alreadyDone" id="FIr-FB-nMK"/>
                         <segue destination="0Uj-2S-izP" kind="show" identifier="toIntro" id="8Ro-Cx-MXG"/>
                     </connections>
                 </viewController>
@@ -292,7 +292,8 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                                 <fontDescription key="fontDescription" name="NewYorkMedium-Semibold" family="New York Medium" pointSize="20"/>
                                                 <state key="normal" title="No"/>
                                                 <connections>
-                                                    <segue destination="UnY-GC-M3t" kind="presentation" modalPresentationStyle="fullScreen" id="9R2-vh-ChX"/>
+                                                    <action selector="btnNoPressed:" destination="Djx-7X-Pk5" eventType="touchUpInside" id="AkQ-7i-C27"/>
+                                                    <segue destination="UnY-GC-M3t" kind="show" id="9R2-vh-ChX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpW-YS-eqU" customClass="yButtonApp" customModule="MMM" customModuleProvider="target">
@@ -304,7 +305,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                                 <state key="normal" title="Yes"/>
                                                 <connections>
                                                     <action selector="btnPressed:" destination="Djx-7X-Pk5" eventType="touchUpInside" id="pla-n9-wiZ"/>
-                                                    <segue destination="UnY-GC-M3t" kind="presentation" modalPresentationStyle="fullScreen" id="6Q8-Y8-Vr2"/>
+                                                    <segue destination="UnY-GC-M3t" kind="show" id="6Q8-Y8-Vr2"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -324,18 +325,21 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cOy-ky-h9u">
-                        <barButtonItem key="leftBarButtonItem" title="Recap" id="Hln-I0-YoD">
+                        <barButtonItem key="leftBarButtonItem" title="Recap" image="questionCircle" id="Hln-I0-YoD">
+                            <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="0Uj-2S-izP" kind="show" id="s4x-5e-QdQ"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="gL2-e4-gK4" userLabel="World">
+                            <barButtonItem title="Item" image="world" id="gL2-e4-gK4" userLabel="World">
+                                <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="visitWeb:" destination="Djx-7X-Pk5" id="3FO-SK-Q5Q"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Change time" id="E0b-am-7S2" userLabel="Notification">
+                            <barButtonItem title="Change time" image="bell" id="E0b-am-7S2" userLabel="Notification">
+                                <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="KGT-Qv-DR6" kind="presentation" id="67I-Or-ArY"/>
                                 </connections>
@@ -357,15 +361,15 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
             <objects>
                 <viewController id="KGT-Qv-DR6" customClass="SettingsViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AyW-0f-eGx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="utj-Pl-OKn">
-                                <rect key="frame" x="41.5" y="340" width="331" height="216"/>
+                                <rect key="frame" x="41.5" y="313" width="331" height="216"/>
                                 <color key="tintColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2O-ML-4d9" customClass="yButtonApp" customModule="MMM" customModuleProvider="target">
-                                <rect key="frame" x="61.5" y="782" width="291" height="40"/>
+                                <rect key="frame" x="61.5" y="728" width="291" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="HKM-JO-azT"/>
                                     <constraint firstAttribute="height" constant="40" id="p9n-4i-obq"/>
@@ -373,6 +377,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                 <fontDescription key="fontDescription" name="NewYorkLarge-Bold" family="New York Large" pointSize="20"/>
                                 <state key="normal" title="Set reminder"/>
                                 <connections>
+                                    <action selector="setNotification:" destination="KGT-Qv-DR6" eventType="touchUpInside" id="ATc-9Q-ya7"/>
                                     <action selector="visitWeb:" destination="UnY-GC-M3t" eventType="touchUpInside" id="6ND-Aw-Ffz"/>
                                 </connections>
                             </button>
@@ -458,10 +463,10 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="VmH-nI-0it" propertyAccessControl="none">
-                        <barButtonItem key="rightBarButtonItem" title="Notification" style="done" id="5EG-vV-COg" userLabel="Notification">
-                            <color key="tintColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Notification" image="bell" style="done" id="5EG-vV-COg" userLabel="Notification">
+                            <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="KGT-Qv-DR6" kind="show" id="XC5-fp-bbc"/>
+                                <segue destination="KGT-Qv-DR6" kind="modal" id="XC5-fp-bbc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -483,6 +488,9 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
         <segue reference="s4x-5e-QdQ"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="bell" width="26" height="26"/>
+        <image name="questionCircle" width="26" height="26"/>
+        <image name="world" width="26" height="26"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

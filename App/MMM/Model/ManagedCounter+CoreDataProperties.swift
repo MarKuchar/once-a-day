@@ -20,7 +20,6 @@ extension ManagedCounter {
     @NSManaged public var currentCount: Int64
     @NSManaged public var title: String?
     @NSManaged public var todayDone: Date?
-
 }
 
 extension ManagedCounter : Identifiable {

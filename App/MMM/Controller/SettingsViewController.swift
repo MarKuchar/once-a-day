@@ -17,7 +17,9 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func setNewTime(_ sender: Any) {
+    
+    
+    @IBAction func setNotification(_ sender: Any) {
         let center = UNUserNotificationCenter.current()
         center.removeAllPendingNotificationRequests()
         
