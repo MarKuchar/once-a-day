@@ -29,6 +29,7 @@ class DoneViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationItem.setHidesBackButton(true, animated: false)
         let _ = self.navigationController?.translucentNavController()
     }
     
