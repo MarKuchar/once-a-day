@@ -12,6 +12,13 @@ class SettingsViewController: UIViewController {
 
     @IBOutlet var timePicker: UIDatePicker!
     
+    @IBOutlet var timeLb: UILabel!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let date = timePicker.date
+        self.setTimeLb(date: date)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +31,7 @@ class SettingsViewController: UIViewController {
         center.removeAllPendingNotificationRequests()
         
         let date = timePicker.date
+        self.setTimeLb(date: date)
         let components = Calendar.current.dateComponents([.hour, .minute], from: date)
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
@@ -38,5 +46,14 @@ class SettingsViewController: UIViewController {
         center.add(request)
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    private func setTimeLb(date: Date) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm a"
+
+        let timeString = formatter.string(from: date)
+        
+        self.timeLb.text = timeString
     }
 }
