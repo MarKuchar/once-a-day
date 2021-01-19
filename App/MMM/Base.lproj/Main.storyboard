@@ -35,7 +35,7 @@
         <!--Loading View Controller-->
         <scene sceneID="1vM-GG-1gq">
             <objects>
-                <viewController id="Tqx-HI-43v" customClass="LoadingViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tqx-HI-43v" customClass="LoadingViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sag-g8-Yde">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,7 @@
         <!--Introduction View Controller-->
         <scene sceneID="BX4-uE-CyG">
             <objects>
-                <viewController id="0Uj-2S-izP" customClass="IntroductionViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0Uj-2S-izP" customClass="IntroductionViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6FY-hU-pCU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +68,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                 <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAb-bs-2t7" userLabel="StartBtn" customClass="yButton" customModule="MMM" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAb-bs-2t7" userLabel="StartBtn" customClass="yButton" customModule="Once_a_day" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="724" width="331" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Aii-fv-BHw"/>
@@ -81,7 +81,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                     <color key="titleShadowColor" systemColor="opaqueSeparatorColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1ah-8G-Bdm" kind="show" identifier="toStart" id="j0f-8D-uwx"/>
+                                    <action selector="nextBtnClicked:" destination="0Uj-2S-izP" eventType="touchUpInside" id="IMQ-b0-6tS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -100,67 +100,17 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                     <connections>
                         <outlet property="introLb" destination="1Mn-yP-wu1" id="Rvp-b1-jRl"/>
                         <outlet property="startBtn" destination="lAb-bs-2t7" id="D2Y-g4-YI4"/>
+                        <segue destination="gUQ-2o-Znb" kind="show" identifier="toReminder" id="WJm-Bl-WZ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBF-kO-3HF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6926.0869565217399" y="80.357142857142847"/>
         </scene>
-        <!--Start View Controller-->
-        <scene sceneID="ela-Es-oc0">
-            <objects>
-                <viewController id="1ah-8G-Bdm" customClass="StartViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UiL-b4-Xli">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="... this app will remind you to do so once a day, every single day." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l2-zy-Uvs" userLabel="Remind">
-                                <rect key="frame" x="41.5" y="392.5" width="331" height="57.5"/>
-                                <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
-                                <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHj-I1-yMZ" userLabel="StartBtn" customClass="yButton" customModule="MMM" customModuleProvider="target">
-                                <rect key="frame" x="41.5" y="724" width="331" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="mbc-9P-h6K"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="NewYorkMedium-Semibold" family="New York Medium" pointSize="20"/>
-                                <state key="normal" title="Let's start">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleShadowColor" systemColor="opaqueSeparatorColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="gUQ-2o-Znb" kind="show" identifier="toReminder" id="HMV-GT-txF"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="qYd-Fl-GXu"/>
-                        <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="qYd-Fl-GXu" firstAttribute="bottom" secondItem="VHj-I1-yMZ" secondAttribute="bottom" constant="40" id="0aa-7s-N1u"/>
-                            <constraint firstItem="4l2-zy-Uvs" firstAttribute="centerX" secondItem="UiL-b4-Xli" secondAttribute="centerX" id="EwU-Bd-GZN"/>
-                            <constraint firstItem="VHj-I1-yMZ" firstAttribute="width" secondItem="UiL-b4-Xli" secondAttribute="width" multiplier="0.8" id="L1e-MW-syd"/>
-                            <constraint firstItem="4l2-zy-Uvs" firstAttribute="centerY" secondItem="UiL-b4-Xli" secondAttribute="centerY" id="Lf2-4g-h3J"/>
-                            <constraint firstItem="4l2-zy-Uvs" firstAttribute="width" secondItem="UiL-b4-Xli" secondAttribute="width" multiplier="0.8" id="bdQ-ZY-tD6"/>
-                            <constraint firstItem="VHj-I1-yMZ" firstAttribute="centerX" secondItem="UiL-b4-Xli" secondAttribute="centerX" id="can-Yo-5Cc"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="q9i-Db-fcF"/>
-                    <connections>
-                        <outlet property="startLb" destination="4l2-zy-Uvs" id="iYs-be-33f"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r9L-va-HHh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-6138" y="80"/>
-        </scene>
         <!--Reminder View Controller-->
         <scene sceneID="Fqb-6e-xte">
             <objects>
-                <viewController id="gUQ-2o-Znb" customClass="ReminderViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gUQ-2o-Znb" customClass="ReminderViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sBE-9v-8Fu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,7 +150,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbY-co-GS0" userLabel="StartBtn" customClass="yButton" customModule="MMM" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbY-co-GS0" userLabel="StartBtn" customClass="yButton" customModule="Once_a_day" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="724" width="331" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="VzV-mE-wWC"/>
@@ -244,7 +194,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
         <!--Counter View Controller-->
         <scene sceneID="ahL-TJ-jUj">
             <objects>
-                <viewController id="Djx-7X-Pk5" customClass="CounterViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Djx-7X-Pk5" customClass="CounterViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8u-Ue-tz7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,11 +231,11 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                         <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nZQ-mv-Rh1">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nZQ-mv-Rh1">
                                         <rect key="frame" x="0.0" y="84" width="331" height="44"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7c-zy-ApF" customClass="yButtonApp" customModule="MMM" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="158" height="44"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7c-zy-ApF" customClass="yButtonApp" customModule="Once_a_day" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="160.5" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="6ab-hE-LlH"/>
                                                 </constraints>
@@ -296,8 +246,8 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                                     <segue destination="UnY-GC-M3t" kind="show" id="9R2-vh-ChX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpW-YS-eqU" customClass="yButtonApp" customModule="MMM" customModuleProvider="target">
-                                                <rect key="frame" x="173" y="0.0" width="158" height="44"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpW-YS-eqU" customClass="yButtonApp" customModule="Once_a_day" customModuleProvider="target">
+                                                <rect key="frame" x="170.5" y="0.0" width="160.5" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="Lj1-ec-gwd"/>
                                                 </constraints>
@@ -359,12 +309,12 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
         <!--Settings View Controller-->
         <scene sceneID="Twc-D5-lhu">
             <objects>
-                <viewController id="KGT-Qv-DR6" customClass="SettingsViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KGT-Qv-DR6" customClass="SettingsViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AyW-0f-eGx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2O-ML-4d9" customClass="yButtonApp" customModule="MMM" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2O-ML-4d9" customClass="yButtonApp" customModule="Once_a_day" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="724" width="331" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="p9n-4i-obq"/>
@@ -436,12 +386,12 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
         <!--Done View Controller-->
         <scene sceneID="2ZN-2e-kxl">
             <objects>
-                <viewController id="UnY-GC-M3t" customClass="DoneViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UnY-GC-M3t" customClass="DoneViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3XG-Sk-Dj7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXz-eN-atd" customClass="yButtonApp" customModule="MMM" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXz-eN-atd" customClass="yButtonApp" customModule="Once_a_day" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="724" width="331" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="ibq-3J-uc4"/>
@@ -526,7 +476,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
         <!--Review View Controller-->
         <scene sceneID="Ktz-de-0oc">
             <objects>
-                <viewController id="25W-Z3-jpA" customClass="ReviewViewController" customModule="MMM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="25W-Z3-jpA" customClass="ReviewViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ceR-KG-Y7V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -544,7 +494,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin,
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVi-7G-B9b" userLabel="StartBtn" customClass="yButton" customModule="MMM" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVi-7G-B9b" userLabel="StartBtn" customClass="yButton" customModule="Once_a_day" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="724" width="331" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m9d-Db-GnN"/>
@@ -579,10 +529,10 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin,
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2ar-Ob-XrK"/>
+        <segue reference="kas-KB-kN2"/>
         <segue reference="6Q8-Y8-Vr2"/>
-        <segue reference="XC5-fp-bbc"/>
-        <segue reference="748-rU-OV6"/>
+        <segue reference="5oB-wE-arY"/>
+        <segue reference="oal-CB-pZS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bell" width="26" height="26"/>

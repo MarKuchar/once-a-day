@@ -141,7 +141,7 @@
 		95089B0F25A8083200590B65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		951BCA95258E0A7300FB43B6 /* ManagedCounter+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedCounter+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		952C2C5425B64C270094AD49 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
-		953B08B72556D1AA008F9D3E /* MMM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		953B08B72556D1AA008F9D3E /* Once a day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Once a day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		953B08BA2556D1AB008F9D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		953B08BC2556D1AB008F9D3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		953B08C12556D1AB008F9D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -265,7 +265,7 @@
 		953B08B82556D1AA008F9D3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				953B08B72556D1AA008F9D3E /* MMM.app */,
+				953B08B72556D1AA008F9D3E /* Once a day.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,7 +378,7 @@
 			);
 			name = MMM;
 			productName = MMM;
-			productReference = 953B08B72556D1AA008F9D3E /* MMM.app */;
+			productReference = 953B08B72556D1AA008F9D3E /* Once a day.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -699,7 +699,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Once a day";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -718,7 +718,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Once a day";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
