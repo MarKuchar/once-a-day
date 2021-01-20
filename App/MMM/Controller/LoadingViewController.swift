@@ -19,8 +19,6 @@ class LoadingViewController: UINavigationController {
     override func viewDidAppear(_ animated: Bool) {
         let context = container.viewContext
         let counter = ManagedCounter.saveOrGet(context: context)
-        navigationItem.backBarButtonItem?.title = "Back"
-        
         
         let date = Date()
         let calendar = Calendar.current

@@ -16,13 +16,15 @@ class IntroductionViewController: UIViewController {
     
     @IBOutlet var startBtn: yButton!
     
-    var isRevaled = false
+    var isRevaled: Bool!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.backBarButtonItem?.tintColor = .yBtnColor
+        self.isRevaled = false
+        self.introLb.text = "For those who want to contribute to protecting our environment, and would not hesitate to pick up any rubbish and put it in the appropriate bin..."
     }
     
     override func viewDidLoad() {
@@ -43,6 +45,7 @@ class IntroductionViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        navigationController?.navigationBar.isHidden = false
     }
     
     private func animateNextParagraph() {

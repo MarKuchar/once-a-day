@@ -59,10 +59,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mn-yP-wu1" userLabel="Introduction">
-                                <rect key="frame" x="41.5" y="335" width="331" height="172"/>
-                                <string key="text">For those who want to contribute to protecting our environment,
-and would not hesitate to pick up any rubbish and put it in the appropriate bin...</string>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mn-yP-wu1" userLabel="Introduction">
+                                <rect key="frame" x="41.5" y="421" width="331" height="0.0"/>
                                 <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
                                 <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -104,7 +102,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBF-kO-3HF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6926.0869565217399" y="80.357142857142847"/>
+            <point key="canvasLocation" x="-8326" y="50"/>
         </scene>
         <!--Reminder View Controller-->
         <scene sceneID="Fqb-6e-xte">
@@ -188,7 +186,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2d-Fl-37Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5368" y="80"/>
+            <point key="canvasLocation" x="-7580" y="50"/>
         </scene>
         <!--Counter View Controller-->
         <scene sceneID="ahL-TJ-jUj">
@@ -242,7 +240,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                                 <state key="normal" title="No"/>
                                                 <connections>
                                                     <action selector="btnNoPressed:" destination="Djx-7X-Pk5" eventType="touchUpInside" id="AkQ-7i-C27"/>
-                                                    <segue destination="UnY-GC-M3t" kind="show" id="9R2-vh-ChX"/>
+                                                    <segue destination="UnY-GC-M3t" kind="show" id="riE-OF-Hxj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpW-YS-eqU" customClass="yButtonApp" customModule="Once_a_day" customModuleProvider="target">
@@ -254,7 +252,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                                                 <state key="normal" title="Yes"/>
                                                 <connections>
                                                     <action selector="btnPressed:" destination="Djx-7X-Pk5" eventType="touchUpInside" id="pla-n9-wiZ"/>
-                                                    <segue destination="UnY-GC-M3t" kind="show" id="6Q8-Y8-Vr2"/>
+                                                    <segue destination="UnY-GC-M3t" kind="show" id="nfw-6B-gEc"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -381,7 +379,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SqD-xw-bm5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6841" y="1594"/>
+            <point key="canvasLocation" x="-6772" y="974"/>
         </scene>
         <!--Done View Controller-->
         <scene sceneID="2ZN-2e-kxl">
@@ -450,13 +448,13 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin.
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="VmH-nI-0it" propertyAccessControl="none">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="questionCircle" id="E41-KM-MSW" userLabel="Recap">
+                        <barButtonItem key="leftBarButtonItem" image="questionCircle" id="E41-KM-MSW" userLabel="Recap">
                             <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="25W-Z3-jpA" kind="presentation" id="2ar-Ob-XrK"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Notification" image="bell" style="done" id="5EG-vV-COg" userLabel="Notification">
+                        <barButtonItem key="rightBarButtonItem" image="bell" style="done" id="5EG-vV-COg" userLabel="Notification">
                             <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="KGT-Qv-DR6" kind="modal" id="XC5-fp-bbc"/>
@@ -525,14 +523,14 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin,
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueg-Ag-Cgx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6813.04347826087" y="807.58928571428567"/>
+            <point key="canvasLocation" x="-6772" y="304"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="2ar-Ob-XrK"/>
-        <segue reference="FIr-FB-nMK"/>
+        <segue reference="riE-OF-Hxj"/>
         <segue reference="XC5-fp-bbc"/>
-        <segue reference="748-rU-OV6"/>
+        <segue reference="oal-CB-pZS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bell" width="26" height="26"/>

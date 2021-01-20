@@ -38,11 +38,12 @@ class CounterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setBackground()
         let context = container.viewContext
         self.counter = ManagedCounter.saveOrGet(context: context)
         registerLocal()
     }
-
+    
     
     @IBAction func btnPressed(_ sender: Any) {
         if let txt = countLb.text {
@@ -67,7 +68,7 @@ class CounterViewController: UIViewController {
     
     private func registerLocal() {
         let center = UNUserNotificationCenter.current()
-
+        
         center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
             if granted {
                 print("Notification is granted!")
@@ -98,4 +99,15 @@ class CounterViewController: UIViewController {
         UIApplication.shared.open(URL(string: "http://once-a-day.xyz")!)
     }
     
+    func setBackground(){
+        let background = UIImage(named: "AppIcon_3")
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.alpha = 0.1
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
+    }
 }
