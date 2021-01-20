@@ -60,7 +60,7 @@ class Contact extends React.Component {
     render() {
         return(
             <div>
-                <Myself title={this.props.title} />
+                <Myself subTitle={this.props.title} />
 
                     <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '50vh', backgroundColor: 'white', opacity: 0.8 }}>
                         <p className="display-5 font-weight-bolder">

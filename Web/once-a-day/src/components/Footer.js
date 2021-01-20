@@ -5,20 +5,14 @@ import Col from 'react-bootstrap/Col';
 
 function Footer() {
     return(
-        <footer >
-            <div className="panel-footer " style={{marginTop: '10vh'}}>
-                <Container fluid={true} >
-                    <Row className="border-top justify-content-between p-3 height:60px ">
-                    
-                        <Col className="p-0" md={3} sm={12} style={{ color: 'white' }}>
-                            Y
-                        </Col>
-                        <Col className="p-0 d-flex justify-content-end" md={3} style={{ color: 'white' }}>
-                            © Copyright Y Team
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+        <footer>
+            <Container fluid={true} style={{paddingTop: '0px'}} >
+                <Row className="p-3 height:60px">
+                    <Col className="justify-content-start" md={3} style={{ color: 'black' }}>
+                        © Copyright Y Team
+                    </Col>
+                </Row>
+            </Container>  
         </footer>
     );
 };

@@ -32,8 +32,16 @@ class ReminderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         animations()
+        setupCounter()
+    }
+    
+    private func setupCounter() {
         let context = container.viewContext
         self.counter = ManagedCounter.saveOrGet(context: context)
+        do {
+            self.counter.setValue(false, forKey: "isFirstLaunch")
+            try? context.save()
+        }
     }
     
     private func animations() {

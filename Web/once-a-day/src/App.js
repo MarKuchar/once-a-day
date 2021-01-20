@@ -13,14 +13,13 @@ import Home from './pages/Home';
 import About from './pages/Policy';
 import AboutT from './pages/TermsAndConditions';
 import Contact from './pages/Contact';
-import backgroundPic from './assets/images/city.png';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
 // Current styles
 const styles = {
   paperContainer: {
-    backgroundColor: `RGBA(0, 0, 0, 0.9)`,
+    backgroundColor: `RGBA(255, 252, 240, 1)`,
     height:'100%', 
     width: '100%',
   }
@@ -39,10 +38,10 @@ class App extends React.Component {
         {title: 'Contact', path: '/contact'}
       ],
       home: {
-        totalCount: 'once-a-day',
+        totalCount: '',
       }, 
       policy: {
-        title: 'Policy',
+        subTitle: 'Policy',
       },
       tAndC: {
         title: 'Terms & Conditions',
@@ -73,12 +72,12 @@ class App extends React.Component {
       <Router>
           <Container id="page-container" fluid={true} style={styles.paperContainer} >
             <Navbar className="border-bottom" bg="transparent" expand="lg" >
-              <Navbar.Brand style={{ color: 'white' }} >ONCE A DAY</Navbar.Brand>
+              <Navbar.Brand style={{ color: 'black' }} >ONCE A DAY</Navbar.Brand>
 
               <Navbar.Toggle className="border-0" arja-aria-controls="navbar-toggle"/>
               <Navbar.Collapse id="navbar-toggle">
                 <Nav className="ml-auto" > 
-                  <Link style={{ color: 'white' }} className="nav-link" to="/">Home</Link>
+                  <Link style={{ color: 'black' }} className="nav-link" to="/">Home</Link>
                   <Dropdown>
                     <Dropdown.Menu>
                       <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -86,16 +85,16 @@ class App extends React.Component {
                       <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
-                  <Link style={{ color: 'white' }} className="nav-link" to="/policy">Policy</Link>
-                  <Link style={{ color: 'white' }} className="nav-link" to="/termsandconditions">Terms & Conditions</Link>
-                  <Link style={{ color: 'white' }} className="nav-link" to="/contact">Contact</Link>
+                  <Link style={{ color: 'black' }} className="nav-link" to="/policy">Policy</Link>
+                  <Link style={{ color: 'black' }} className="nav-link" to="/termsandconditions">Terms & Conditions</Link>
+                  <Link style={{ color: 'black' }} className="nav-link" to="/contact">Contact</Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
             <div id="content-wrap">
               <Route path="/" exact render={() => <Home title={this.state.home.totalCount} /> } />
           
-              <Route path="/policy" render={() => <About title={this.state.policy.title} /> } />
+              <Route path="/policy" render={() => <About subTitle={this.state.policy.subTitle} /> } />
 
               <Route path="/termsandconditions" exact render={() => <AboutT title={this.state.tAndC.title} /> } />
 

@@ -33,4 +33,5 @@ extension CGSize {
 
 extension UIColor {
     public static var yBtnColor: UIColor { get { return UIConstants.btnColor } }
+    public static var yBgColor: UIColor { get { return UIConstants.bgColor } }
 }

@@ -5,7 +5,7 @@ import Myself from '../components/Myself';
 function AboutT(props) {
     return(
         <div>
-            <Myself title={props.title} />
+            <Myself subTitle={props.title} />
             <div style={{ backgroundColor: 'white', opacity: 0.6 }}>
                 <Content>
                     <p>

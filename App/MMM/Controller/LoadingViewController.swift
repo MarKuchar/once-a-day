@@ -14,6 +14,7 @@ class LoadingViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .yBgColor
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -23,7 +24,7 @@ class LoadingViewController: UINavigationController {
         let date = Date()
         let calendar = Calendar.current
         let today = calendar.dateComponents([.month, .day], from: date)
-        if Int(counter.currentCount) == 0 {
+        if counter.isFirstLaunch {
             performSegue(withIdentifier: "toIntro", sender: self)
         } else {
             if let lastDateDone = counter.todayDone,

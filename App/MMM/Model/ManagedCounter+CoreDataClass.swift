@@ -1,9 +1,8 @@
 //
 //  ManagedCounter+CoreDataClass.swift
-//  MMM
+//  
 //
-//  Created by Martin Kuchar on 2020-11-10.
-//  Copyright © 2020 Martin Kuchar. All rights reserved.
+//  Created by Martin Kuchar on 2021-01-20.
 //
 //
 
@@ -24,6 +23,7 @@ public class ManagedCounter: NSManagedObject {
         let counter = ManagedCounter(context: context)
         counter.title = "Main"
         counter.currentCount = 0
+        counter.isFirstLaunch = true
         try? context.save()
         return counter
     }

@@ -5,7 +5,7 @@ import Myself from '../components/Myself';
 function About(props) {
     return(
         <div>
-            <Myself title={props.title} />
+            <Myself subTitle={props.subTitle} />
             <div style={{ backgroundColor: 'white', opacity: 0.6 }}>
                 <Content>
                     <p>

@@ -19,7 +19,7 @@ class DoneViewController: UIViewController {
     private var counter: ManagedCounter! {
         didSet {
             self.countLb.text = String(counter.currentCount)
-            if counter.currentCount < 2 {
+            if counter.currentCount == 1 {
                 timeLb.text = "time."
             } else {
                 timeLb.text = "times."
@@ -35,6 +35,7 @@ class DoneViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setBackground()
         let context = container.viewContext
         self.counter = ManagedCounter.saveOrGet(context: context)
     }
