@@ -23,7 +23,7 @@ class CounterViewController: UIViewController {
     private var counter: ManagedCounter! {
         didSet {
             countLb.text = String(counter.currentCount)
-            if counter.currentCount < 1 {
+            if counter.currentCount == 1 {
                 timeLb.text = "time."
             } else {
                 timeLb.text = "times."
