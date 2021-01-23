@@ -66,6 +66,8 @@
 		953B08C52556D1AB008F9D3E /* MMM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 953B08C32556D1AB008F9D3E /* MMM.xcdatamodeld */; };
 		953B08C72556D1AC008F9D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953B08C62556D1AC008F9D3E /* Assets.xcassets */; };
 		953B08CA2556D1AC008F9D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953B08C82556D1AC008F9D3E /* LaunchScreen.storyboard */; };
+		95510E8B25BC24CF00DE01DE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95510E8A25BC24CF00DE01DE /* StoreKit.framework */; };
+		95510E9E25BC28B600DE01DE /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95510E9D25BC28B600DE01DE /* TipViewController.swift */; };
 		955247322563579000B059CB /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955247312563579000B059CB /* CounterViewController.swift */; };
 		9552473A25635B8000B059CB /* roboto in Resources */ = {isa = PBXBuildFile; fileRef = 9552473925635B8000B059CB /* roboto */; };
 		95602DBC25725FC300AD648A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95602DBB25725FC300AD648A /* SettingsViewController.swift */; };
@@ -149,6 +151,8 @@
 		953B08C62556D1AC008F9D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		953B08C92556D1AC008F9D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		953B08CB2556D1AC008F9D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95510E8A25BC24CF00DE01DE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		95510E9D25BC28B600DE01DE /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		955247312563579000B059CB /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		9552473925635B8000B059CB /* roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = roboto; sourceTree = "<group>"; };
 		95602DBB25725FC300AD648A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FE229A2C89BAA7AC2AC203F /* Pods_MMM.framework in Frameworks */,
+				95510E8B25BC24CF00DE01DE /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +188,7 @@
 		18E9A77271ACA40224ED8F26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95510E8A25BC24CF00DE01DE /* StoreKit.framework */,
 				4794C7EFA14B887B6C18CC0B /* Pods_MMM.framework */,
 			);
 			name = Frameworks;
@@ -295,6 +301,7 @@
 				95602DBB25725FC300AD648A /* SettingsViewController.swift */,
 				95C667D725AFF3B5000FA27B /* DoneViewController.swift */,
 				952C2C5425B64C270094AD49 /* ReviewViewController.swift */,
+				95510E9D25BC28B600DE01DE /* TipViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -539,6 +546,7 @@
 				95602DBC25725FC300AD648A /* SettingsViewController.swift in Sources */,
 				95724AC225B26F8600EF6088 /* UIButton+Animation.swift in Sources */,
 				95724AF225B27DAF00EF6088 /* yButtonApp.swift in Sources */,
+				95510E9E25BC28B600DE01DE /* TipViewController.swift in Sources */,
 				95660B8A25B8F647001DAF3F /* ManagedCounter+CoreDataClass.swift in Sources */,
 				953B08BD2556D1AB008F9D3E /* SceneDelegate.swift in Sources */,
 				95660B6725B8EF77001DAF3F /* UIViewController+Background.swift in Sources */,

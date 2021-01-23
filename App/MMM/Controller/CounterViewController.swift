@@ -9,8 +9,9 @@
 import UIKit
 import CoreData
 import FirebaseDatabase
+import SafariServices
 
-class CounterViewController: UIViewController {
+class CounterViewController: UIViewController, SFSafariViewControllerDelegate {
     
     @IBOutlet var countLb: UILabel!
     
@@ -95,6 +96,10 @@ class CounterViewController: UIViewController {
     }
     
     @IBAction func visitWeb(_ sender: Any) {
-        UIApplication.shared.open(URL(string: "http://once-a-day.xyz")!)
+        let webVC = SFSafariViewController(url: URL(string: "http://once-a-day.xyz")!)
+        webVC.delegate = self
+        webVC.preferredBarTintColor = .yBgColor
+        webVC.modalPresentationStyle = .overCurrentContext
+        self.navigationController?.present(webVC, animated: true, completion: nil)
     }
 }

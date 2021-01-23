@@ -37,8 +37,8 @@ class SettingsViewController: UIViewController {
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
         
         let content = UNMutableNotificationContent()
-        content.title = "One step reminder"
-        content.body = "Did you do another step today?"
+        content.title = "Your Once A Day reminder"
+        content.body = "Did you contribute to cleanliness today?"
         content.categoryIdentifier = "customIdentifier"
         content.sound = UNNotificationSound.default
         

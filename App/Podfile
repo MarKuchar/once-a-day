@@ -9,6 +9,8 @@ target 'MMM' do
   # add pods for any other desired Firebase products
   # https://firebase.google.com/docs/ios/setup#available-pods
   pod 'Firebase/Database'
-  # Pods for MMM
+  
+  # Pods for RevenueCat
+  pod 'Purchases', '3.10.1'
 
 end

@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import Purchases
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
+        Purchases.debugLogsEnabled = true
+        Purchases.configure(withAPIKey: "ABGNyQPwnAOGDxRSRIcFvPIJtTXZcKyt")
+        
         return true
     }
     

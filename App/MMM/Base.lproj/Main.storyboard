@@ -34,7 +34,7 @@
         <!--Loading View Controller-->
         <scene sceneID="1vM-GG-1gq">
             <objects>
-                <viewController id="Tqx-HI-43v" customClass="LoadingViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tqx-HI-43v" customClass="LoadingViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sag-g8-Yde">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,7 +54,7 @@
         <!--Introduction View Controller-->
         <scene sceneID="BX4-uE-CyG">
             <objects>
-                <viewController id="0Uj-2S-izP" customClass="IntroductionViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0Uj-2S-izP" customClass="IntroductionViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6FY-hU-pCU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +65,7 @@
                                 <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAb-bs-2t7" userLabel="StartBtn" customClass="yButton" customModule="Once_a_day" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAb-bs-2t7" userLabel="StartBtn" customClass="yButton" customModule="Once_A_Day" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="724" width="331" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Aii-fv-BHw"/>
@@ -107,7 +107,7 @@
         <!--Reminder View Controller-->
         <scene sceneID="Fqb-6e-xte">
             <objects>
-                <viewController id="gUQ-2o-Znb" customClass="ReminderViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gUQ-2o-Znb" customClass="ReminderViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sBE-9v-8Fu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,7 +147,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbY-co-GS0" userLabel="StartBtn" customClass="yButton" customModule="Once_a_day" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbY-co-GS0" userLabel="StartBtn" customClass="yButton" customModule="Once_A_Day" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="724" width="331" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="VzV-mE-wWC"/>
@@ -191,13 +191,13 @@
         <!--Counter View Controller-->
         <scene sceneID="ahL-TJ-jUj">
             <objects>
-                <viewController id="Djx-7X-Pk5" customClass="CounterViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Djx-7X-Pk5" customClass="CounterViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8u-Ue-tz7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PIC-Fi-xYA">
-                                <rect key="frame" x="41.5" y="290" width="331" height="182"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PIC-Fi-xYA">
+                                <rect key="frame" x="41.5" y="310" width="331" height="142"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have contributed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QC-NZ-rrP">
                                         <rect key="frame" x="57" y="0.0" width="217.5" height="29"/>
@@ -206,13 +206,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaT-Zc-Bx0" userLabel="CountLb">
-                                        <rect key="frame" x="140.5" y="49" width="50" height="56.5"/>
+                                        <rect key="frame" x="140.5" y="29" width="50" height="56.5"/>
                                         <fontDescription key="fontDescription" name="NewYorkExtraLarge-Semibold" family="New York Extra Large" pointSize="90"/>
                                         <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaA-m5-Bov" userLabel="TimesLb">
-                                        <rect key="frame" x="140.5" y="125.5" width="50" height="56.5"/>
+                                        <rect key="frame" x="140.5" y="85.5" width="50" height="56.5"/>
                                         <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
                                         <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -231,7 +231,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nZQ-mv-Rh1">
                                         <rect key="frame" x="0.0" y="84" width="331" height="44"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7c-zy-ApF" customClass="yButtonApp" customModule="Once_a_day" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7c-zy-ApF" customClass="yButtonApp" customModule="Once_A_Day" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="160.5" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="6ab-hE-LlH"/>
@@ -243,7 +243,7 @@
                                                     <segue destination="UnY-GC-M3t" kind="show" id="riE-OF-Hxj"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpW-YS-eqU" customClass="yButtonApp" customModule="Once_a_day" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpW-YS-eqU" customClass="yButtonApp" customModule="Once_A_Day" customModuleProvider="target">
                                                 <rect key="frame" x="170.5" y="0.0" width="160.5" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="Lj1-ec-gwd"/>
@@ -306,12 +306,12 @@
         <!--Settings View Controller-->
         <scene sceneID="Twc-D5-lhu">
             <objects>
-                <viewController id="KGT-Qv-DR6" customClass="SettingsViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KGT-Qv-DR6" customClass="SettingsViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AyW-0f-eGx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2O-ML-4d9" customClass="yButtonApp" customModule="Once_a_day" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2O-ML-4d9" customClass="yButtonApp" customModule="Once_A_Day" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="724" width="331" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="p9n-4i-obq"/>
@@ -379,17 +379,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SqD-xw-bm5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6772" y="974"/>
+            <point key="canvasLocation" x="-6841" y="808"/>
         </scene>
         <!--Done View Controller-->
         <scene sceneID="2ZN-2e-kxl">
             <objects>
-                <viewController id="UnY-GC-M3t" customClass="DoneViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UnY-GC-M3t" customClass="DoneViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3XG-Sk-Dj7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXz-eN-atd" customClass="yButtonApp" customModule="Once_a_day" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXz-eN-atd" customClass="yButtonApp" customModule="Once_A_Day" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="724" width="331" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="ibq-3J-uc4"/>
@@ -454,12 +454,20 @@
                                 <segue destination="25W-Z3-jpA" kind="presentation" id="2ar-Ob-XrK"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="bell" style="done" id="5EG-vV-COg" userLabel="Notification">
-                            <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="KGT-Qv-DR6" kind="modal" id="XC5-fp-bbc"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="bell" style="done" id="5EG-vV-COg" userLabel="Notification">
+                                <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="KGT-Qv-DR6" kind="modal" id="XC5-fp-bbc"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="heart" catalog="system" id="GN7-M9-ffw" userLabel="Tipping">
+                                <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="E6g-rG-0gQ" kind="show" id="d84-WI-Hf7"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
@@ -471,10 +479,42 @@
             </objects>
             <point key="canvasLocation" x="-7749" y="1594"/>
         </scene>
+        <!--Tip View Controller-->
+        <scene sceneID="KDM-Ea-yGQ">
+            <objects>
+                <viewController id="E6g-rG-0gQ" customClass="TipViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Mh-sq-qe4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8O-pL-9aM" userLabel="$1">
+                                <rect key="frame" x="184" y="406" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="makePurchase:" destination="E6g-rG-0gQ" eventType="touchUpInside" id="1iL-Ng-n6J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2bV-cc-bVA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h8O-pL-9aM" firstAttribute="centerY" secondItem="1Mh-sq-qe4" secondAttribute="centerY" id="4AI-Hq-wIU"/>
+                            <constraint firstItem="h8O-pL-9aM" firstAttribute="centerX" secondItem="1Mh-sq-qe4" secondAttribute="centerX" id="4HK-yC-fyG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hMO-sv-XD3"/>
+                    <connections>
+                        <outlet property="oneDollarBtn" destination="h8O-pL-9aM" id="QOh-DZ-VXx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uY-hI-ZWz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6842.0289855072469" y="1593.75"/>
+        </scene>
         <!--Review View Controller-->
         <scene sceneID="Ktz-de-0oc">
             <objects>
-                <viewController id="25W-Z3-jpA" customClass="ReviewViewController" customModule="Once_a_day" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="25W-Z3-jpA" customClass="ReviewViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ceR-KG-Y7V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -492,7 +532,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin,
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVi-7G-B9b" userLabel="StartBtn" customClass="yButton" customModule="Once_a_day" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" verticalHuggingPriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVi-7G-B9b" userLabel="StartBtn" customClass="yButton" customModule="Once_A_Day" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="724" width="331" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m9d-Db-GnN"/>
@@ -523,7 +563,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin,
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueg-Ag-Cgx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6772" y="304"/>
+            <point key="canvasLocation" x="-6841" y="50"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -534,10 +574,14 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin,
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bell" width="26" height="26"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="questionCircle" width="26" height="26"/>
         <image name="world" width="26" height="26"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
