@@ -11,7 +11,7 @@ import Purchases
 
 class TipViewController: UIViewController {
     
-    @IBOutlet var oneDollarBtn: UIButton!
+    @IBOutlet var vStackView: UIStackView!
     
     var packages = [Purchases.Package]()
     
@@ -28,27 +28,40 @@ class TipViewController: UIViewController {
               // Display current offering with offerings.current
                 let offer = offerings.current
                 if let fechedPackages = offer?.availablePackages {
-                    let _ = fechedPackages.map { (package) in
-                        
+                    for i in 0..<fechedPackages.count {
+                        let package = fechedPackages[i]
                         self.packages.append(package)
                         
                         let product = package.product
                         let title = product.localizedTitle
                         let price = product.price
-                        self.oneDollarBtn.setTitle("\(title) \(price)", for: .normal)
+                        self.makeBtn(with: "\(title) with price: \(price)", andTag: i)
                     }
                 }
           }
         }
     }
     
+    private func makeBtn(with title: String, andTag: Int) {
+        let btn = UIButton(type: .system)
+        btn.setTitle(title, for: .normal)
+        btn.tag = andTag
+        btn.titleLabel?.textAlignment = .center
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.addTarget(self, action: #selector(makePurchase(_:)), for: .touchUpInside)
+        vStackView.addArrangedSubview(btn)
+        btn.widthAnchor.constraint(equalTo: vStackView.widthAnchor).isActive = true
+    }
     
-    @IBAction func makePurchase(_ sender: Any) {
-        //        Purchases.shared.purchasePackage(package) { (transaction, purchaserInfo, error, userCancelled) in
-        //            if purchaserInfo?.entitlements.all["your_entitlement_id"]?.isActive == true {
-        //                // Unlock that great "pro" content
-        //            }
-        //        })
+    @objc func makePurchase(_ sender: UIButton) {
+        Purchases.shared.purchasePackage(packages[sender.tag]) { (transaction, purchaserInfo, error, userCancelled) in
+            if let error = error {
+                debugPrint(error.localizedDescription)
+            }
+        }
     }
 
+    @IBAction func goBack(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
 }

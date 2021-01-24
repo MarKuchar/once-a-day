@@ -42,16 +42,10 @@ class DoneViewController: UIViewController, SFSafariViewControllerDelegate, UIAd
     }
     
     @IBAction func visitWeb(_ sender: Any) {
-//        UIApplication.shared.open(URL(string: "http://once-a-day.xyz")!)
         let webVC = SFSafariViewController(url: URL(string: "http://once-a-day.xyz")!)
         webVC.delegate = self
         webVC.preferredBarTintColor = .yBgColor
         webVC.modalPresentationStyle = .overCurrentContext
         self.navigationController?.present(webVC, animated: true, completion: nil)
     }
-    
-    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-        dismiss(animated: true, completion: nil)
-        navigationController?.popViewController(animated: false)
-   }
 }

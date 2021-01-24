@@ -64,7 +64,7 @@ class Contact extends React.Component {
 
                     <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '50vh', backgroundColor: 'white', opacity: 0.8 }}>
                         <p className="display-5 font-weight-bolder">
-                            If you have any questions or suggestions about my Policy or Terms and Conditions, do not hesitate to contact me at ypinapp@gmail.com.
+                            If you have any questions or suggestions about my Policy or Terms and Conditions, do not hesitate to contact me at ypin.master@gmail.com.
                         </p>
                     </div>
 
