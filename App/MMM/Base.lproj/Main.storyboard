@@ -23,6 +23,9 @@
         <array key="NewYorkLarge-Regular.otf">
             <string>NewYorkLarge-Regular</string>
         </array>
+        <array key="NewYorkLarge-Semibold.otf">
+            <string>NewYorkLarge-Semibold</string>
+        </array>
         <array key="NewYorkLarge-SemiboldItalic.otf">
             <string>NewYorkLarge-SemiboldItalic</string>
         </array>
@@ -288,7 +291,7 @@
                             <barButtonItem title="Change time" image="bell" id="E0b-am-7S2" userLabel="Notification">
                                 <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="KGT-Qv-DR6" kind="presentation" id="5oB-wE-arY"/>
+                                    <action selector="toSetupNotification:" destination="Djx-7X-Pk5" id="zAl-ev-aZg"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -306,13 +309,13 @@
         <!--Settings View Controller-->
         <scene sceneID="Twc-D5-lhu">
             <objects>
-                <viewController id="KGT-Qv-DR6" customClass="SettingsViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotificationViewController" id="KGT-Qv-DR6" customClass="SettingsViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AyW-0f-eGx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2O-ML-4d9" customClass="yButtonApp" customModule="Once_A_Day" customModuleProvider="target">
-                                <rect key="frame" x="41.5" y="724" width="331" height="44"/>
+                                <rect key="frame" x="41.5" y="778" width="331" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="p9n-4i-obq"/>
                                 </constraints>
@@ -324,7 +327,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="fi9-p6-wRD">
-                                <rect key="frame" x="41.5" y="185" width="331" height="472.5"/>
+                                <rect key="frame" x="41.5" y="212" width="331" height="472.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set the time, you would like to be reminded." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60j-YW-xMd" userLabel="Remind">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="57.5"/>
@@ -371,7 +374,14 @@
                             <constraint firstItem="fi9-p6-wRD" firstAttribute="centerY" secondItem="AyW-0f-eGx" secondAttribute="centerY" id="vhc-yk-Qbh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="MGr-f8-zDU"/>
+                    <navigationItem key="navigationItem" id="MGr-f8-zDU">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="bkR-19-kTU" userLabel="Done">
+                            <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="goBack:" destination="KGT-Qv-DR6" id="FPD-nk-aYf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="timeLb" destination="ccf-4w-huh" id="p9P-rC-frs"/>
                         <outlet property="timePicker" destination="DMS-jG-NE0" id="aZk-2c-645"/>
@@ -458,13 +468,13 @@
                             <barButtonItem image="bell" style="done" id="5EG-vV-COg" userLabel="Notification">
                                 <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="KGT-Qv-DR6" kind="modal" id="XC5-fp-bbc"/>
+                                    <action selector="toSetNotification:" destination="UnY-GC-M3t" id="kbH-xG-XLC"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Item" image="heart" catalog="system" id="GN7-M9-ffw" userLabel="Tipping">
                                 <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="E6g-rG-0gQ" kind="show" id="d84-WI-Hf7"/>
+                                    <action selector="toTipVC:" destination="UnY-GC-M3t" id="l2m-JN-Lp3"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -482,32 +492,58 @@
         <!--Tip View Controller-->
         <scene sceneID="KDM-Ea-yGQ">
             <objects>
-                <viewController id="E6g-rG-0gQ" customClass="TipViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DonateViewController" id="E6g-rG-0gQ" customClass="TipViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Mh-sq-qe4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="gWr-zm-nIN">
-                                <rect key="frame" x="41.5" y="329" width="331" height="150"/>
-                                <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="df8-hV-yjI"/>
-                                </constraints>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gFa-2m-sho">
+                                <rect key="frame" x="41.5" y="76" width="331" height="738"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We would love to improve your experience of this app." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjf-9D-HLH">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="100.5"/>
+                                        <fontDescription key="fontDescription" name="NewYorkLarge-SemiboldItalic" family="New York Large" pointSize="28"/>
+                                        <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="KD8-Nw-hh0">
+                                        <rect key="frame" x="0.0" y="188.5" width="331" height="184"/>
+                                        <string key="text">If you would like to support our development efforts, please consider leaving a tip! Every little bit helps us keep working on projects like this. We appreciate your generosity and commitment to a tidier world!</string>
+                                        <fontDescription key="fontDescription" name="NewYorkLarge-Semibold" family="New York Large" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit.heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6Xf-oF-e4o">
+                                        <rect key="frame" x="0.0" y="461.5" width="331" height="37.5"/>
+                                        <color key="tintColor" red="0.68235294117647061" green="0.074509803921568626" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="dWN-PL-Yi2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gWr-zm-nIN">
+                                        <rect key="frame" x="0.0" y="588" width="331" height="150"/>
+                                        <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="df8-hV-yjI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2bV-cc-bVA"/>
                         <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="gWr-zm-nIN" firstAttribute="width" secondItem="1Mh-sq-qe4" secondAttribute="width" multiplier="0.8" id="2Ws-rt-dgG"/>
-                            <constraint firstItem="gWr-zm-nIN" firstAttribute="centerX" secondItem="1Mh-sq-qe4" secondAttribute="centerX" id="fFs-mT-KWg"/>
-                            <constraint firstItem="gWr-zm-nIN" firstAttribute="centerY" secondItem="2bV-cc-bVA" secondAttribute="centerY" id="qHw-9k-Chm"/>
+                            <constraint firstItem="gFa-2m-sho" firstAttribute="centerX" secondItem="1Mh-sq-qe4" secondAttribute="centerX" id="7vX-Fc-aKO"/>
+                            <constraint firstItem="gFa-2m-sho" firstAttribute="width" secondItem="1Mh-sq-qe4" secondAttribute="width" multiplier="0.8" id="NOU-sM-3nN"/>
+                            <constraint firstItem="2bV-cc-bVA" firstAttribute="bottom" secondItem="gFa-2m-sho" secondAttribute="bottom" constant="48" id="XB2-1M-nne"/>
+                            <constraint firstItem="gFa-2m-sho" firstAttribute="top" secondItem="2bV-cc-bVA" secondAttribute="top" constant="32" id="fGh-jd-Khw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hMO-sv-XD3">
-                        <barButtonItem key="leftBarButtonItem" image="backArrow" id="9Hm-oQ-mCc" userLabel="Back">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="hMO-sv-XD3">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="9Hm-oQ-mCc" userLabel="Back">
                             <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="goBack:" destination="E6g-rG-0gQ" id="RGq-CP-hId"/>
+                                <action selector="goBack:" destination="E6g-rG-0gQ" id="44A-F8-J0A"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -575,16 +611,15 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin,
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2ar-Ob-XrK"/>
+        <segue reference="kas-KB-kN2"/>
         <segue reference="riE-OF-Hxj"/>
-        <segue reference="XC5-fp-bbc"/>
         <segue reference="oal-CB-pZS"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="backArrow" width="24" height="24"/>
         <image name="bell" width="26" height="26"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="questionCircle" width="26" height="26"/>
+        <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
         <image name="world" width="26" height="26"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

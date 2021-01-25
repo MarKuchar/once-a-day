@@ -15,8 +15,15 @@ class TipViewController: UIViewController {
     
     var packages = [Purchases.Package]()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let attributes = [NSAttributedString.Key.font: UIFont(name: "NewYorkMedium-Semibold", size: 20)]
+        self.navigationItem.rightBarButtonItem?.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         fetchPurchases()
     }
     
@@ -35,7 +42,7 @@ class TipViewController: UIViewController {
                         let product = package.product
                         let title = product.localizedTitle
                         let price = product.price
-                        self.makeBtn(with: "\(title) with price: \(price)", andTag: i)
+                        self.makeBtn(with: "\(title) - \(price)", andTag: i)
                     }
                 }
           }
@@ -43,11 +50,8 @@ class TipViewController: UIViewController {
     }
     
     private func makeBtn(with title: String, andTag: Int) {
-        let btn = UIButton(type: .system)
-        btn.setTitle(title, for: .normal)
+        let btn = yButtonTip(text: title)
         btn.tag = andTag
-        btn.titleLabel?.textAlignment = .center
-        btn.translatesAutoresizingMaskIntoConstraints = false
         btn.addTarget(self, action: #selector(makePurchase(_:)), for: .touchUpInside)
         vStackView.addArrangedSubview(btn)
         btn.widthAnchor.constraint(equalTo: vStackView.widthAnchor).isActive = true
@@ -62,6 +66,6 @@ class TipViewController: UIViewController {
     }
 
     @IBAction func goBack(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
 }

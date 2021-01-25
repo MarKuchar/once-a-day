@@ -83,6 +83,7 @@
 		95724AF225B27DAF00EF6088 /* yButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724AF125B27DAF00EF6088 /* yButtonApp.swift */; };
 		95724AF625B2817800EF6088 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724AF525B2817800EF6088 /* Constants.swift */; };
 		957321E12568543C00F21BEF /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957321E02568543C00F21BEF /* LoadingViewController.swift */; };
+		9598581525BE6E2D00E0B890 /* yButtonTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9598581425BE6E2D00E0B890 /* yButtonTip.swift */; };
 		95C1F342255BAFF400B9123C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1F341255BAFF400B9123C /* CoreDataManager.swift */; };
 		95C667D825AFF3B5000FA27B /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C667D725AFF3B5000FA27B /* DoneViewController.swift */; };
 /* End PBXBuildFile section */
@@ -168,6 +169,7 @@
 		95724AF125B27DAF00EF6088 /* yButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yButtonApp.swift; sourceTree = "<group>"; };
 		95724AF525B2817800EF6088 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		957321E02568543C00F21BEF /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		9598581425BE6E2D00E0B890 /* yButtonTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yButtonTip.swift; sourceTree = "<group>"; };
 		95C1F341255BAFF400B9123C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		95C667D725AFF3B5000FA27B /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -356,6 +358,7 @@
 			children = (
 				95724ABD25B26F6300EF6088 /* yButton.swift */,
 				95724AF125B27DAF00EF6088 /* yButtonApp.swift */,
+				9598581425BE6E2D00E0B890 /* yButtonTip.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				95724AAC25B26E7B00EF6088 /* NavController+NavBar.swift in Sources */,
 				95660B8925B8F647001DAF3F /* ManagedCounter+CoreDataProperties.swift in Sources */,
 				953B08BB2556D1AB008F9D3E /* AppDelegate.swift in Sources */,
+				9598581525BE6E2D00E0B890 /* yButtonTip.swift in Sources */,
 				952C2C5525B64C270094AD49 /* ReviewViewController.swift in Sources */,
 				95C667D825AFF3B5000FA27B /* DoneViewController.swift in Sources */,
 				95724A9725B2687400EF6088 /* IntroductionViewController.swift in Sources */,

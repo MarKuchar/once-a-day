@@ -18,6 +18,7 @@ class SettingsViewController: UIViewController {
         super.viewWillAppear(animated)
         let date = timePicker.date
         self.setTimeLb(date: date)
+        setupNavVC()
     }
     
     override func viewDidLoad() {
@@ -56,4 +57,15 @@ class SettingsViewController: UIViewController {
         
         self.timeLb.text = timeString
     }
+    
+    private func setupNavVC() {
+        let attributes = [NSAttributedString.Key.font: UIFont(name: "NewYorkMedium-Semibold", size: 20)]
+        self.navigationItem.rightBarButtonItem?.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
+    }
+    
+    
+    @IBAction func goBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

@@ -48,4 +48,19 @@ class DoneViewController: UIViewController, SFSafariViewControllerDelegate, UIAd
         webVC.modalPresentationStyle = .overCurrentContext
         self.navigationController?.present(webVC, animated: true, completion: nil)
     }
+    
+    @IBAction func toTipVC(_ sender: Any) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "DonateViewController") as! TipViewController
+        let nav = UINavigationController(rootViewController: vc)
+        let _ = nav.translucentNavController()
+        self.present(nav, animated: true, completion: nil)
+    }
+    
+    @IBAction func toSetNotification(_ sender: Any) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "NotificationViewController") as! SettingsViewController
+        let nav = UINavigationController(rootViewController: vc)
+        let _ = nav.translucentNavController()
+        self.present(nav, animated: true, completion: nil)
+    }
+    
 }

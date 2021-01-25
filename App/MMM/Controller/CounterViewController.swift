@@ -102,4 +102,11 @@ class CounterViewController: UIViewController, SFSafariViewControllerDelegate {
         webVC.modalPresentationStyle = .overCurrentContext
         self.navigationController?.present(webVC, animated: true, completion: nil)
     }
+    
+    @IBAction func toSetupNotification(_ sender: Any) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "NotificationViewController") as! SettingsViewController
+        let nav = UINavigationController(rootViewController: vc)
+        let _ = nav.translucentNavController()
+        self.present(nav, animated: true, completion: nil)
+    }
 }
