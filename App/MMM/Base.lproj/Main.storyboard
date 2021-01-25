@@ -17,14 +17,14 @@
         <array key="NewYorkLarge-Bold.otf">
             <string>NewYorkLarge-Bold</string>
         </array>
+        <array key="NewYorkLarge-Medium.otf">
+            <string>NewYorkLarge-Medium</string>
+        </array>
         <array key="NewYorkLarge-MediumItalic.otf">
             <string>NewYorkLarge-MediumItalic</string>
         </array>
         <array key="NewYorkLarge-Regular.otf">
             <string>NewYorkLarge-Regular</string>
-        </array>
-        <array key="NewYorkLarge-Semibold.otf">
-            <string>NewYorkLarge-Semibold</string>
         </array>
         <array key="NewYorkLarge-SemiboldItalic.otf">
             <string>NewYorkLarge-SemiboldItalic</string>
@@ -119,28 +119,28 @@
                                 <rect key="frame" x="41.5" y="158" width="331" height="526"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set the time, you would like to be reminded." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb7-h0-nCO" userLabel="Remind">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="57.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="56"/>
                                         <fontDescription key="fontDescription" name="NewYorkLarge-Regular" family="New York Large" pointSize="24"/>
                                         <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-eR-jM7">
-                                        <rect key="frame" x="0.0" y="181" width="331" height="345"/>
+                                        <rect key="frame" x="0.0" y="183.5" width="331" height="342.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You'll be reminded at " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrn-LR-kpd" userLabel="Second">
-                                                <rect key="frame" x="0.0" y="0.0" width="331" height="29"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="331" height="28"/>
                                                 <fontDescription key="fontDescription" name="NewYork-RegularItalic" family="New York" pointSize="24"/>
                                                 <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imn-5f-Kq4" userLabel="Time">
-                                                <rect key="frame" x="0.0" y="49" width="331" height="60"/>
+                                                <rect key="frame" x="0.0" y="48" width="331" height="58.5"/>
                                                 <fontDescription key="fontDescription" name="NewYorkExtraLarge-Semibold" family="New York Extra Large" pointSize="50"/>
                                                 <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker alpha="0.0" contentMode="scaleToFill" verticalHuggingPriority="750" horizontalCompressionResistancePriority="550" verticalCompressionResistancePriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="9jC-YL-XvP">
-                                                <rect key="frame" x="0.0" y="129" width="331" height="216"/>
+                                                <rect key="frame" x="0.0" y="126.5" width="331" height="216"/>
                                                 <color key="tintColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="setTimeForNotification:" destination="gUQ-2o-Znb" eventType="valueChanged" id="gV9-ds-CVo"/>
@@ -200,22 +200,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PIC-Fi-xYA">
-                                <rect key="frame" x="41.5" y="310" width="331" height="142"/>
+                                <rect key="frame" x="41.5" y="310.5" width="331" height="141"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have contributed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QC-NZ-rrP">
-                                        <rect key="frame" x="57" y="0.0" width="217.5" height="29"/>
+                                        <rect key="frame" x="51.5" y="0.0" width="228" height="28"/>
                                         <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
                                         <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaT-Zc-Bx0" userLabel="CountLb">
-                                        <rect key="frame" x="140.5" y="29" width="50" height="56.5"/>
+                                        <rect key="frame" x="140.5" y="28" width="50" height="56.5"/>
                                         <fontDescription key="fontDescription" name="NewYorkExtraLarge-Semibold" family="New York Extra Large" pointSize="90"/>
                                         <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaA-m5-Bov" userLabel="TimesLb">
-                                        <rect key="frame" x="140.5" y="85.5" width="50" height="56.5"/>
+                                        <rect key="frame" x="140.5" y="84.5" width="50" height="56.5"/>
                                         <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
                                         <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -327,31 +327,31 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="fi9-p6-wRD">
-                                <rect key="frame" x="41.5" y="212" width="331" height="472.5"/>
+                                <rect key="frame" x="41.5" y="214" width="331" height="468.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set the time, you would like to be reminded." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60j-YW-xMd" userLabel="Remind">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="57.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="56"/>
                                         <fontDescription key="fontDescription" name="NewYorkLarge-Regular" family="New York Large" pointSize="24"/>
                                         <color key="textColor" red="0.074509803920000006" green="0.074509803920000006" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0R6-EK-Vca">
-                                        <rect key="frame" x="0.0" y="127.5" width="331" height="345"/>
+                                        <rect key="frame" x="0.0" y="126" width="331" height="342.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You'll be reminded at " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfT-GS-xgj" userLabel="Second">
-                                                <rect key="frame" x="0.0" y="0.0" width="331" height="29"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="331" height="28"/>
                                                 <fontDescription key="fontDescription" name="NewYork-RegularItalic" family="New York" pointSize="24"/>
                                                 <color key="textColor" red="0.074509803920000006" green="0.074509803920000006" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccf-4w-huh" userLabel="Time">
-                                                <rect key="frame" x="0.0" y="49" width="331" height="60"/>
+                                                <rect key="frame" x="0.0" y="48" width="331" height="58.5"/>
                                                 <fontDescription key="fontDescription" name="NewYorkExtraLarge-Semibold" family="New York Extra Large" pointSize="50"/>
                                                 <color key="textColor" red="0.36078431370000003" green="0.45882352939999999" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" verticalHuggingPriority="750" horizontalCompressionResistancePriority="550" verticalCompressionResistancePriority="550" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="DMS-jG-NE0">
-                                                <rect key="frame" x="0.0" y="129" width="331" height="216"/>
+                                                <rect key="frame" x="0.0" y="126.5" width="331" height="216"/>
                                                 <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
@@ -412,31 +412,31 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="C8p-ss-SrA">
-                                <rect key="frame" x="41.5" y="300.5" width="331" height="241.5"/>
+                                <rect key="frame" x="41.5" y="301.5" width="331" height="239"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have done the best you could for today. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wib-YS-I3f">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="57.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="56"/>
                                         <fontDescription key="fontDescription" name="NewYorkLarge-SemiboldItalic" family="New York Large" pointSize="24"/>
                                         <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6vC-ZE-8vS">
-                                        <rect key="frame" x="0.0" y="97.5" width="331" height="144"/>
+                                        <rect key="frame" x="0.0" y="96" width="331" height="143"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have contributed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKS-84-hrq">
-                                                <rect key="frame" x="57" y="0.0" width="217.5" height="29"/>
+                                                <rect key="frame" x="51.5" y="0.0" width="228" height="28"/>
                                                 <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
                                                 <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaU-xw-ARu" userLabel="CountLb">
-                                                <rect key="frame" x="140.5" y="29" width="50" height="57.5"/>
+                                                <rect key="frame" x="140.5" y="28" width="50" height="57.5"/>
                                                 <fontDescription key="fontDescription" name="NewYorkExtraLarge-Semibold" family="New York Extra Large" pointSize="90"/>
                                                 <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22i-dW-mRp">
-                                                <rect key="frame" x="140.5" y="86.5" width="50" height="57.5"/>
+                                                <rect key="frame" x="140.5" y="85.5" width="50" height="57.5"/>
                                                 <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
                                                 <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -471,7 +471,7 @@
                                     <action selector="toSetNotification:" destination="UnY-GC-M3t" id="kbH-xG-XLC"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Item" image="heart" catalog="system" id="GN7-M9-ffw" userLabel="Tipping">
+                            <barButtonItem title="Item" image="give-gift-heart" id="GN7-M9-ffw" userLabel="Tipping">
                                 <color key="tintColor" red="0.22352941176470587" green="0.58823529411764708" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toTipVC:" destination="UnY-GC-M3t" id="l2m-JN-Lp3"/>
@@ -493,38 +493,43 @@
         <scene sceneID="KDM-Ea-yGQ">
             <objects>
                 <viewController storyboardIdentifier="DonateViewController" id="E6g-rG-0gQ" customClass="TipViewController" customModule="Once_A_Day" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1Mh-sq-qe4">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="1Mh-sq-qe4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gFa-2m-sho">
-                                <rect key="frame" x="41.5" y="76" width="331" height="738"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gFa-2m-sho">
+                                <rect key="frame" x="41.5" y="52" width="331" height="778"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We would love to improve your experience of this app." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjf-9D-HLH">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="100.5"/>
-                                        <fontDescription key="fontDescription" name="NewYorkLarge-SemiboldItalic" family="New York Large" pointSize="28"/>
-                                        <color key="textColor" red="0.36078431372549019" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="KD8-Nw-hh0">
-                                        <rect key="frame" x="0.0" y="188.5" width="331" height="184"/>
-                                        <string key="text">If you would like to support our development efforts, please consider leaving a tip! Every little bit helps us keep working on projects like this. We appreciate your generosity and commitment to a tidier world!</string>
-                                        <fontDescription key="fontDescription" name="NewYorkLarge-Semibold" family="New York Large" pointSize="22"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit.heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6Xf-oF-e4o">
-                                        <rect key="frame" x="0.0" y="461.5" width="331" height="37.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="beF-pp-1Af">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="311.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="We would love to improve your experience of this app." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjf-9D-HLH">
+                                                <rect key="frame" x="0.0" y="0.0" width="331" height="107.5"/>
+                                                <fontDescription key="fontDescription" name="NewYorkLarge-SemiboldItalic" family="New York Large" pointSize="30"/>
+                                                <color key="textColor" red="0.27843137254901962" green="0.39215686274509803" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="KD8-Nw-hh0">
+                                                <rect key="frame" x="0.0" y="127.5" width="331" height="184"/>
+                                                <string key="text">If you would like to support our development efforts, please consider leaving a tip! Every little bit helps us keep working on projects like this. We appreciate your generosity and commitment to a tidier world!</string>
+                                                <fontDescription key="fontDescription" name="NewYorkLarge-Medium" family="New York Large" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Xf-oF-e4o">
+                                        <rect key="frame" x="0.0" y="452" width="331" height="24"/>
                                         <color key="tintColor" red="0.68235294117647061" green="0.074509803921568626" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="dWN-PL-Yi2"/>
+                                            <constraint firstAttribute="height" constant="24" id="dWN-PL-Yi2"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gWr-zm-nIN">
-                                        <rect key="frame" x="0.0" y="588" width="331" height="150"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="gWr-zm-nIN">
+                                        <rect key="frame" x="0.0" y="616" width="331" height="162"/>
                                         <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="df8-hV-yjI"/>
+                                            <constraint firstAttribute="height" constant="162" id="K7x-gj-MQd"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -535,8 +540,8 @@
                         <constraints>
                             <constraint firstItem="gFa-2m-sho" firstAttribute="centerX" secondItem="1Mh-sq-qe4" secondAttribute="centerX" id="7vX-Fc-aKO"/>
                             <constraint firstItem="gFa-2m-sho" firstAttribute="width" secondItem="1Mh-sq-qe4" secondAttribute="width" multiplier="0.8" id="NOU-sM-3nN"/>
-                            <constraint firstItem="2bV-cc-bVA" firstAttribute="bottom" secondItem="gFa-2m-sho" secondAttribute="bottom" constant="48" id="XB2-1M-nne"/>
-                            <constraint firstItem="gFa-2m-sho" firstAttribute="top" secondItem="2bV-cc-bVA" secondAttribute="top" constant="32" id="fGh-jd-Khw"/>
+                            <constraint firstItem="2bV-cc-bVA" firstAttribute="bottom" secondItem="gFa-2m-sho" secondAttribute="bottom" constant="32" id="XB2-1M-nne"/>
+                            <constraint firstItem="gFa-2m-sho" firstAttribute="top" secondItem="2bV-cc-bVA" secondAttribute="top" constant="8" id="fGh-jd-Khw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="hMO-sv-XD3">
@@ -564,10 +569,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="ev3-5Y-gyq">
-                                <rect key="frame" x="41.5" y="306.5" width="331" height="229.5"/>
+                                <rect key="frame" x="41.5" y="309" width="331" height="224"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yq-IP-aWn" userLabel="Introduction">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="229.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="224"/>
                                         <string key="text">For those who want to contribute to protecting our environment,
 and would not hesitate to pick up any rubbish and put it in the appropriate bin, this app will remind you to do so once a day, every single day.</string>
                                         <fontDescription key="fontDescription" name="NewYorkLarge-MediumItalic" family="New York Large" pointSize="24"/>
@@ -611,15 +616,15 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin,
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kas-KB-kN2"/>
+        <segue reference="2ar-Ob-XrK"/>
         <segue reference="riE-OF-Hxj"/>
         <segue reference="oal-CB-pZS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bell" width="26" height="26"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="give-gift-heart" width="27.5" height="26.5"/>
+        <image name="heart" width="27" height="24"/>
         <image name="questionCircle" width="26" height="26"/>
-        <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
         <image name="world" width="26" height="26"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

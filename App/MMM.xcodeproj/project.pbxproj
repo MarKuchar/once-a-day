@@ -71,6 +71,7 @@
 		955247322563579000B059CB /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955247312563579000B059CB /* CounterViewController.swift */; };
 		9552473A25635B8000B059CB /* roboto in Resources */ = {isa = PBXBuildFile; fileRef = 9552473925635B8000B059CB /* roboto */; };
 		95602DBC25725FC300AD648A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95602DBB25725FC300AD648A /* SettingsViewController.swift */; };
+		9561D4CA25BF437F009ECC55 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9561D4C925BF437F009ECC55 /* UIViewController+Toast.swift */; };
 		95660B6725B8EF77001DAF3F /* UIViewController+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95660B6625B8EF77001DAF3F /* UIViewController+Background.swift */; };
 		95660B8925B8F647001DAF3F /* ManagedCounter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95660B8725B8F646001DAF3F /* ManagedCounter+CoreDataProperties.swift */; };
 		95660B8A25B8F647001DAF3F /* ManagedCounter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95660B8825B8F647001DAF3F /* ManagedCounter+CoreDataClass.swift */; };
@@ -157,6 +158,7 @@
 		955247312563579000B059CB /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		9552473925635B8000B059CB /* roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = roboto; sourceTree = "<group>"; };
 		95602DBB25725FC300AD648A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9561D4C925BF437F009ECC55 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		95660B6625B8EF77001DAF3F /* UIViewController+Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Background.swift"; sourceTree = "<group>"; };
 		95660B8725B8F646001DAF3F /* ManagedCounter+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedCounter+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		95660B8825B8F647001DAF3F /* ManagedCounter+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedCounter+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 				9504FC4525B2E2A8004D2C79 /* Fonts */,
 				95724ABC25B26F5100EF6088 /* Components */,
 				95724AAB25B26E7B00EF6088 /* NavController+NavBar.swift */,
+				9561D4C925BF437F009ECC55 /* UIViewController+Toast.swift */,
 				95724AC125B26F8600EF6088 /* UIButton+Animation.swift */,
 				95724AF525B2817800EF6088 /* Constants.swift */,
 				95660B6625B8EF77001DAF3F /* UIViewController+Background.swift */,
@@ -554,6 +557,7 @@
 				95660B8A25B8F647001DAF3F /* ManagedCounter+CoreDataClass.swift in Sources */,
 				953B08BD2556D1AB008F9D3E /* SceneDelegate.swift in Sources */,
 				95660B6725B8EF77001DAF3F /* UIViewController+Background.swift in Sources */,
+				9561D4CA25BF437F009ECC55 /* UIViewController+Toast.swift in Sources */,
 				95724AE125B2765900EF6088 /* ReminderViewController.swift in Sources */,
 				95724AA925B26C3100EF6088 /* StartViewController.swift in Sources */,
 				95C1F342255BAFF400B9123C /* CoreDataManager.swift in Sources */,
@@ -715,6 +719,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep;
 				PRODUCT_NAME = "Once A Day";
 				SWIFT_VERSION = 5.0;
@@ -735,6 +740,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep;
 				PRODUCT_NAME = "Once A Day";
 				SWIFT_VERSION = 5.0;

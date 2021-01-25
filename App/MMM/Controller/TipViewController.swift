@@ -23,7 +23,6 @@ class TipViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fetchPurchases()
     }
     
@@ -39,10 +38,11 @@ class TipViewController: UIViewController {
                         let package = fechedPackages[i]
                         self.packages.append(package)
                         
+                        let priceString = package.localizedPriceString
                         let product = package.product
                         let title = product.localizedTitle
-                        let price = product.price
-                        self.makeBtn(with: "\(title) - \(price)", andTag: i)
+                        
+                        self.makeBtn(with: "\(title) - " + "\(priceString)" , andTag: i)
                     }
                 }
           }
@@ -61,6 +61,8 @@ class TipViewController: UIViewController {
         Purchases.shared.purchasePackage(packages[sender.tag]) { (transaction, purchaserInfo, error, userCancelled) in
             if let error = error {
                 debugPrint(error.localizedDescription)
+            } else {
+                self.showToast(message: "Thank You! ❤️", font: UIFont(name: "NewYorkMedium-Semibold", size: 20)!)
             }
         }
     }
