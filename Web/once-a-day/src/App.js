@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
-import Dropdown from 'react-bootstrap/Dropdown';
+import icon from './assets/images/icon.png'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
@@ -38,7 +38,7 @@ class App extends React.Component {
         {title: 'Contact', path: '/contact'}
       ],
       home: {
-        totalCount: '',
+        totalCount: '...',
       }, 
       policy: {
         subTitle: 'Policy',
@@ -71,23 +71,20 @@ class App extends React.Component {
     return (
       <Router>
           <Container id="page-container" fluid={true} style={styles.paperContainer} >
-            <Navbar className="border-bottom" bg="transparent" expand="lg" >
-              <Navbar.Brand style={{ color: 'black' }} >ONCE A DAY</Navbar.Brand>
+            <Navbar className="k-navbar-style" expand="lg" >
+              <Navbar.Brand style={{ color: 'rgba(92, 117,182)'}} >
+              <Link to={'/'}>
+                <img className="k-icon-image" src={icon} alt={icon} />
+              </Link>
+              </Navbar.Brand>
 
               <Navbar.Toggle className="border-0" arja-aria-controls="navbar-toggle"/>
               <Navbar.Collapse id="navbar-toggle">
                 <Nav className="ml-auto" > 
-                  <Link style={{ color: 'black' }} className="nav-link" to="/">Home</Link>
-                  <Dropdown>
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-                  <Link style={{ color: 'black' }} className="nav-link" to="/policy">Policy</Link>
-                  <Link style={{ color: 'black' }} className="nav-link" to="/termsandconditions">Terms & Conditions</Link>
-                  <Link style={{ color: 'black' }} className="nav-link" to="/contact">Contact</Link>
+                  <Link style={{ color: 'black', fontSize: '1.2em' }} className="nav-link" to="/">World's count</Link>
+                  <Link style={{ color: 'black', fontSize: '1.2em' }} className="nav-link" to="/policy">Policy</Link>
+                  <Link style={{ color: 'black', fontSize: '1.2em' }} className="nav-link" to="/termsandconditions">Terms & Conditions</Link>
+                  <Link style={{ color: 'black', fontSize: '1.2em' }} className="nav-link" to="/contact">Contact</Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>

@@ -42,3 +42,33 @@ code {
   color: #ee6652;
   padding: 10px 15px;
 }
+
+.k-container-bg {
+  margin-top: 4vh;
+  padding: 4vh;
+  font-size: 1.3vw;
+  justify-content: center;
+  background-color: rgba(92, 117, 182, 0.1);
+  border-radius: 40px;
+}
+
+.k-navbar-style {
+  background-color: rgba(92, 117, 182, 0.1);
+  opacity: 0.8;
+  z-index: 10;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.k-icon-image {
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.k-title {
+  font-size: 2.6vw;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2vw;
+}

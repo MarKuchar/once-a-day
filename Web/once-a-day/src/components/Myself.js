@@ -10,7 +10,7 @@ function Myself(props) {
             <Container fluid={true}>
                 <Row className="justify-content-center">
                     <Col md={8} sm={12}>
-                        { props.title && <h1 style={{ color: 'black' , fontSize: '25vh'}} >{props.title}</h1> }
+                        { props.title && <h1 style={{ color: 'rgba(92, 117,182)' , fontSize: '25vh'}} >{props.title}</h1> }
                         { props.subTitle && <h1 className="display-5 font-weight-bolder" style={{ color: 'black' }} >{props.subTitle}</h1> }
                         { props.text && <h3 className="lead font-weight-light" style={{ color: 'white' }} >{props.text}</h3> }
                     </Col>

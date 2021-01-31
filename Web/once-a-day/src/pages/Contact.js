@@ -60,36 +60,14 @@ class Contact extends React.Component {
     render() {
         return(
             <div>
-                <Myself subTitle={this.props.title} />
-
-                    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '50vh', backgroundColor: 'white', opacity: 0.8 }}>
-                        <p className="display-5 font-weight-bolder">
-                            If you have any questions or suggestions about my Policy or Terms and Conditions, do not hesitate to contact me at ypin.master@gmail.com.
-                        </p>
-                    </div>
-
-                {/* <Content>
-                    <Form onSubmit={this.handleSubmit}>
-                        <Form.Group>
-                            <Form.Label htmlFor="full-name">Full Name</Form.Label>
-                            <Form.Control id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange}></Form.Control>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Label htmlFor="email">Email</Form.Label>
-                            <Form.Control id="email" name="email" type="email" value={this.state.email} onChange={this.handleChange}></Form.Control>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Label htmlFor="message">Message</Form.Label>
-                            <Form.Control id="message" name="message" as="textarea" rows="3" value={this.state.message} onChange={this.handleChange}></Form.Control>
-                        </Form.Group>
-
-                        <Button className="d-inline-block" variant="primary" type="submit" disabled={this.state.disabled}>
-                            Send
-                        </Button>
-                        { this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p> }
-                        { this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p> }
-                    </Form>
-                </Content> */}
+                <p className="k-title">
+                    Contact
+                </p>
+                <div>
+                    <p className="k-container-bg" style={{padding: '20vh', fontSize:'1.2vw'}}>
+                        If you have any questions or suggestions about my Policy or Terms and Conditions, do not hesitate to contact me at ypin.master@gmail.com.
+                    </p>
+                </div>
             </div>
         )
     }

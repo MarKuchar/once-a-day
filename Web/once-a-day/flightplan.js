@@ -1,6 +1,6 @@
 var plan = require('flightplan');
 
-var appName = 'once-a-day';
+var appName = 'Once A Day';
 var username = 'deploy';
 var startFile = 'bin/www';
 

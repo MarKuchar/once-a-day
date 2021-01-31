@@ -5,8 +5,10 @@ import Myself from '../components/Myself';
 function About(props) {
     return(
         <div>
-            <Myself subTitle={props.subTitle} />
-            <div style={{ backgroundColor: 'white', opacity: 0.6 }}>
+            <p className="k-title">
+                Policy
+            </p>
+            <div className="k-container-bg">
                 <Content>
                     <p>
                         <p><b>Privacy Policy</b></p>
