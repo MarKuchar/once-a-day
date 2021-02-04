@@ -39,7 +39,11 @@ class IntroductionViewController: UIViewController {
         if !isRevaled {
             animateNextParagraph()
         } else {
-            toReminder()
+            UIView.animate(withDuration: 2.5, delay: 0, options: .allowAnimatedContent) {
+                self.introLb.alpha = 0
+            } completion: { _ in
+                self.toReminder()
+            }
         }
     }
     

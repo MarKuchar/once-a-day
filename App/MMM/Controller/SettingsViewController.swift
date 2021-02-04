@@ -22,8 +22,6 @@ class SettingsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let date = timePicker.date
-        self.setTimeLb(date: date)
         self.setupNavVC()
         self.getCurrentNotificationDate()
     }
@@ -88,6 +86,7 @@ class SettingsViewController: UIViewController {
             }
             DispatchQueue.main.async {
                 self.setTimeLb(date: date)
+                self.timePicker.date = date
             }
         }
     }
