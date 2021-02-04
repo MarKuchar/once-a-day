@@ -9,7 +9,13 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
+    private let container = CoreDataManager.shared.persistentContainer
+    
+    private let center = UNUserNotificationCenter.current()
+    
+    private var counter: ManagedCounter!
+    
     @IBOutlet var timePicker: UIDatePicker!
     
     @IBOutlet var timeLb: UILabel!
@@ -18,21 +24,25 @@ class SettingsViewController: UIViewController {
         super.viewWillAppear(animated)
         let date = timePicker.date
         self.setTimeLb(date: date)
-        setupNavVC()
+        self.setupNavVC()
+        self.getCurrentNotificationDate()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    @IBAction func datePickerValueChanged(_ sender: Any) {
+        let date = timePicker.date
+        self.setTimeLb(date: date)
+    }
     
     
     @IBAction func setNotification(_ sender: Any) {
-        let center = UNUserNotificationCenter.current()
-        center.removeAllPendingNotificationRequests()
+        self.center.removeAllPendingNotificationRequests()
         
         let date = timePicker.date
-        self.setTimeLb(date: date)
+        
         let components = Calendar.current.dateComponents([.hour, .minute], from: date)
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
@@ -52,7 +62,7 @@ class SettingsViewController: UIViewController {
     private func setTimeLb(date: Date) {
         let formatter = DateFormatter()
         formatter.dateFormat = "hh:mm a"
-
+        
         let timeString = formatter.string(from: date)
         
         self.timeLb.text = timeString
@@ -63,9 +73,22 @@ class SettingsViewController: UIViewController {
         self.navigationItem.rightBarButtonItem?.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
     }
     
-    
     @IBAction func goBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+    private func getCurrentNotificationDate() {
+        self.center.getPendingNotificationRequests { (requests) in
+            guard let trigger = requests.first?.trigger as? UNCalendarNotificationTrigger else {
+                return
+                
+            }
+            guard let date = trigger.nextTriggerDate() else {
+                return
+            }
+            DispatchQueue.main.async {
+                self.setTimeLb(date: date)
+            }
+        }
+    }
 }

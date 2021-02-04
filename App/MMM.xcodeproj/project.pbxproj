@@ -59,6 +59,13 @@
 		9504FCAB25B2E531004D2C79 /* NewYorkSmall-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7925B2E52F004D2C79 /* NewYorkSmall-BlackItalic.otf */; };
 		9504FCAC25B2E531004D2C79 /* NewYorkMedium-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7A25B2E531004D2C79 /* NewYorkMedium-SemiboldItalic.otf */; };
 		95089B1025A8083200590B65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95089B0F25A8083200590B65 /* GoogleService-Info.plist */; };
+		9524DEDD25CB98A3002F3347 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9524DEDC25CB98A3002F3347 /* WidgetKit.framework */; };
+		9524DEDF25CB98A3002F3347 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9524DEDE25CB98A3002F3347 /* SwiftUI.framework */; };
+		9524DEE225CB98A3002F3347 /* OAD_widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9524DEE125CB98A3002F3347 /* OAD_widget.swift */; };
+		9524DEE525CB98A6002F3347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9524DEE425CB98A6002F3347 /* Assets.xcassets */; };
+		9524DEE725CB98A6002F3347 /* OAD_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9524DEE325CB98A3002F3347 /* OAD_widget.intentdefinition */; };
+		9524DEE825CB98A6002F3347 /* OAD_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9524DEE325CB98A3002F3347 /* OAD_widget.intentdefinition */; };
+		9524DEEB25CB98A6002F3347 /* OAD-widgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9524DEDB25CB98A3002F3347 /* OAD-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		952C2C5525B64C270094AD49 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952C2C5425B64C270094AD49 /* ReviewViewController.swift */; };
 		953B08BB2556D1AB008F9D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B08BA2556D1AB008F9D3E /* AppDelegate.swift */; };
 		953B08BD2556D1AB008F9D3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B08BC2556D1AB008F9D3E /* SceneDelegate.swift */; };
@@ -88,6 +95,30 @@
 		95C1F342255BAFF400B9123C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1F341255BAFF400B9123C /* CoreDataManager.swift */; };
 		95C667D825AFF3B5000FA27B /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C667D725AFF3B5000FA27B /* DoneViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9524DEE925CB98A6002F3347 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 953B08AF2556D1AA008F9D3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9524DEDA25CB98A3002F3347;
+			remoteInfo = "OAD-widgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9524DEEC25CB98A6002F3347 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9524DEEB25CB98A6002F3347 /* OAD-widgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11545567E27B1BF83F8D3BA9 /* Pods-MMM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMM.release.xcconfig"; path = "Target Support Files/Pods-MMM/Pods-MMM.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +175,13 @@
 		9504FC7925B2E52F004D2C79 /* NewYorkSmall-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-BlackItalic.otf"; sourceTree = "<group>"; };
 		9504FC7A25B2E531004D2C79 /* NewYorkMedium-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		95089B0F25A8083200590B65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9524DEDB25CB98A3002F3347 /* OAD-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OAD-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9524DEDC25CB98A3002F3347 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9524DEDE25CB98A3002F3347 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9524DEE125CB98A3002F3347 /* OAD_widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAD_widget.swift; sourceTree = "<group>"; };
+		9524DEE325CB98A3002F3347 /* OAD_widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OAD_widget.intentdefinition; sourceTree = "<group>"; };
+		9524DEE425CB98A6002F3347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9524DEE625CB98A6002F3347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		952C2C5425B64C270094AD49 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		953B08B72556D1AA008F9D3E /* Once A Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Once A Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		953B08BA2556D1AB008F9D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +215,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9524DED825CB98A3002F3347 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9524DEDF25CB98A3002F3347 /* SwiftUI.framework in Frameworks */,
+				9524DEDD25CB98A3002F3347 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		953B08B42556D1AA008F9D3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +241,8 @@
 			children = (
 				95510E8A25BC24CF00DE01DE /* StoreKit.framework */,
 				4794C7EFA14B887B6C18CC0B /* Pods_MMM.framework */,
+				9524DEDC25CB98A3002F3347 /* WidgetKit.framework */,
+				9524DEDE25CB98A3002F3347 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -264,10 +313,22 @@
 			path = NY;
 			sourceTree = "<group>";
 		};
+		9524DEE025CB98A3002F3347 /* OAD-widget */ = {
+			isa = PBXGroup;
+			children = (
+				9524DEE125CB98A3002F3347 /* OAD_widget.swift */,
+				9524DEE325CB98A3002F3347 /* OAD_widget.intentdefinition */,
+				9524DEE425CB98A6002F3347 /* Assets.xcassets */,
+				9524DEE625CB98A6002F3347 /* Info.plist */,
+			);
+			path = "OAD-widget";
+			sourceTree = "<group>";
+		};
 		953B08AE2556D1AA008F9D3E = {
 			isa = PBXGroup;
 			children = (
 				953B08B92556D1AA008F9D3E /* MMM */,
+				9524DEE025CB98A3002F3347 /* OAD-widget */,
 				953B08B82556D1AA008F9D3E /* Products */,
 				F286CB4F27972DF48FA27132 /* Pods */,
 				18E9A77271ACA40224ED8F26 /* Frameworks */,
@@ -278,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				953B08B72556D1AA008F9D3E /* Once A Day.app */,
+				9524DEDB25CB98A3002F3347 /* OAD-widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,6 +440,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9524DEDA25CB98A3002F3347 /* OAD-widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9524DEEF25CB98A6002F3347 /* Build configuration list for PBXNativeTarget "OAD-widgetExtension" */;
+			buildPhases = (
+				9524DED725CB98A3002F3347 /* Sources */,
+				9524DED825CB98A3002F3347 /* Frameworks */,
+				9524DED925CB98A3002F3347 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OAD-widgetExtension";
+			productName = "OAD-widgetExtension";
+			productReference = 9524DEDB25CB98A3002F3347 /* OAD-widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		953B08B62556D1AA008F9D3E /* MMM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 953B08CE2556D1AC008F9D3E /* Build configuration list for PBXNativeTarget "MMM" */;
@@ -387,10 +466,12 @@
 				953B08B42556D1AA008F9D3E /* Frameworks */,
 				953B08B52556D1AA008F9D3E /* Resources */,
 				27D8938DF14355BDA5AE4C00 /* [CP] Embed Pods Frameworks */,
+				9524DEEC25CB98A6002F3347 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9524DEEA25CB98A6002F3347 /* PBXTargetDependency */,
 			);
 			name = MMM;
 			productName = MMM;
@@ -403,10 +484,13 @@
 		953B08AF2556D1AA008F9D3E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1170;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Martin Kuchar";
 				TargetAttributes = {
+					9524DEDA25CB98A3002F3347 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					953B08B62556D1AA008F9D3E = {
 						CreatedOnToolsVersion = 11.7;
 					};
@@ -426,11 +510,20 @@
 			projectRoot = "";
 			targets = (
 				953B08B62556D1AA008F9D3E /* MMM */,
+				9524DEDA25CB98A3002F3347 /* OAD-widgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9524DED925CB98A3002F3347 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9524DEE525CB98A6002F3347 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		953B08B52556D1AA008F9D3E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -538,6 +631,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9524DED725CB98A3002F3347 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9524DEE225CB98A3002F3347 /* OAD_widget.swift in Sources */,
+				9524DEE725CB98A6002F3347 /* OAD_widget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		953B08B32556D1AA008F9D3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -553,6 +655,7 @@
 				95602DBC25725FC300AD648A /* SettingsViewController.swift in Sources */,
 				95724AC225B26F8600EF6088 /* UIButton+Animation.swift in Sources */,
 				95724AF225B27DAF00EF6088 /* yButtonApp.swift in Sources */,
+				9524DEE825CB98A6002F3347 /* OAD_widget.intentdefinition in Sources */,
 				95510E9E25BC28B600DE01DE /* TipViewController.swift in Sources */,
 				95660B8A25B8F647001DAF3F /* ManagedCounter+CoreDataClass.swift in Sources */,
 				953B08BD2556D1AB008F9D3E /* SceneDelegate.swift in Sources */,
@@ -569,6 +672,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9524DEEA25CB98A6002F3347 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9524DEDA25CB98A3002F3347 /* OAD-widgetExtension */;
+			targetProxy = 9524DEE925CB98A6002F3347 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		953B08C02556D1AB008F9D3E /* Main.storyboard */ = {
@@ -590,6 +701,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9524DEED25CB98A6002F3347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC4J6W84S8;
+				INFOPLIST_FILE = "OAD-widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mm.onestep.OAD-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9524DEEE25CB98A6002F3347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC4J6W84S8;
+				INFOPLIST_FILE = "OAD-widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mm.onestep.OAD-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		953B08CC2556D1AC008F9D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -710,6 +863,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 366C4F8CFAD8E27CCB2B0B4F /* Pods-MMM.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PC4J6W84S8;
@@ -719,7 +873,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep;
 				PRODUCT_NAME = "Once A Day";
 				SWIFT_VERSION = 5.0;
@@ -731,6 +885,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 11545567E27B1BF83F8D3BA9 /* Pods-MMM.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PC4J6W84S8;
@@ -740,7 +895,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep;
 				PRODUCT_NAME = "Once A Day";
 				SWIFT_VERSION = 5.0;
@@ -751,6 +906,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9524DEEF25CB98A6002F3347 /* Build configuration list for PBXNativeTarget "OAD-widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9524DEED25CB98A6002F3347 /* Debug */,
+				9524DEEE25CB98A6002F3347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		953B08B22556D1AA008F9D3E /* Build configuration list for PBXProject "MMM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
