@@ -7,6 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BFC83E825CBAB0D008FC6DF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1F341255BAFF400B9123C /* CoreDataManager.swift */; };
+		4BFC83FC25CBAE5A008FC6DF /* MMM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 953B08C32556D1AB008F9D3E /* MMM.xcdatamodeld */; };
+		4BFD4B5625C7C5AA00ED55F7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFD4B5525C7C5AA00ED55F7 /* WidgetKit.framework */; };
+		4BFD4B5825C7C5AA00ED55F7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFD4B5725C7C5AA00ED55F7 /* SwiftUI.framework */; };
+		4BFD4B5B25C7C5AA00ED55F7 /* OnceADayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFD4B5A25C7C5AA00ED55F7 /* OnceADayWidget.swift */; };
+		4BFD4B5D25C7C5AB00ED55F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BFD4B5C25C7C5AB00ED55F7 /* Assets.xcassets */; };
+		4BFD4B6125C7C5AC00ED55F7 /* OnceADayWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4BFD4B5425C7C5AA00ED55F7 /* OnceADayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4BFD4B7325C7C6BA00ED55F7 /* ManagedCounter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95660B8725B8F646001DAF3F /* ManagedCounter+CoreDataProperties.swift */; };
+		4BFD4B7425C7C6BA00ED55F7 /* ManagedCounter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95660B8825B8F647001DAF3F /* ManagedCounter+CoreDataClass.swift */; };
+		4BFD4B7725C7C6D800ED55F7 /* NewYorkExtraLarge-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5925B2E4EE004D2C79 /* NewYorkExtraLarge-MediumItalic.otf */; };
+		4BFD4B7825C7C6D800ED55F7 /* NewYorkLarge-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5325B2E4E6004D2C79 /* NewYorkLarge-Semibold.otf */; };
+		4BFD4B7925C7C6D800ED55F7 /* NewYorkMedium-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC4E25B2E4DF004D2C79 /* NewYorkMedium-Regular.otf */; };
+		4BFD4B7A25C7C6D800ED55F7 /* NewYorkSmall-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7025B2E521004D2C79 /* NewYorkSmall-RegularItalic.otf */; };
+		4BFD4B7B25C7C6D800ED55F7 /* NewYorkLarge-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5525B2E4E8004D2C79 /* NewYorkLarge-MediumItalic.otf */; };
+		4BFD4B7C25C7C6D800ED55F7 /* NewYorkSmall-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6B25B2E51A004D2C79 /* NewYorkSmall-Black.otf */; };
+		4BFD4B7D25C7C6D800ED55F7 /* NewYorkMedium-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC4C25B2E4DC004D2C79 /* NewYorkMedium-Black.otf */; };
+		4BFD4B7E25C7C6D800ED55F7 /* NewYorkExtraLarge-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5625B2E4EA004D2C79 /* NewYorkExtraLarge-Black.otf */; };
+		4BFD4B7F25C7C6D800ED55F7 /* NewYorkMedium-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC4925B2E4D8004D2C79 /* NewYorkMedium-HeavyItalic.otf */; };
+		4BFD4B8025C7C6D800ED55F7 /* NewYorkLarge-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5C25B2E4F2004D2C79 /* NewYorkLarge-BoldItalic.otf */; };
+		4BFD4B8125C7C6D800ED55F7 /* NewYorkExtraLarge-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6125B2E500004D2C79 /* NewYorkExtraLarge-Regular.otf */; };
+		4BFD4B8225C7C6D800ED55F7 /* NewYorkExtraLarge-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6625B2E512004D2C79 /* NewYorkExtraLarge-Heavy.otf */; };
+		4BFD4B8325C7C6D800ED55F7 /* NewYorkLarge-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7825B2E52E004D2C79 /* NewYorkLarge-HeavyItalic.otf */; };
+		4BFD4B8425C7C6D800ED55F7 /* NewYorkSmall-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC4F25B2E4E0004D2C79 /* NewYorkSmall-Bold.otf */; };
+		4BFD4B8525C7C6D800ED55F7 /* NewYorkSmall-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7725B2E52C004D2C79 /* NewYorkSmall-Heavy.otf */; };
+		4BFD4B8625C7C6D800ED55F7 /* NewYorkSmall-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7925B2E52F004D2C79 /* NewYorkSmall-BlackItalic.otf */; };
+		4BFD4B8725C7C6D800ED55F7 /* NewYorkExtraLarge-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6E25B2E51E004D2C79 /* NewYorkExtraLarge-BoldItalic.otf */; };
+		4BFD4B8825C7C6D800ED55F7 /* NewYorkMedium-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7A25B2E531004D2C79 /* NewYorkMedium-SemiboldItalic.otf */; };
+		4BFD4B8925C7C6D800ED55F7 /* NewYorkExtraLarge-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5E25B2E4FC004D2C79 /* NewYorkExtraLarge-Semibold.otf */; };
+		4BFD4B8A25C7C6D800ED55F7 /* NewYorkMedium-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5225B2E4E4004D2C79 /* NewYorkMedium-Bold.otf */; };
+		4BFD4B8B25C7C6D800ED55F7 /* NewYorkMedium-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5125B2E4E3004D2C79 /* NewYorkMedium-Semibold.otf */; };
+		4BFD4B8C25C7C6D800ED55F7 /* NewYorkSmall-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7125B2E523004D2C79 /* NewYorkSmall-BoldItalic.otf */; };
+		4BFD4B8D25C7C6D800ED55F7 /* NewYorkLarge-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC4B25B2E4DA004D2C79 /* NewYorkLarge-Black.otf */; };
+		4BFD4B8E25C7C6D800ED55F7 /* NewYorkLarge-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5F25B2E4FD004D2C79 /* NewYorkLarge-RegularItalic.otf */; };
+		4BFD4B8F25C7C6D800ED55F7 /* NewYorkLarge-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5725B2E4EB004D2C79 /* NewYorkLarge-Medium.otf */; };
+		4BFD4B9025C7C6D800ED55F7 /* NewYorkMedium-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5425B2E4E7004D2C79 /* NewYorkMedium-Heavy.otf */; };
+		4BFD4B9125C7C6D800ED55F7 /* NewYorkLarge-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6C25B2E51C004D2C79 /* NewYorkLarge-BlackItalic.otf */; };
+		4BFD4B9225C7C6D800ED55F7 /* NewYorkSmall-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7625B2E52A004D2C79 /* NewYorkSmall-Regular.otf */; };
+		4BFD4B9325C7C6D800ED55F7 /* NewYorkExtraLarge-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7325B2E526004D2C79 /* NewYorkExtraLarge-BlackItalic.otf */; };
+		4BFD4B9425C7C6D800ED55F7 /* NewYorkExtraLarge-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5825B2E4ED004D2C79 /* NewYorkExtraLarge-RegularItalic.otf */; };
+		4BFD4B9525C7C6D800ED55F7 /* NewYorkLarge-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6225B2E502004D2C79 /* NewYorkLarge-Heavy.otf */; };
+		4BFD4B9625C7C6D800ED55F7 /* NewYorkItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6025B2E4FF004D2C79 /* NewYorkItalic.ttf */; };
+		4BFD4B9725C7C6D800ED55F7 /* NewYorkSmall-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC4D25B2E4DD004D2C79 /* NewYorkSmall-Medium.otf */; };
+		4BFD4B9825C7C6D800ED55F7 /* NewYork.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7225B2E524004D2C79 /* NewYork.ttf */; };
+		4BFD4B9925C7C6D800ED55F7 /* NewYorkLarge-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6325B2E503004D2C79 /* NewYorkLarge-Regular.otf */; };
+		4BFD4B9A25C7C6D800ED55F7 /* NewYorkExtraLarge-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6F25B2E520004D2C79 /* NewYorkExtraLarge-Bold.otf */; };
+		4BFD4B9B25C7C6D800ED55F7 /* NewYorkMedium-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC4A25B2E4D9004D2C79 /* NewYorkMedium-RegularItalic.otf */; };
+		4BFD4B9C25C7C6D800ED55F7 /* NewYorkLarge-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6A25B2E519004D2C79 /* NewYorkLarge-Bold.otf */; };
+		4BFD4B9D25C7C6D800ED55F7 /* NewYorkExtraLarge-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7525B2E529004D2C79 /* NewYorkExtraLarge-SemiboldItalic.otf */; };
+		4BFD4B9E25C7C6D800ED55F7 /* NewYorkExtraLarge-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5025B2E4E1004D2C79 /* NewYorkExtraLarge-Medium.otf */; };
+		4BFD4B9F25C7C6D800ED55F7 /* NewYorkSmall-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5D25B2E4F4004D2C79 /* NewYorkSmall-SemiboldItalic.otf */; };
+		4BFD4BA025C7C6D800ED55F7 /* NewYorkLarge-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6525B2E511004D2C79 /* NewYorkLarge-SemiboldItalic.otf */; };
+		4BFD4BA125C7C6D800ED55F7 /* NewYorkMedium-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6D25B2E51D004D2C79 /* NewYorkMedium-Medium.otf */; };
+		4BFD4BA225C7C6D800ED55F7 /* NewYorkSmall-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6825B2E516004D2C79 /* NewYorkSmall-HeavyItalic.otf */; };
+		4BFD4BA325C7C6D800ED55F7 /* NewYorkSmall-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5A25B2E4F0004D2C79 /* NewYorkSmall-Semibold.otf */; };
+		4BFD4BA425C7C6D800ED55F7 /* NewYorkSmall-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7425B2E527004D2C79 /* NewYorkSmall-MediumItalic.otf */; };
+		4BFD4BA525C7C6D800ED55F7 /* NewYorkMedium-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6425B2E505004D2C79 /* NewYorkMedium-BoldItalic.otf */; };
+		4BFD4BA625C7C6D800ED55F7 /* NewYorkMedium-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6925B2E518004D2C79 /* NewYorkMedium-BlackItalic.otf */; };
+		4BFD4BA725C7C6D800ED55F7 /* NewYorkExtraLarge-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5B25B2E4F1004D2C79 /* NewYorkExtraLarge-HeavyItalic.otf */; };
+		4BFD4BA825C7C6D800ED55F7 /* NewYorkMedium-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6725B2E514004D2C79 /* NewYorkMedium-MediumItalic.otf */; };
+		4BFD4BAB25C7C6E700ED55F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724AF525B2817800EF6088 /* Constants.swift */; };
+		4BFD4BAF25C7DD3D00ED55F7 /* UserCountEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFD4BAE25C7DD3D00ED55F7 /* UserCountEntry.swift */; };
+		4BFD4BB525C7DE6100ED55F7 /* WidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFD4BB425C7DE6100ED55F7 /* WidgetEntryView.swift */; };
 		5FE229A2C89BAA7AC2AC203F /* Pods_MMM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4794C7EFA14B887B6C18CC0B /* Pods_MMM.framework */; };
 		9504FC7B25B2E531004D2C79 /* NewYorkMedium-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC4925B2E4D8004D2C79 /* NewYorkMedium-HeavyItalic.otf */; };
 		9504FC7C25B2E531004D2C79 /* NewYorkMedium-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC4A25B2E4D9004D2C79 /* NewYorkMedium-RegularItalic.otf */; };
@@ -89,10 +151,44 @@
 		95C667D825AFF3B5000FA27B /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C667D725AFF3B5000FA27B /* DoneViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4BFD4B5F25C7C5AC00ED55F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 953B08AF2556D1AA008F9D3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BFD4B5325C7C5AA00ED55F7;
+			remoteInfo = OnceADayWIdgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4BFD4B6225C7C5AC00ED55F7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4BFD4B6125C7C5AC00ED55F7 /* OnceADayWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		11545567E27B1BF83F8D3BA9 /* Pods-MMM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMM.release.xcconfig"; path = "Target Support Files/Pods-MMM/Pods-MMM.release.xcconfig"; sourceTree = "<group>"; };
 		366C4F8CFAD8E27CCB2B0B4F /* Pods-MMM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMM.debug.xcconfig"; path = "Target Support Files/Pods-MMM/Pods-MMM.debug.xcconfig"; sourceTree = "<group>"; };
 		4794C7EFA14B887B6C18CC0B /* Pods_MMM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFC83FF25CBB006008FC6DF /* OnceADayWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OnceADayWidgetExtension.entitlements; sourceTree = "<group>"; };
+		4BFC840225CBB025008FC6DF /* Once A Day.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Once A Day.entitlements"; sourceTree = "<group>"; };
+		4BFD4B5425C7C5AA00ED55F7 /* OnceADayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OnceADayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFD4B5525C7C5AA00ED55F7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4BFD4B5725C7C5AA00ED55F7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4BFD4B5A25C7C5AA00ED55F7 /* OnceADayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnceADayWidget.swift; sourceTree = "<group>"; };
+		4BFD4B5C25C7C5AB00ED55F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BFD4B5E25C7C5AC00ED55F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BFD4BAE25C7DD3D00ED55F7 /* UserCountEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCountEntry.swift; sourceTree = "<group>"; };
+		4BFD4BB425C7DE6100ED55F7 /* WidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntryView.swift; sourceTree = "<group>"; };
 		9504FC4925B2E4D8004D2C79 /* NewYorkMedium-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-HeavyItalic.otf"; sourceTree = "<group>"; };
 		9504FC4A25B2E4D9004D2C79 /* NewYorkMedium-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-RegularItalic.otf"; sourceTree = "<group>"; };
 		9504FC4B25B2E4DA004D2C79 /* NewYorkLarge-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-Black.otf"; sourceTree = "<group>"; };
@@ -177,6 +273,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4BFD4B5125C7C5AA00ED55F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFD4B5825C7C5AA00ED55F7 /* SwiftUI.framework in Frameworks */,
+				4BFD4B5625C7C5AA00ED55F7 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		953B08B42556D1AA008F9D3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,8 +299,29 @@
 			children = (
 				95510E8A25BC24CF00DE01DE /* StoreKit.framework */,
 				4794C7EFA14B887B6C18CC0B /* Pods_MMM.framework */,
+				4BFD4B5525C7C5AA00ED55F7 /* WidgetKit.framework */,
+				4BFD4B5725C7C5AA00ED55F7 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BFD4B5925C7C5AA00ED55F7 /* OnceADayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4BFD4B5A25C7C5AA00ED55F7 /* OnceADayWidget.swift */,
+				4BFD4BB425C7DE6100ED55F7 /* WidgetEntryView.swift */,
+				4BFD4BAE25C7DD3D00ED55F7 /* UserCountEntry.swift */,
+				4BFD4B5C25C7C5AB00ED55F7 /* Assets.xcassets */,
+				4BFD4B5E25C7C5AC00ED55F7 /* Info.plist */,
+			);
+			path = OnceADayWidget;
+			sourceTree = "<group>";
+		};
+		4BFD4B7025C7C63E00ED55F7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		9504FC4525B2E2A8004D2C79 /* Fonts */ = {
@@ -267,7 +393,10 @@
 		953B08AE2556D1AA008F9D3E = {
 			isa = PBXGroup;
 			children = (
+				4BFC83FF25CBB006008FC6DF /* OnceADayWidgetExtension.entitlements */,
 				953B08B92556D1AA008F9D3E /* MMM */,
+				4BFD4B5925C7C5AA00ED55F7 /* OnceADayWidget */,
+				4BFD4B7025C7C63E00ED55F7 /* Shared */,
 				953B08B82556D1AA008F9D3E /* Products */,
 				F286CB4F27972DF48FA27132 /* Pods */,
 				18E9A77271ACA40224ED8F26 /* Frameworks */,
@@ -278,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				953B08B72556D1AA008F9D3E /* Once A Day.app */,
+				4BFD4B5425C7C5AA00ED55F7 /* OnceADayWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,6 +415,7 @@
 		953B08B92556D1AA008F9D3E /* MMM */ = {
 			isa = PBXGroup;
 			children = (
+				4BFC840225CBB025008FC6DF /* Once A Day.entitlements */,
 				9552473C25635B8800B059CB /* Utils */,
 				9552473825635B5000B059CB /* Supporting Files */,
 				9552473725635B4700B059CB /* Model */,
@@ -378,6 +509,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4BFD4B5325C7C5AA00ED55F7 /* OnceADayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BFD4B6525C7C5AC00ED55F7 /* Build configuration list for PBXNativeTarget "OnceADayWidgetExtension" */;
+			buildPhases = (
+				4BFD4B5025C7C5AA00ED55F7 /* Sources */,
+				4BFD4B5125C7C5AA00ED55F7 /* Frameworks */,
+				4BFD4B5225C7C5AA00ED55F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnceADayWidgetExtension;
+			productName = OnceADayWIdgetExtension;
+			productReference = 4BFD4B5425C7C5AA00ED55F7 /* OnceADayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		953B08B62556D1AA008F9D3E /* MMM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 953B08CE2556D1AC008F9D3E /* Build configuration list for PBXNativeTarget "MMM" */;
@@ -387,10 +535,12 @@
 				953B08B42556D1AA008F9D3E /* Frameworks */,
 				953B08B52556D1AA008F9D3E /* Resources */,
 				27D8938DF14355BDA5AE4C00 /* [CP] Embed Pods Frameworks */,
+				4BFD4B6225C7C5AC00ED55F7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4BFD4B6025C7C5AC00ED55F7 /* PBXTargetDependency */,
 			);
 			name = MMM;
 			productName = MMM;
@@ -403,10 +553,13 @@
 		953B08AF2556D1AA008F9D3E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1170;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Martin Kuchar";
 				TargetAttributes = {
+					4BFD4B5325C7C5AA00ED55F7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					953B08B62556D1AA008F9D3E = {
 						CreatedOnToolsVersion = 11.7;
 					};
@@ -426,11 +579,70 @@
 			projectRoot = "";
 			targets = (
 				953B08B62556D1AA008F9D3E /* MMM */,
+				4BFD4B5325C7C5AA00ED55F7 /* OnceADayWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4BFD4B5225C7C5AA00ED55F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFD4B7D25C7C6D800ED55F7 /* NewYorkMedium-Black.otf in Resources */,
+				4BFD4BA625C7C6D800ED55F7 /* NewYorkMedium-BlackItalic.otf in Resources */,
+				4BFD4B9125C7C6D800ED55F7 /* NewYorkLarge-BlackItalic.otf in Resources */,
+				4BFD4B8125C7C6D800ED55F7 /* NewYorkExtraLarge-Regular.otf in Resources */,
+				4BFD4B8E25C7C6D800ED55F7 /* NewYorkLarge-RegularItalic.otf in Resources */,
+				4BFD4B8C25C7C6D800ED55F7 /* NewYorkSmall-BoldItalic.otf in Resources */,
+				4BFD4B8F25C7C6D800ED55F7 /* NewYorkLarge-Medium.otf in Resources */,
+				4BFD4B9625C7C6D800ED55F7 /* NewYorkItalic.ttf in Resources */,
+				4BFD4B8625C7C6D800ED55F7 /* NewYorkSmall-BlackItalic.otf in Resources */,
+				4BFD4B9825C7C6D800ED55F7 /* NewYork.ttf in Resources */,
+				4BFD4BA225C7C6D800ED55F7 /* NewYorkSmall-HeavyItalic.otf in Resources */,
+				4BFD4B8925C7C6D800ED55F7 /* NewYorkExtraLarge-Semibold.otf in Resources */,
+				4BFD4B9C25C7C6D800ED55F7 /* NewYorkLarge-Bold.otf in Resources */,
+				4BFD4B7B25C7C6D800ED55F7 /* NewYorkLarge-MediumItalic.otf in Resources */,
+				4BFD4B9425C7C6D800ED55F7 /* NewYorkExtraLarge-RegularItalic.otf in Resources */,
+				4BFD4B7C25C7C6D800ED55F7 /* NewYorkSmall-Black.otf in Resources */,
+				4BFD4BA025C7C6D800ED55F7 /* NewYorkLarge-SemiboldItalic.otf in Resources */,
+				4BFD4B9725C7C6D800ED55F7 /* NewYorkSmall-Medium.otf in Resources */,
+				4BFD4B7E25C7C6D800ED55F7 /* NewYorkExtraLarge-Black.otf in Resources */,
+				4BFD4B8825C7C6D800ED55F7 /* NewYorkMedium-SemiboldItalic.otf in Resources */,
+				4BFD4B9925C7C6D800ED55F7 /* NewYorkLarge-Regular.otf in Resources */,
+				4BFD4B8225C7C6D800ED55F7 /* NewYorkExtraLarge-Heavy.otf in Resources */,
+				4BFD4B9D25C7C6D800ED55F7 /* NewYorkExtraLarge-SemiboldItalic.otf in Resources */,
+				4BFD4B8B25C7C6D800ED55F7 /* NewYorkMedium-Semibold.otf in Resources */,
+				4BFD4B7F25C7C6D800ED55F7 /* NewYorkMedium-HeavyItalic.otf in Resources */,
+				4BFD4B8725C7C6D800ED55F7 /* NewYorkExtraLarge-BoldItalic.otf in Resources */,
+				4BFD4B9525C7C6D800ED55F7 /* NewYorkLarge-Heavy.otf in Resources */,
+				4BFD4BA325C7C6D800ED55F7 /* NewYorkSmall-Semibold.otf in Resources */,
+				4BFD4B5D25C7C5AB00ED55F7 /* Assets.xcassets in Resources */,
+				4BFD4B8025C7C6D800ED55F7 /* NewYorkLarge-BoldItalic.otf in Resources */,
+				4BFD4BA725C7C6D800ED55F7 /* NewYorkExtraLarge-HeavyItalic.otf in Resources */,
+				4BFD4B7825C7C6D800ED55F7 /* NewYorkLarge-Semibold.otf in Resources */,
+				4BFD4B7A25C7C6D800ED55F7 /* NewYorkSmall-RegularItalic.otf in Resources */,
+				4BFD4BA125C7C6D800ED55F7 /* NewYorkMedium-Medium.otf in Resources */,
+				4BFD4B8D25C7C6D800ED55F7 /* NewYorkLarge-Black.otf in Resources */,
+				4BFD4B8425C7C6D800ED55F7 /* NewYorkSmall-Bold.otf in Resources */,
+				4BFD4B8325C7C6D800ED55F7 /* NewYorkLarge-HeavyItalic.otf in Resources */,
+				4BFD4B8A25C7C6D800ED55F7 /* NewYorkMedium-Bold.otf in Resources */,
+				4BFD4B9225C7C6D800ED55F7 /* NewYorkSmall-Regular.otf in Resources */,
+				4BFD4B9B25C7C6D800ED55F7 /* NewYorkMedium-RegularItalic.otf in Resources */,
+				4BFD4B9A25C7C6D800ED55F7 /* NewYorkExtraLarge-Bold.otf in Resources */,
+				4BFD4BA525C7C6D800ED55F7 /* NewYorkMedium-BoldItalic.otf in Resources */,
+				4BFD4BA425C7C6D800ED55F7 /* NewYorkSmall-MediumItalic.otf in Resources */,
+				4BFD4B7725C7C6D800ED55F7 /* NewYorkExtraLarge-MediumItalic.otf in Resources */,
+				4BFD4B9325C7C6D800ED55F7 /* NewYorkExtraLarge-BlackItalic.otf in Resources */,
+				4BFD4B9025C7C6D800ED55F7 /* NewYorkMedium-Heavy.otf in Resources */,
+				4BFD4BA825C7C6D800ED55F7 /* NewYorkMedium-MediumItalic.otf in Resources */,
+				4BFD4B9F25C7C6D800ED55F7 /* NewYorkSmall-SemiboldItalic.otf in Resources */,
+				4BFD4B9E25C7C6D800ED55F7 /* NewYorkExtraLarge-Medium.otf in Resources */,
+				4BFD4B7925C7C6D800ED55F7 /* NewYorkMedium-Regular.otf in Resources */,
+				4BFD4B8525C7C6D800ED55F7 /* NewYorkSmall-Heavy.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		953B08B52556D1AA008F9D3E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -538,6 +750,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4BFD4B5025C7C5AA00ED55F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFD4B7325C7C6BA00ED55F7 /* ManagedCounter+CoreDataProperties.swift in Sources */,
+				4BFD4BB525C7DE6100ED55F7 /* WidgetEntryView.swift in Sources */,
+				4BFD4B5B25C7C5AA00ED55F7 /* OnceADayWidget.swift in Sources */,
+				4BFD4B7425C7C6BA00ED55F7 /* ManagedCounter+CoreDataClass.swift in Sources */,
+				4BFD4BAF25C7DD3D00ED55F7 /* UserCountEntry.swift in Sources */,
+				4BFC83E825CBAB0D008FC6DF /* CoreDataManager.swift in Sources */,
+				4BFD4BAB25C7C6E700ED55F7 /* Constants.swift in Sources */,
+				4BFC83FC25CBAE5A008FC6DF /* MMM.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		953B08B32556D1AA008F9D3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,6 +797,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4BFD4B6025C7C5AC00ED55F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BFD4B5325C7C5AA00ED55F7 /* OnceADayWidgetExtension */;
+			targetProxy = 4BFD4B5F25C7C5AC00ED55F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		953B08C02556D1AB008F9D3E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -590,6 +825,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4BFD4B6325C7C5AC00ED55F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = OnceADayWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XF72A49733;
+				INFOPLIST_FILE = OnceADayWIdget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep.tushar.OnceADayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BFD4B6425C7C5AC00ED55F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = OnceADayWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XF72A49733;
+				INFOPLIST_FILE = OnceADayWIdget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep.tushar.OnceADayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		953B08CC2556D1AC008F9D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -641,7 +922,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -696,7 +977,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -710,9 +991,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 366C4F8CFAD8E27CCB2B0B4F /* Pods-MMM.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MMM/Once A Day.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PC4J6W84S8;
+				DEVELOPMENT_TEAM = XF72A49733;
 				INFOPLIST_FILE = MMM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -720,7 +1003,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep.tushar;
 				PRODUCT_NAME = "Once A Day";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -731,9 +1014,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 11545567E27B1BF83F8D3BA9 /* Pods-MMM.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MMM/Once A Day.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PC4J6W84S8;
+				DEVELOPMENT_TEAM = XF72A49733;
 				INFOPLIST_FILE = MMM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -741,7 +1026,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep.tushar;
 				PRODUCT_NAME = "Once A Day";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -751,6 +1036,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4BFD4B6525C7C5AC00ED55F7 /* Build configuration list for PBXNativeTarget "OnceADayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BFD4B6325C7C5AC00ED55F7 /* Debug */,
+				4BFD4B6425C7C5AC00ED55F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		953B08B22556D1AA008F9D3E /* Build configuration list for PBXProject "MMM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

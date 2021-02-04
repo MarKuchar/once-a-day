@@ -16,6 +16,12 @@ struct CoreDataManager {
     
     let persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "MMM")
+        let sharedStoreURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.mmm.onestep.tushar")
+        if let storeURL = sharedStoreURL?.appendingPathComponent("AppGroupOAD") {
+            let storeDescription = NSPersistentStoreDescription(url: storeURL)
+            container.persistentStoreDescriptions = [storeDescription]
+        }
+        
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
