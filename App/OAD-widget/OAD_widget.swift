@@ -1,8 +1,8 @@
 //
-//  OnceADayWIdget.swift
-//  OnceADayWIdget
+//  OAD_widget.swift
+//  OAD-widget
 //
-//  Created by Tushar Chhabra on 2021-01-31.
+//  Created by Martin Kuchar on 2021-02-04.
 //  Copyright © 2021 Martin Kuchar. All rights reserved.
 //
 
