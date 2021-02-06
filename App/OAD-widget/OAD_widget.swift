@@ -79,14 +79,14 @@ struct WidgetEntryView : View {
     
     @main
     struct OnceADayWidget: Widget {
-        let kind: String = "OnceADayWIdget"
+        let kind: String = "OAD_widget_local_count"
         
         var body: some WidgetConfiguration {
             StaticConfiguration(kind: kind, provider: Provider()) { entry in
                 WidgetEntryView(entry: entry)
             }
-            .configurationDisplayName("My Widget")
-            .description("This is an example widget.")
+            .configurationDisplayName("My total contribution")
+            .description("My total contribution.")
         }
     }
     

@@ -100,6 +100,13 @@
 		9598581525BE6E2D00E0B890 /* yButtonTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9598581425BE6E2D00E0B890 /* yButtonTip.swift */; };
 		95C1F342255BAFF400B9123C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1F341255BAFF400B9123C /* CoreDataManager.swift */; };
 		95C667D825AFF3B5000FA27B /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C667D725AFF3B5000FA27B /* DoneViewController.swift */; };
+		95DFE70025CDB8930049C094 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9524DEDC25CB98A3002F3347 /* WidgetKit.framework */; };
+		95DFE70125CDB8930049C094 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9524DEDE25CB98A3002F3347 /* SwiftUI.framework */; };
+		95DFE70425CDB8930049C094 /* OAD_widget_world.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DFE70325CDB8930049C094 /* OAD_widget_world.swift */; };
+		95DFE70725CDB8940049C094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DFE70625CDB8940049C094 /* Assets.xcassets */; };
+		95DFE70925CDB8940049C094 /* OAD_widget_world.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 95DFE70525CDB8930049C094 /* OAD_widget_world.intentdefinition */; };
+		95DFE70D25CDB8940049C094 /* OAD-widget-worldExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 95DFE6FF25CDB8930049C094 /* OAD-widget-worldExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		95DFE71C25CDB93A0049C094 /* WorldCountEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DFE71B25CDB93A0049C094 /* WorldCountEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +117,13 @@
 			remoteGlobalIDString = 9524DFBA25CCE412002F3347;
 			remoteInfo = "OAD-widgetExtension";
 		};
+		95DFE70B25CDB8940049C094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 953B08AF2556D1AA008F9D3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95DFE6FE25CDB8930049C094;
+			remoteInfo = "OAD-widget-worldExtension";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -119,6 +133,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				95DFE70D25CDB8940049C094 /* OAD-widget-worldExtension.appex in Embed App Extensions */,
 				9524DFC925CCE413002F3347 /* OAD-widgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -220,6 +235,13 @@
 		9598581425BE6E2D00E0B890 /* yButtonTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yButtonTip.swift; sourceTree = "<group>"; };
 		95C1F341255BAFF400B9123C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		95C667D725AFF3B5000FA27B /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		95DFE6FF25CDB8930049C094 /* OAD-widget-worldExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OAD-widget-worldExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DFE70325CDB8930049C094 /* OAD_widget_world.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAD_widget_world.swift; sourceTree = "<group>"; };
+		95DFE70525CDB8930049C094 /* OAD_widget_world.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OAD_widget_world.intentdefinition; sourceTree = "<group>"; };
+		95DFE70625CDB8940049C094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95DFE70825CDB8940049C094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DFE71425CDB8BA0049C094 /* OAD-widgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OAD-widgetExtension.entitlements"; sourceTree = "<group>"; };
+		95DFE71B25CDB93A0049C094 /* WorldCountEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCountEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +260,15 @@
 			files = (
 				5FE229A2C89BAA7AC2AC203F /* Pods_MMM.framework in Frameworks */,
 				95510E8B25BC24CF00DE01DE /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DFE6FC25CDB8930049C094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DFE70125CDB8930049C094 /* SwiftUI.framework in Frameworks */,
+				95DFE70025CDB8930049C094 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +368,10 @@
 			isa = PBXGroup;
 			children = (
 				9524DFD125CCE4AA002F3347 /* OAD-widgetExtension.entitlements */,
+				95DFE71425CDB8BA0049C094 /* OAD-widgetExtension.entitlements */,
 				953B08B92556D1AA008F9D3E /* MMM */,
 				9524DFBE25CCE412002F3347 /* OAD-widget */,
+				95DFE70225CDB8930049C094 /* OAD-widget-world */,
 				953B08B82556D1AA008F9D3E /* Products */,
 				F286CB4F27972DF48FA27132 /* Pods */,
 				18E9A77271ACA40224ED8F26 /* Frameworks */,
@@ -350,6 +383,7 @@
 			children = (
 				953B08B72556D1AA008F9D3E /* Once A Day.app */,
 				9524DFBB25CCE412002F3347 /* OAD-widgetExtension.appex */,
+				95DFE6FF25CDB8930049C094 /* OAD-widget-worldExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -438,6 +472,18 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		95DFE70225CDB8930049C094 /* OAD-widget-world */ = {
+			isa = PBXGroup;
+			children = (
+				95DFE71B25CDB93A0049C094 /* WorldCountEntry.swift */,
+				95DFE70325CDB8930049C094 /* OAD_widget_world.swift */,
+				95DFE70525CDB8930049C094 /* OAD_widget_world.intentdefinition */,
+				95DFE70625CDB8940049C094 /* Assets.xcassets */,
+				95DFE70825CDB8940049C094 /* Info.plist */,
+			);
+			path = "OAD-widget-world";
+			sourceTree = "<group>";
+		};
 		F286CB4F27972DF48FA27132 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,11 +528,29 @@
 			);
 			dependencies = (
 				9524DFC825CCE413002F3347 /* PBXTargetDependency */,
+				95DFE70C25CDB8940049C094 /* PBXTargetDependency */,
 			);
 			name = MMM;
 			productName = MMM;
 			productReference = 953B08B72556D1AA008F9D3E /* Once A Day.app */;
 			productType = "com.apple.product-type.application";
+		};
+		95DFE6FE25CDB8930049C094 /* OAD-widget-worldExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DFE71025CDB8940049C094 /* Build configuration list for PBXNativeTarget "OAD-widget-worldExtension" */;
+			buildPhases = (
+				95DFE6FB25CDB8930049C094 /* Sources */,
+				95DFE6FC25CDB8930049C094 /* Frameworks */,
+				95DFE6FD25CDB8930049C094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OAD-widget-worldExtension";
+			productName = "OAD-widget-worldExtension";
+			productReference = 95DFE6FF25CDB8930049C094 /* OAD-widget-worldExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -503,6 +567,9 @@
 					};
 					953B08B62556D1AA008F9D3E = {
 						CreatedOnToolsVersion = 11.7;
+					};
+					95DFE6FE25CDB8930049C094 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
@@ -521,6 +588,7 @@
 			targets = (
 				953B08B62556D1AA008F9D3E /* MMM */,
 				9524DFBA25CCE412002F3347 /* OAD-widgetExtension */,
+				95DFE6FE25CDB8930049C094 /* OAD-widget-worldExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -593,6 +661,14 @@
 				9552473A25635B8000B059CB /* roboto in Resources */,
 				9504FC9025B2E531004D2C79 /* NewYorkExtraLarge-Semibold.otf in Resources */,
 				9504FCAB25B2E531004D2C79 /* NewYorkSmall-BlackItalic.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DFE6FD25CDB8930049C094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DFE70725CDB8940049C094 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,7 +759,17 @@
 				957321E12568543C00F21BEF /* LoadingViewController.swift in Sources */,
 				953B08C52556D1AB008F9D3E /* MMM.xcdatamodeld in Sources */,
 				955247322563579000B059CB /* CounterViewController.swift in Sources */,
+				95DFE71C25CDB93A0049C094 /* WorldCountEntry.swift in Sources */,
 				95724AF625B2817800EF6088 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DFE6FB25CDB8930049C094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DFE70925CDB8940049C094 /* OAD_widget_world.intentdefinition in Sources */,
+				95DFE70425CDB8930049C094 /* OAD_widget_world.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +780,11 @@
 			isa = PBXTargetDependency;
 			target = 9524DFBA25CCE412002F3347 /* OAD-widgetExtension */;
 			targetProxy = 9524DFC725CCE413002F3347 /* PBXContainerItemProxy */;
+		};
+		95DFE70C25CDB8940049C094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95DFE6FE25CDB8930049C094 /* OAD-widget-worldExtension */;
+			targetProxy = 95DFE70B25CDB8940049C094 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -923,6 +1014,48 @@
 			};
 			name = Release;
 		};
+		95DFE70E25CDB8940049C094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC4J6W84S8;
+				INFOPLIST_FILE = "OAD-widget-world/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mm.onestep.OAD-widget-world";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95DFE70F25CDB8940049C094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC4J6W84S8;
+				INFOPLIST_FILE = "OAD-widget-world/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mm.onestep.OAD-widget-world";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -949,6 +1082,15 @@
 			buildConfigurations = (
 				953B08CF2556D1AC008F9D3E /* Debug */,
 				953B08D02556D1AC008F9D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95DFE71025CDB8940049C094 /* Build configuration list for PBXNativeTarget "OAD-widget-worldExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DFE70E25CDB8940049C094 /* Debug */,
+				95DFE70F25CDB8940049C094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
