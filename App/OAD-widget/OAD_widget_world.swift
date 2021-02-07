@@ -14,6 +14,7 @@ struct WidgetWorldEntryView : View {
     
     var body: some View {
         ZStack {
+            
             Color(UIConstants.bgColor)
             
             Image("AppIcon_3")

@@ -108,7 +108,6 @@ struct Provider: TimelineProvider {
             let currentCount = self.getEntry()
             let entry = UserCountEntry(date: entryDate, count: currentCount, countWorld: 1)
             entries.append(entry)
-            
         }
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
