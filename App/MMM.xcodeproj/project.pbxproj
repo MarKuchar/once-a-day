@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FE229A2C89BAA7AC2AC203F /* Pods_MMM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4794C7EFA14B887B6C18CC0B /* Pods_MMM.framework */; };
+		5B3F56FC674769F2CF253537 /* Pods_OAD_widgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD2E4DDD3F779B0602CE9D6 /* Pods_OAD_widgetExtension.framework */; };
+		75318BF46248BE6F64B26C7F /* Pods_MMM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A912293CDBAB7E70A9AC8992 /* Pods_MMM.framework */; };
 		9504FC7B25B2E531004D2C79 /* NewYorkMedium-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC4925B2E4D8004D2C79 /* NewYorkMedium-HeavyItalic.otf */; };
 		9504FC7C25B2E531004D2C79 /* NewYorkMedium-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC4A25B2E4D9004D2C79 /* NewYorkMedium-RegularItalic.otf */; };
 		9504FC7D25B2E531004D2C79 /* NewYorkLarge-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC4B25B2E4DA004D2C79 /* NewYorkLarge-Black.otf */; };
@@ -61,7 +62,7 @@
 		95089B1025A8083200590B65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95089B0F25A8083200590B65 /* GoogleService-Info.plist */; };
 		9524DFBC25CCE412002F3347 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9524DEDC25CB98A3002F3347 /* WidgetKit.framework */; };
 		9524DFBD25CCE412002F3347 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9524DEDE25CB98A3002F3347 /* SwiftUI.framework */; };
-		9524DFC025CCE412002F3347 /* OAD_widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9524DFBF25CCE412002F3347 /* OAD_widget.swift */; };
+		9524DFC025CCE412002F3347 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9524DFBF25CCE412002F3347 /* Provider.swift */; };
 		9524DFC325CCE413002F3347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9524DFC225CCE413002F3347 /* Assets.xcassets */; };
 		9524DFC525CCE413002F3347 /* OAD_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9524DFC125CCE412002F3347 /* OAD_widget.intentdefinition */; };
 		9524DFC625CCE413002F3347 /* OAD_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9524DFC125CCE412002F3347 /* OAD_widget.intentdefinition */; };
@@ -70,7 +71,7 @@
 		9524DFD725CCE4C7002F3347 /* ManagedCounter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95660B8725B8F646001DAF3F /* ManagedCounter+CoreDataProperties.swift */; };
 		9524DFD825CCE4C7002F3347 /* ManagedCounter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95660B8825B8F647001DAF3F /* ManagedCounter+CoreDataClass.swift */; };
 		9524DFDB25CCE4D6002F3347 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1F341255BAFF400B9123C /* CoreDataManager.swift */; };
-		9524DFE825CCE600002F3347 /* UserCountEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9524DFE425CCE556002F3347 /* UserCountEntry.swift */; };
+		9524DFE825CCE600002F3347 /* CountEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9524DFE425CCE556002F3347 /* CountEntry.swift */; };
 		9524E00125CCE62D002F3347 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724AF525B2817800EF6088 /* Constants.swift */; };
 		952C2C5525B64C270094AD49 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952C2C5425B64C270094AD49 /* ReviewViewController.swift */; };
 		953B08BB2556D1AB008F9D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B08BA2556D1AB008F9D3E /* AppDelegate.swift */; };
@@ -79,6 +80,10 @@
 		953B08C52556D1AB008F9D3E /* MMM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 953B08C32556D1AB008F9D3E /* MMM.xcdatamodeld */; };
 		953B08C72556D1AC008F9D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953B08C62556D1AC008F9D3E /* Assets.xcassets */; };
 		953B08CA2556D1AC008F9D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953B08C82556D1AC008F9D3E /* LaunchScreen.storyboard */; };
+		953D296425D018F900E05588 /* Pods-OAD-widgetExtension.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 20810FB0E576C8D2C1E353B8 /* Pods-OAD-widgetExtension.release.xcconfig */; };
+		953D296725D0190000E05588 /* Pods-OAD-widgetExtension.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 078B074ABED7A8D7E21D8245 /* Pods-OAD-widgetExtension.debug.xcconfig */; };
+		953D296A25D0190400E05588 /* Pods-MMM.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5A9C1B8746C17D64615C7B26 /* Pods-MMM.release.xcconfig */; };
+		953D296D25D0190900E05588 /* Pods-MMM.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A286BA2C3927DBEFF5F00E9A /* Pods-MMM.debug.xcconfig */; };
 		95510E8B25BC24CF00DE01DE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95510E8A25BC24CF00DE01DE /* StoreKit.framework */; };
 		95510E9E25BC28B600DE01DE /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95510E9D25BC28B600DE01DE /* TipViewController.swift */; };
 		955247322563579000B059CB /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955247312563579000B059CB /* CounterViewController.swift */; };
@@ -98,15 +103,11 @@
 		95724AF625B2817800EF6088 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95724AF525B2817800EF6088 /* Constants.swift */; };
 		957321E12568543C00F21BEF /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957321E02568543C00F21BEF /* LoadingViewController.swift */; };
 		9598581525BE6E2D00E0B890 /* yButtonTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9598581425BE6E2D00E0B890 /* yButtonTip.swift */; };
+		95B6ACBA25CFFCAD0097D6A3 /* OAD_widget_world.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B6ACB625CFFC4F0097D6A3 /* OAD_widget_world.swift */; };
+		95B6ACC025CFFCFE0097D6A3 /* OAD_widget_personal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B6ACBF25CFFCFE0097D6A3 /* OAD_widget_personal.swift */; };
+		95B6ACC625D000B40097D6A3 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B6ACC525D000B40097D6A3 /* Widgets.swift */; };
 		95C1F342255BAFF400B9123C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1F341255BAFF400B9123C /* CoreDataManager.swift */; };
 		95C667D825AFF3B5000FA27B /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C667D725AFF3B5000FA27B /* DoneViewController.swift */; };
-		95DFE70025CDB8930049C094 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9524DEDC25CB98A3002F3347 /* WidgetKit.framework */; };
-		95DFE70125CDB8930049C094 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9524DEDE25CB98A3002F3347 /* SwiftUI.framework */; };
-		95DFE70425CDB8930049C094 /* OAD_widget_world.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DFE70325CDB8930049C094 /* OAD_widget_world.swift */; };
-		95DFE70725CDB8940049C094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DFE70625CDB8940049C094 /* Assets.xcassets */; };
-		95DFE70925CDB8940049C094 /* OAD_widget_world.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 95DFE70525CDB8930049C094 /* OAD_widget_world.intentdefinition */; };
-		95DFE70D25CDB8940049C094 /* OAD-widget-worldExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 95DFE6FF25CDB8930049C094 /* OAD-widget-worldExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		95DFE71C25CDB93A0049C094 /* WorldCountEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DFE71B25CDB93A0049C094 /* WorldCountEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,23 +118,15 @@
 			remoteGlobalIDString = 9524DFBA25CCE412002F3347;
 			remoteInfo = "OAD-widgetExtension";
 		};
-		95DFE70B25CDB8940049C094 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 953B08AF2556D1AA008F9D3E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 95DFE6FE25CDB8930049C094;
-			remoteInfo = "OAD-widget-worldExtension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9524DEEC25CB98A6002F3347 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				95DFE70D25CDB8940049C094 /* OAD-widget-worldExtension.appex in Embed App Extensions */,
 				9524DFC925CCE413002F3347 /* OAD-widgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -142,9 +135,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		11545567E27B1BF83F8D3BA9 /* Pods-MMM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMM.release.xcconfig"; path = "Target Support Files/Pods-MMM/Pods-MMM.release.xcconfig"; sourceTree = "<group>"; };
-		366C4F8CFAD8E27CCB2B0B4F /* Pods-MMM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMM.debug.xcconfig"; path = "Target Support Files/Pods-MMM/Pods-MMM.debug.xcconfig"; sourceTree = "<group>"; };
-		4794C7EFA14B887B6C18CC0B /* Pods_MMM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		078B074ABED7A8D7E21D8245 /* Pods-OAD-widgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAD-widgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-OAD-widgetExtension/Pods-OAD-widgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		20810FB0E576C8D2C1E353B8 /* Pods-OAD-widgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAD-widgetExtension.release.xcconfig"; path = "Target Support Files/Pods-OAD-widgetExtension/Pods-OAD-widgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		3FD2E4DDD3F779B0602CE9D6 /* Pods_OAD_widgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAD_widgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9C1B8746C17D64615C7B26 /* Pods-MMM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMM.release.xcconfig"; path = "Target Support Files/Pods-MMM/Pods-MMM.release.xcconfig"; sourceTree = "<group>"; };
 		9504FC4925B2E4D8004D2C79 /* NewYorkMedium-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-HeavyItalic.otf"; sourceTree = "<group>"; };
 		9504FC4A25B2E4D9004D2C79 /* NewYorkMedium-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-RegularItalic.otf"; sourceTree = "<group>"; };
 		9504FC4B25B2E4DA004D2C79 /* NewYorkLarge-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-Black.otf"; sourceTree = "<group>"; };
@@ -199,12 +193,12 @@
 		9524DEDC25CB98A3002F3347 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		9524DEDE25CB98A3002F3347 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		9524DFBB25CCE412002F3347 /* OAD-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OAD-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9524DFBF25CCE412002F3347 /* OAD_widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAD_widget.swift; sourceTree = "<group>"; };
+		9524DFBF25CCE412002F3347 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		9524DFC125CCE412002F3347 /* OAD_widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OAD_widget.intentdefinition; sourceTree = "<group>"; };
 		9524DFC225CCE413002F3347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9524DFC425CCE413002F3347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9524DFD125CCE4AA002F3347 /* OAD-widgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OAD-widgetExtension.entitlements"; sourceTree = "<group>"; };
-		9524DFE425CCE556002F3347 /* UserCountEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCountEntry.swift; sourceTree = "<group>"; };
+		9524DFE425CCE556002F3347 /* CountEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountEntry.swift; sourceTree = "<group>"; };
 		952C2C5425B64C270094AD49 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		953B08B72556D1AA008F9D3E /* Once A Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Once A Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		953B08BA2556D1AB008F9D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -233,15 +227,13 @@
 		95724AF525B2817800EF6088 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		957321E02568543C00F21BEF /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		9598581425BE6E2D00E0B890 /* yButtonTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yButtonTip.swift; sourceTree = "<group>"; };
+		95B6ACB625CFFC4F0097D6A3 /* OAD_widget_world.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAD_widget_world.swift; sourceTree = "<group>"; };
+		95B6ACBF25CFFCFE0097D6A3 /* OAD_widget_personal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAD_widget_personal.swift; sourceTree = "<group>"; };
+		95B6ACC525D000B40097D6A3 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
 		95C1F341255BAFF400B9123C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		95C667D725AFF3B5000FA27B /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
-		95DFE6FF25CDB8930049C094 /* OAD-widget-worldExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OAD-widget-worldExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		95DFE70325CDB8930049C094 /* OAD_widget_world.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAD_widget_world.swift; sourceTree = "<group>"; };
-		95DFE70525CDB8930049C094 /* OAD_widget_world.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OAD_widget_world.intentdefinition; sourceTree = "<group>"; };
-		95DFE70625CDB8940049C094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		95DFE70825CDB8940049C094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95DFE71425CDB8BA0049C094 /* OAD-widgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OAD-widgetExtension.entitlements"; sourceTree = "<group>"; };
-		95DFE71B25CDB93A0049C094 /* WorldCountEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCountEntry.swift; sourceTree = "<group>"; };
+		A286BA2C3927DBEFF5F00E9A /* Pods-MMM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMM.debug.xcconfig"; path = "Target Support Files/Pods-MMM/Pods-MMM.debug.xcconfig"; sourceTree = "<group>"; };
+		A912293CDBAB7E70A9AC8992 /* Pods_MMM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +243,7 @@
 			files = (
 				9524DFBD25CCE412002F3347 /* SwiftUI.framework in Frameworks */,
 				9524DFBC25CCE412002F3347 /* WidgetKit.framework in Frameworks */,
+				5B3F56FC674769F2CF253537 /* Pods_OAD_widgetExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,17 +251,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FE229A2C89BAA7AC2AC203F /* Pods_MMM.framework in Frameworks */,
 				95510E8B25BC24CF00DE01DE /* StoreKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		95DFE6FC25CDB8930049C094 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				95DFE70125CDB8930049C094 /* SwiftUI.framework in Frameworks */,
-				95DFE70025CDB8930049C094 /* WidgetKit.framework in Frameworks */,
+				75318BF46248BE6F64B26C7F /* Pods_MMM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +263,10 @@
 			isa = PBXGroup;
 			children = (
 				95510E8A25BC24CF00DE01DE /* StoreKit.framework */,
-				4794C7EFA14B887B6C18CC0B /* Pods_MMM.framework */,
 				9524DEDC25CB98A3002F3347 /* WidgetKit.framework */,
 				9524DEDE25CB98A3002F3347 /* SwiftUI.framework */,
+				A912293CDBAB7E70A9AC8992 /* Pods_MMM.framework */,
+				3FD2E4DDD3F779B0602CE9D6 /* Pods_OAD_widgetExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -355,8 +340,11 @@
 		9524DFBE25CCE412002F3347 /* OAD-widget */ = {
 			isa = PBXGroup;
 			children = (
-				9524DFE425CCE556002F3347 /* UserCountEntry.swift */,
-				9524DFBF25CCE412002F3347 /* OAD_widget.swift */,
+				9524DFE425CCE556002F3347 /* CountEntry.swift */,
+				95B6ACC525D000B40097D6A3 /* Widgets.swift */,
+				9524DFBF25CCE412002F3347 /* Provider.swift */,
+				95B6ACB625CFFC4F0097D6A3 /* OAD_widget_world.swift */,
+				95B6ACBF25CFFCFE0097D6A3 /* OAD_widget_personal.swift */,
 				9524DFC125CCE412002F3347 /* OAD_widget.intentdefinition */,
 				9524DFC225CCE413002F3347 /* Assets.xcassets */,
 				9524DFC425CCE413002F3347 /* Info.plist */,
@@ -368,10 +356,8 @@
 			isa = PBXGroup;
 			children = (
 				9524DFD125CCE4AA002F3347 /* OAD-widgetExtension.entitlements */,
-				95DFE71425CDB8BA0049C094 /* OAD-widgetExtension.entitlements */,
 				953B08B92556D1AA008F9D3E /* MMM */,
 				9524DFBE25CCE412002F3347 /* OAD-widget */,
-				95DFE70225CDB8930049C094 /* OAD-widget-world */,
 				953B08B82556D1AA008F9D3E /* Products */,
 				F286CB4F27972DF48FA27132 /* Pods */,
 				18E9A77271ACA40224ED8F26 /* Frameworks */,
@@ -383,7 +369,6 @@
 			children = (
 				953B08B72556D1AA008F9D3E /* Once A Day.app */,
 				9524DFBB25CCE412002F3347 /* OAD-widgetExtension.appex */,
-				95DFE6FF25CDB8930049C094 /* OAD-widget-worldExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -472,23 +457,13 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		95DFE70225CDB8930049C094 /* OAD-widget-world */ = {
-			isa = PBXGroup;
-			children = (
-				95DFE71B25CDB93A0049C094 /* WorldCountEntry.swift */,
-				95DFE70325CDB8930049C094 /* OAD_widget_world.swift */,
-				95DFE70525CDB8930049C094 /* OAD_widget_world.intentdefinition */,
-				95DFE70625CDB8940049C094 /* Assets.xcassets */,
-				95DFE70825CDB8940049C094 /* Info.plist */,
-			);
-			path = "OAD-widget-world";
-			sourceTree = "<group>";
-		};
 		F286CB4F27972DF48FA27132 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				366C4F8CFAD8E27CCB2B0B4F /* Pods-MMM.debug.xcconfig */,
-				11545567E27B1BF83F8D3BA9 /* Pods-MMM.release.xcconfig */,
+				A286BA2C3927DBEFF5F00E9A /* Pods-MMM.debug.xcconfig */,
+				5A9C1B8746C17D64615C7B26 /* Pods-MMM.release.xcconfig */,
+				078B074ABED7A8D7E21D8245 /* Pods-OAD-widgetExtension.debug.xcconfig */,
+				20810FB0E576C8D2C1E353B8 /* Pods-OAD-widgetExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -500,6 +475,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9524DFCA25CCE413002F3347 /* Build configuration list for PBXNativeTarget "OAD-widgetExtension" */;
 			buildPhases = (
+				1D133CAF3C453DF13EBE22D9 /* [CP] Check Pods Manifest.lock */,
 				9524DFB725CCE412002F3347 /* Sources */,
 				9524DFB825CCE412002F3347 /* Frameworks */,
 				9524DFB925CCE412002F3347 /* Resources */,
@@ -517,40 +493,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 953B08CE2556D1AC008F9D3E /* Build configuration list for PBXNativeTarget "MMM" */;
 			buildPhases = (
-				F032F060132DD066804D2401 /* [CP] Check Pods Manifest.lock */,
+				B302DD91583EDC967FF93A0F /* [CP] Check Pods Manifest.lock */,
 				953B08B32556D1AA008F9D3E /* Sources */,
 				953B08B42556D1AA008F9D3E /* Frameworks */,
 				953B08B52556D1AA008F9D3E /* Resources */,
-				27D8938DF14355BDA5AE4C00 /* [CP] Embed Pods Frameworks */,
 				9524DEEC25CB98A6002F3347 /* Embed App Extensions */,
+				92ECA3154B0910E30F0B9A9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				9524DFC825CCE413002F3347 /* PBXTargetDependency */,
-				95DFE70C25CDB8940049C094 /* PBXTargetDependency */,
 			);
 			name = MMM;
 			productName = MMM;
 			productReference = 953B08B72556D1AA008F9D3E /* Once A Day.app */;
 			productType = "com.apple.product-type.application";
-		};
-		95DFE6FE25CDB8930049C094 /* OAD-widget-worldExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 95DFE71025CDB8940049C094 /* Build configuration list for PBXNativeTarget "OAD-widget-worldExtension" */;
-			buildPhases = (
-				95DFE6FB25CDB8930049C094 /* Sources */,
-				95DFE6FC25CDB8930049C094 /* Frameworks */,
-				95DFE6FD25CDB8930049C094 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "OAD-widget-worldExtension";
-			productName = "OAD-widget-worldExtension";
-			productReference = 95DFE6FF25CDB8930049C094 /* OAD-widget-worldExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -567,9 +525,6 @@
 					};
 					953B08B62556D1AA008F9D3E = {
 						CreatedOnToolsVersion = 11.7;
-					};
-					95DFE6FE25CDB8930049C094 = {
-						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
@@ -588,7 +543,6 @@
 			targets = (
 				953B08B62556D1AA008F9D3E /* MMM */,
 				9524DFBA25CCE412002F3347 /* OAD-widgetExtension */,
-				95DFE6FE25CDB8930049C094 /* OAD-widget-worldExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -598,6 +552,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953D296725D0190000E05588 /* Pods-OAD-widgetExtension.debug.xcconfig in Resources */,
+				953D296425D018F900E05588 /* Pods-OAD-widgetExtension.release.xcconfig in Resources */,
 				9524DFC325CCE413002F3347 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +571,7 @@
 				9504FC8D25B2E531004D2C79 /* NewYorkExtraLarge-HeavyItalic.otf in Resources */,
 				9504FC8E25B2E531004D2C79 /* NewYorkLarge-BoldItalic.otf in Resources */,
 				9504FC9E25B2E531004D2C79 /* NewYorkLarge-BlackItalic.otf in Resources */,
+				953D296A25D0190400E05588 /* Pods-MMM.release.xcconfig in Resources */,
 				9504FCA725B2E531004D2C79 /* NewYorkExtraLarge-SemiboldItalic.otf in Resources */,
 				9504FC9125B2E531004D2C79 /* NewYorkLarge-RegularItalic.otf in Resources */,
 				9504FC8625B2E531004D2C79 /* NewYorkMedium-Heavy.otf in Resources */,
@@ -655,6 +612,7 @@
 				9504FC9325B2E531004D2C79 /* NewYorkExtraLarge-Regular.otf in Resources */,
 				95089B1025A8083200590B65 /* GoogleService-Info.plist in Resources */,
 				9504FCA025B2E531004D2C79 /* NewYorkExtraLarge-BoldItalic.otf in Resources */,
+				953D296D25D0190900E05588 /* Pods-MMM.debug.xcconfig in Resources */,
 				9504FC9B25B2E531004D2C79 /* NewYorkMedium-BlackItalic.otf in Resources */,
 				953B08C22556D1AB008F9D3E /* Main.storyboard in Resources */,
 				9504FCA125B2E531004D2C79 /* NewYorkExtraLarge-Bold.otf in Resources */,
@@ -664,18 +622,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95DFE6FD25CDB8930049C094 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				95DFE70725CDB8940049C094 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27D8938DF14355BDA5AE4C00 /* [CP] Embed Pods Frameworks */ = {
+		1D133CAF3C453DF13EBE22D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OAD-widgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92ECA3154B0910E30F0B9A9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -692,7 +664,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMM/Pods-MMM-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F032F060132DD066804D2401 /* [CP] Check Pods Manifest.lock */ = {
+		B302DD91583EDC967FF93A0F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -723,9 +695,12 @@
 			files = (
 				9524DFDB25CCE4D6002F3347 /* CoreDataManager.swift in Sources */,
 				9524DFD825CCE4C7002F3347 /* ManagedCounter+CoreDataClass.swift in Sources */,
-				9524DFE825CCE600002F3347 /* UserCountEntry.swift in Sources */,
+				9524DFE825CCE600002F3347 /* CountEntry.swift in Sources */,
 				9524DFD425CCE4C0002F3347 /* MMM.xcdatamodeld in Sources */,
-				9524DFC025CCE412002F3347 /* OAD_widget.swift in Sources */,
+				95B6ACC025CFFCFE0097D6A3 /* OAD_widget_personal.swift in Sources */,
+				95B6ACC625D000B40097D6A3 /* Widgets.swift in Sources */,
+				9524DFC025CCE412002F3347 /* Provider.swift in Sources */,
+				95B6ACBA25CFFCAD0097D6A3 /* OAD_widget_world.swift in Sources */,
 				9524DFD725CCE4C7002F3347 /* ManagedCounter+CoreDataProperties.swift in Sources */,
 				9524DFC525CCE413002F3347 /* OAD_widget.intentdefinition in Sources */,
 				9524E00125CCE62D002F3347 /* Constants.swift in Sources */,
@@ -759,17 +734,7 @@
 				957321E12568543C00F21BEF /* LoadingViewController.swift in Sources */,
 				953B08C52556D1AB008F9D3E /* MMM.xcdatamodeld in Sources */,
 				955247322563579000B059CB /* CounterViewController.swift in Sources */,
-				95DFE71C25CDB93A0049C094 /* WorldCountEntry.swift in Sources */,
 				95724AF625B2817800EF6088 /* Constants.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		95DFE6FB25CDB8930049C094 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				95DFE70925CDB8940049C094 /* OAD_widget_world.intentdefinition in Sources */,
-				95DFE70425CDB8930049C094 /* OAD_widget_world.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,11 +745,6 @@
 			isa = PBXTargetDependency;
 			target = 9524DFBA25CCE412002F3347 /* OAD-widgetExtension */;
 			targetProxy = 9524DFC725CCE413002F3347 /* PBXContainerItemProxy */;
-		};
-		95DFE70C25CDB8940049C094 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 95DFE6FE25CDB8930049C094 /* OAD-widget-worldExtension */;
-			targetProxy = 95DFE70B25CDB8940049C094 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -810,6 +770,7 @@
 /* Begin XCBuildConfiguration section */
 		9524DFCB25CCE413002F3347 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 078B074ABED7A8D7E21D8245 /* Pods-OAD-widgetExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -832,6 +793,7 @@
 		};
 		9524DFCC25CCE413002F3347 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20810FB0E576C8D2C1E353B8 /* Pods-OAD-widgetExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -970,9 +932,8 @@
 		};
 		953B08CF2556D1AC008F9D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 366C4F8CFAD8E27CCB2B0B4F /* Pods-MMM.debug.xcconfig */;
+			baseConfigurationReference = A286BA2C3927DBEFF5F00E9A /* Pods-MMM.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "MMM/Once A Day.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -993,9 +954,8 @@
 		};
 		953B08D02556D1AC008F9D3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11545567E27B1BF83F8D3BA9 /* Pods-MMM.release.xcconfig */;
+			baseConfigurationReference = 5A9C1B8746C17D64615C7B26 /* Pods-MMM.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "MMM/Once A Day.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -1011,48 +971,6 @@
 				PRODUCT_NAME = "Once A Day";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		95DFE70E25CDB8940049C094 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PC4J6W84S8;
-				INFOPLIST_FILE = "OAD-widget-world/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mm.onestep.OAD-widget-world";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		95DFE70F25CDB8940049C094 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PC4J6W84S8;
-				INFOPLIST_FILE = "OAD-widget-world/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mm.onestep.OAD-widget-world";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1082,15 +1000,6 @@
 			buildConfigurations = (
 				953B08CF2556D1AC008F9D3E /* Debug */,
 				953B08D02556D1AC008F9D3E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		95DFE71025CDB8940049C094 /* Build configuration list for PBXNativeTarget "OAD-widget-worldExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				95DFE70E25CDB8940049C094 /* Debug */,
-				95DFE70F25CDB8940049C094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,5 +1,5 @@
 //
-//  IntroViewController.swift
+//  CounteViewController.swift
 //  MMM
 //
 //  Created by Martin Kuchar on 2020-11-16.
@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import FirebaseDatabase
 import SafariServices
+import WidgetKit
 
 class CounterViewController: UIViewController, SFSafariViewControllerDelegate {
     
@@ -52,6 +53,7 @@ class CounterViewController: UIViewController, SFSafariViewControllerDelegate {
         }
         updateLocalDb()
         updateCloudDb()
+        updateWidget()
     }
     
     
@@ -108,5 +110,16 @@ class CounterViewController: UIViewController, SFSafariViewControllerDelegate {
         let nav = UINavigationController(rootViewController: vc)
         let _ = nav.translucentNavController()
         self.present(nav, animated: true, completion: nil)
+    }
+    
+    private func updateWidget() {
+        WidgetCenter.shared.getCurrentConfigurations { result in
+            guard case .success(let widgets) = result else { return }
+            for widget in widgets {
+                if widget.kind == "OAD_widget_personal_count" {
+                    WidgetCenter.shared.reloadTimelines(ofKind: widget.kind)
+                }
+            }
+        }
     }
 }
