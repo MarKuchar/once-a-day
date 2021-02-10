@@ -60,6 +60,8 @@
 		9504FCAB25B2E531004D2C79 /* NewYorkSmall-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7925B2E52F004D2C79 /* NewYorkSmall-BlackItalic.otf */; };
 		9504FCAC25B2E531004D2C79 /* NewYorkMedium-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7A25B2E531004D2C79 /* NewYorkMedium-SemiboldItalic.otf */; };
 		95089B1025A8083200590B65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95089B0F25A8083200590B65 /* GoogleService-Info.plist */; };
+		951360B525D480420019371A /* AppGroup+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951360B425D480420019371A /* AppGroup+String.swift */; };
+		951360C725D481580019371A /* AppGroup+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951360B425D480420019371A /* AppGroup+String.swift */; };
 		9524DFBC25CCE412002F3347 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9524DEDC25CB98A3002F3347 /* WidgetKit.framework */; };
 		9524DFBD25CCE412002F3347 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9524DEDE25CB98A3002F3347 /* SwiftUI.framework */; };
 		9524DFC025CCE412002F3347 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9524DFBF25CCE412002F3347 /* Provider.swift */; };
@@ -190,6 +192,9 @@
 		9504FC7925B2E52F004D2C79 /* NewYorkSmall-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-BlackItalic.otf"; sourceTree = "<group>"; };
 		9504FC7A25B2E531004D2C79 /* NewYorkMedium-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		95089B0F25A8083200590B65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		951360AD25D47CB10019371A /* Once A Day.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Once A Day.entitlements"; sourceTree = "<group>"; };
+		951360B425D480420019371A /* AppGroup+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppGroup+String.swift"; sourceTree = "<group>"; };
+		951360E825D488F10019371A /* OAD-widgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OAD-widgetExtension.entitlements"; sourceTree = "<group>"; };
 		9524DEDC25CB98A3002F3347 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		9524DEDE25CB98A3002F3347 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		9524DFBB25CCE412002F3347 /* OAD-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OAD-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -355,7 +360,7 @@
 		953B08AE2556D1AA008F9D3E = {
 			isa = PBXGroup;
 			children = (
-				9524DFD125CCE4AA002F3347 /* OAD-widgetExtension.entitlements */,
+				951360E825D488F10019371A /* OAD-widgetExtension.entitlements */,
 				953B08B92556D1AA008F9D3E /* MMM */,
 				9524DFBE25CCE412002F3347 /* OAD-widget */,
 				953B08B82556D1AA008F9D3E /* Products */,
@@ -376,6 +381,8 @@
 		953B08B92556D1AA008F9D3E /* MMM */ = {
 			isa = PBXGroup;
 			children = (
+				951360AD25D47CB10019371A /* Once A Day.entitlements */,
+				9524DFD125CCE4AA002F3347 /* OAD-widgetExtension.entitlements */,
 				9552473C25635B8800B059CB /* Utils */,
 				9552473825635B5000B059CB /* Supporting Files */,
 				9552473725635B4700B059CB /* Model */,
@@ -453,6 +460,7 @@
 				95724ABD25B26F6300EF6088 /* yButton.swift */,
 				95724AF125B27DAF00EF6088 /* yButtonApp.swift */,
 				9598581425BE6E2D00E0B890 /* yButtonTip.swift */,
+				951360B425D480420019371A /* AppGroup+String.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -693,6 +701,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				951360C725D481580019371A /* AppGroup+String.swift in Sources */,
 				9524DFDB25CCE4D6002F3347 /* CoreDataManager.swift in Sources */,
 				9524DFD825CCE4C7002F3347 /* ManagedCounter+CoreDataClass.swift in Sources */,
 				9524DFE825CCE600002F3347 /* CountEntry.swift in Sources */,
@@ -717,6 +726,7 @@
 				9598581525BE6E2D00E0B890 /* yButtonTip.swift in Sources */,
 				952C2C5525B64C270094AD49 /* ReviewViewController.swift in Sources */,
 				95C667D825AFF3B5000FA27B /* DoneViewController.swift in Sources */,
+				951360B525D480420019371A /* AppGroup+String.swift in Sources */,
 				95724A9725B2687400EF6088 /* IntroductionViewController.swift in Sources */,
 				95724ABE25B26F6300EF6088 /* yButton.swift in Sources */,
 				95602DBC25725FC300AD648A /* SettingsViewController.swift in Sources */,
@@ -937,6 +947,7 @@
 			baseConfigurationReference = A286BA2C3927DBEFF5F00E9A /* Pods-MMM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MMM/Once A Day.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PC4J6W84S8;
 				INFOPLIST_FILE = MMM/Info.plist;
@@ -958,6 +969,7 @@
 			baseConfigurationReference = 5A9C1B8746C17D64615C7B26 /* Pods-MMM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MMM/Once A Day.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PC4J6W84S8;
 				INFOPLIST_FILE = MMM/Info.plist;

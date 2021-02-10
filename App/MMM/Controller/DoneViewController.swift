@@ -8,6 +8,7 @@
 
 import UIKit
 import SafariServices
+import WidgetKit
 
 class DoneViewController: UIViewController, SFSafariViewControllerDelegate, UIAdaptivePresentationControllerDelegate {
     
@@ -27,7 +28,7 @@ class DoneViewController: UIViewController, SFSafariViewControllerDelegate, UIAd
             }
         }
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationItem.setHidesBackButton(true, animated: false)
@@ -39,6 +40,18 @@ class DoneViewController: UIViewController, SFSafariViewControllerDelegate, UIAd
         self.setBackground()
         let context = container.viewContext
         self.counter = ManagedCounter.saveOrGet(context: context)
+        
+        
+        
+        WidgetCenter.shared.getCurrentConfigurations { result in
+            guard case .success(let widgets) = result else { return }
+            for widget in widgets {
+                if widget.kind == "OAD_widget_personal_count" {
+                    WidgetCenter.shared.reloadTimelines(ofKind: widget.kind)
+                }
+            }
+        }
+        
     }
     
     @IBAction func visitWeb(_ sender: Any) {
