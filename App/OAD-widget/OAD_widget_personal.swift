@@ -23,14 +23,14 @@ struct WidgetPersonalEntryView : View {
             
             VStack {
                 
-                Text("You have contributed")
+                Text("You've contributed")
                     .font(.custom("NewYorkLarge-MediumItalic", size: 16))
                 
                 Text("\(entry.count)")
                     .font(.custom("NewYorkExtraLarge-Semibold", size: 50))
                     .foregroundColor(Color(UIConstants.customBlue))
                     .frame(maxWidth: .infinity, alignment: .center)
-                    .padding(.top, 7).padding(.bottom, 7)
+                    .padding(.top, 6).padding(.bottom, 6)
                 
                 Text(entry.count == 1 ? "time." : "times.")
                     .font(.custom("NewYorkLarge-MediumItalic", size: 16))
