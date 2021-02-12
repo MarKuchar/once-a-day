@@ -12,6 +12,9 @@ enum UIConstants {
     static let btnColor = UIColor(red: 57/255, green: 150/255, blue: 100/255, alpha: 1)
     static let bgColor = UIColor(red: 255/255, green: 252/255, blue: 240/255, alpha: 1)
     static let customBlue = UIColor(red: 92/255, green: 117/255, blue: 182/255, alpha: 1)
+    static let customBlack = UIColor(red: 79/255, green: 79/255, blue: 79/255, alpha: 1)
+    
+    static let NYItalic20 = UIFont(name: "NewYorkLarge-MediumItalic", size: 20)!
     
     enum Button {
         static let buttonIconSize = CGSize.init(width: 44, height: 44)
@@ -34,4 +37,10 @@ extension CGSize {
 extension UIColor {
     public static var yBtnColor: UIColor { get { return UIConstants.btnColor } }
     public static var yBgColor: UIColor { get { return UIConstants.bgColor } }
+    public static var customBlue: UIColor { get { return UIConstants.customBlue } }
+    public static var customBlack: UIColor { get { return UIConstants.customBlack } }
+}
+
+extension UIFont {
+    public static var NYItalic20: UIFont { get { return UIConstants.NYItalic20 } }
 }

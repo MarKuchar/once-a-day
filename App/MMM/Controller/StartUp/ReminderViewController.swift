@@ -13,6 +13,8 @@ class ReminderViewController: UIViewController {
     
     private let container = CoreDataManager.shared.persistentContainer
     
+    private let center = NotificationCenter.shared
+    
     private var counter: ManagedCounter!
     
     @IBOutlet var topLb: UILabel!
@@ -60,12 +62,12 @@ class ReminderViewController: UIViewController {
     }
     
     
-    @IBAction func setTimeForNotification(_ sender: Any) {
-        let date = timePicker.date
-        self.setTimeLb(date: date)
-        
-        let components = Calendar.current.dateComponents([.hour, .day], from: date)
     
+    @IBAction func setNotification(_ sender: Any) {
+        self.center.removeAllPendingNotificationRequests()
+        
+        let date = timePicker.date
+        let components = Calendar.current.dateComponents([.hour, .minute], from: date)
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
         
         let content = UNMutableNotificationContent()
@@ -74,9 +76,14 @@ class ReminderViewController: UIViewController {
         content.categoryIdentifier = "customIdentifier"
         content.sound = UNNotificationSound.default
         
-        let center = UNUserNotificationCenter.current()
+        
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         center.add(request)
+    }
+    
+    @IBAction func setTimeForNotification(_ sender: Any) {
+        let date = timePicker.date
+        self.setTimeLb(date: date)
     }
     
     private func setTimeLb(date: Date) {

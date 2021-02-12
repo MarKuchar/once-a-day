@@ -110,6 +110,11 @@
 		95B6ACC625D000B40097D6A3 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B6ACC525D000B40097D6A3 /* Widgets.swift */; };
 		95C1F342255BAFF400B9123C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1F341255BAFF400B9123C /* CoreDataManager.swift */; };
 		95C667D825AFF3B5000FA27B /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C667D725AFF3B5000FA27B /* DoneViewController.swift */; };
+		95EA03E225D5C79D002A45A4 /* NewYorkExtraLarge-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5E25B2E4FC004D2C79 /* NewYorkExtraLarge-Semibold.otf */; };
+		95EA03E525D5C97D002A45A4 /* NewYork.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC7225B2E524004D2C79 /* NewYork.ttf */; };
+		95EA03E825D5C985002A45A4 /* NewYorkItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC6025B2E4FF004D2C79 /* NewYorkItalic.ttf */; };
+		95EA03EC25D614E6002A45A4 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EA03EB25D614E6002A45A4 /* NotificationCenter.swift */; };
+		95FB828225D5BE2300EF2A06 /* NewYorkLarge-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9504FC5525B2E4E8004D2C79 /* NewYorkLarge-MediumItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +242,7 @@
 		95B6ACC525D000B40097D6A3 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
 		95C1F341255BAFF400B9123C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		95C667D725AFF3B5000FA27B /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		95EA03EB25D614E6002A45A4 /* NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
 		A286BA2C3927DBEFF5F00E9A /* Pods-MMM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMM.debug.xcconfig"; path = "Target Support Files/Pods-MMM/Pods-MMM.debug.xcconfig"; sourceTree = "<group>"; };
 		A912293CDBAB7E70A9AC8992 /* Pods_MMM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -440,6 +446,7 @@
 				95724AC125B26F8600EF6088 /* UIButton+Animation.swift */,
 				95724AF525B2817800EF6088 /* Constants.swift */,
 				95660B6625B8EF77001DAF3F /* UIViewController+Background.swift */,
+				95EA03EB25D614E6002A45A4 /* NotificationCenter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -560,8 +567,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95EA03E525D5C97D002A45A4 /* NewYork.ttf in Resources */,
 				953D296725D0190000E05588 /* Pods-OAD-widgetExtension.debug.xcconfig in Resources */,
 				953D296425D018F900E05588 /* Pods-OAD-widgetExtension.release.xcconfig in Resources */,
+				95FB828225D5BE2300EF2A06 /* NewYorkLarge-MediumItalic.otf in Resources */,
+				95EA03E825D5C985002A45A4 /* NewYorkItalic.ttf in Resources */,
+				95EA03E225D5C79D002A45A4 /* NewYorkExtraLarge-Semibold.otf in Resources */,
 				9524DFC325CCE413002F3347 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -729,6 +740,7 @@
 				951360B525D480420019371A /* AppGroup+String.swift in Sources */,
 				95724A9725B2687400EF6088 /* IntroductionViewController.swift in Sources */,
 				95724ABE25B26F6300EF6088 /* yButton.swift in Sources */,
+				95EA03EC25D614E6002A45A4 /* NotificationCenter.swift in Sources */,
 				95602DBC25725FC300AD648A /* SettingsViewController.swift in Sources */,
 				95724AC225B26F8600EF6088 /* UIButton+Animation.swift in Sources */,
 				95724AF225B27DAF00EF6088 /* yButtonApp.swift in Sources */,

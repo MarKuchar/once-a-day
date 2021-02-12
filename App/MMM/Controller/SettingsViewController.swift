@@ -12,7 +12,7 @@ class SettingsViewController: UIViewController {
     
     private let container = CoreDataManager.shared.persistentContainer
     
-    private let center = UNUserNotificationCenter.current()
+    private let center = NotificationCenter.shared
     
     private var counter: ManagedCounter!
     
@@ -38,11 +38,8 @@ class SettingsViewController: UIViewController {
     
     @IBAction func setNotification(_ sender: Any) {
         self.center.removeAllPendingNotificationRequests()
-        
         let date = timePicker.date
-        
         let components = Calendar.current.dateComponents([.hour, .minute], from: date)
-        
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
         
         let content = UNMutableNotificationContent()
@@ -78,8 +75,10 @@ class SettingsViewController: UIViewController {
     private func getCurrentNotificationDate() {
         self.center.getPendingNotificationRequests { (requests) in
             guard let trigger = requests.first?.trigger as? UNCalendarNotificationTrigger else {
+                DispatchQueue.main.async {
+                    self.setTimeLb(date: self.timePicker.date)
+                }
                 return
-                
             }
             guard let date = trigger.nextTriggerDate() else {
                 return

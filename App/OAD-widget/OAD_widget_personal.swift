@@ -16,25 +16,20 @@ struct WidgetPersonalEntryView : View {
         ZStack {
             Color(UIConstants.bgColor)
             
-            Image("AppIcon_3")
-                .resizable()
-                .frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .opacity(0.2)
-            
-            VStack {
+            VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 2, content: {
                 
-                Text("You've contributed")
-                    .font(.custom("NewYorkLarge-MediumItalic", size: 16))
+                Text("Cleanliness")
+                    .font(.custom("NewYorkLarge-MediumItalic", size: 20))
+                    .foregroundColor(Color(.customBlack))
                 
                 Text("\(entry.count)")
                     .font(.custom("NewYorkExtraLarge-Semibold", size: 50))
-                    .foregroundColor(Color(UIConstants.customBlue))
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .padding(.top, 6).padding(.bottom, 6)
+                    .foregroundColor(Color(.customBlue))
                 
-                Text(entry.count == 1 ? "time." : "times.")
-                    .font(.custom("NewYorkLarge-MediumItalic", size: 16))
-            }
+                Image("widget-count-underline")
+                
+            }).padding(.top, 18).padding(.bottom, 33)
+            
         }
     }
     

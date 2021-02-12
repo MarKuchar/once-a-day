@@ -39,7 +39,7 @@ class IntroductionViewController: UIViewController {
         if !isRevaled {
             animateNextParagraph()
         } else {
-            UIView.animate(withDuration: 2.5, delay: 0, options: .allowAnimatedContent) {
+            UIView.animate(withDuration: 2.2, delay: 0, options: .allowAnimatedContent) {
                 self.introLb.alpha = 0
             } completion: { _ in
                 self.toReminder()
@@ -53,15 +53,15 @@ class IntroductionViewController: UIViewController {
     }
     
     private func animateNextParagraph() {
-        UIView.animate(withDuration: 4,
-                       delay: 0,
-                       animations: {
-                        self.introLb.alpha = 0
-                        self.introLb.text = ""
-                        self.introLb.text = "... this app will remind you to do so once a day, every single day."
-                        self.introLb.alpha = 1
-                        self.isRevaled = true
-                       }, completion: {_ in })
+        UIView.animate(withDuration: 2.2, delay: 0, options: .allowAnimatedContent) {
+            self.introLb.alpha = 0
+        } completion: { _ in
+            UIView.animate(withDuration: 2.2) {
+                self.introLb.text = "... this app will remind you to do so once a day, every single day."
+                self.introLb.alpha = 1
+                self.isRevaled = true
+            }
+       }
     }
     
     private func toReminder() {

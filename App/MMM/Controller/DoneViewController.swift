@@ -51,7 +51,6 @@ class DoneViewController: UIViewController, SFSafariViewControllerDelegate, UIAd
                 }
             }
         }
-        
     }
     
     @IBAction func visitWeb(_ sender: Any) {
