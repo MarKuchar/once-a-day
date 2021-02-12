@@ -16,6 +16,10 @@ class IntroductionViewController: UIViewController {
     
     @IBOutlet var startBtn: yButton!
     
+    @IBOutlet var imageBottom: UIImageView!
+    
+    @IBOutlet var imageTop: UIImageView!
+    
     var isRevaled: Bool!
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,6 +35,7 @@ class IntroductionViewController: UIViewController {
         super.viewDidLoad()
         UIView.animate(withDuration: 2.5, animations: {
             self.introLb.alpha = 1
+            self.imageTop.alpha = 1
         })
     }
     
@@ -41,6 +46,7 @@ class IntroductionViewController: UIViewController {
         } else {
             UIView.animate(withDuration: 2.2, delay: 0, options: .allowAnimatedContent) {
                 self.introLb.alpha = 0
+                self.imageBottom.alpha = 0
             } completion: { _ in
                 self.toReminder()
             }
@@ -55,10 +61,12 @@ class IntroductionViewController: UIViewController {
     private func animateNextParagraph() {
         UIView.animate(withDuration: 2.2, delay: 0, options: .allowAnimatedContent) {
             self.introLb.alpha = 0
+            self.imageTop.alpha = 0
         } completion: { _ in
             UIView.animate(withDuration: 2.2) {
                 self.introLb.text = "... this app will remind you to do so once a day, every single day."
                 self.introLb.alpha = 1
+                self.imageBottom.alpha = 1
                 self.isRevaled = true
             }
        }
