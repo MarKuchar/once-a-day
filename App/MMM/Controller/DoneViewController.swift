@@ -12,7 +12,11 @@ import WidgetKit
 
 class DoneViewController: UIViewController, SFSafariViewControllerDelegate, UIAdaptivePresentationControllerDelegate {
     
+    private let flowers = Flowers.flowers
+    
     private let container = CoreDataManager.shared.persistentContainer
+    
+    @IBOutlet var flowerImage: UIImageView!
     
     @IBOutlet var countLb: UILabel!
     
@@ -40,17 +44,8 @@ class DoneViewController: UIViewController, SFSafariViewControllerDelegate, UIAd
         self.setBackground()
         let context = container.viewContext
         self.counter = ManagedCounter.saveOrGet(context: context)
-        
-        
-        
-        WidgetCenter.shared.getCurrentConfigurations { result in
-            guard case .success(let widgets) = result else { return }
-            for widget in widgets {
-                if widget.kind == "OAD_widget_personal_count" {
-                    WidgetCenter.shared.reloadTimelines(ofKind: widget.kind)
-                }
-            }
-        }
+        self.updateWidget()
+        self.animateFlower()
     }
     
     @IBAction func visitWeb(_ sender: Any) {
@@ -75,4 +70,24 @@ class DoneViewController: UIViewController, SFSafariViewControllerDelegate, UIAd
         self.present(nav, animated: true, completion: nil)
     }
     
+    private func animateFlower() {
+        UIView.animate(withDuration: 1.5, animations: {
+            if let flowerString = self.flowers.randomElement() {
+                print(flowerString)
+                self.flowerImage.image = UIImage(named: flowerString)
+                self.flowerImage.alpha = 1
+            }
+        })
+    }
+    
+    private func updateWidget() {
+        WidgetCenter.shared.getCurrentConfigurations { result in
+            guard case .success(let widgets) = result else { return }
+            for widget in widgets {
+                if widget.kind == "OAD_widget_personal_count" {
+                    WidgetCenter.shared.reloadTimelines(ofKind: widget.kind)
+                }
+            }
+        }
+    }
 }
