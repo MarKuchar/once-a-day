@@ -18,9 +18,16 @@ extension UIViewController {
         imageView.clipsToBounds = true
         imageView.image = background
         imageView.alpha = 0.08
-        imageView.center = view.center
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(imageView)
+        NSLayoutConstraint.activate([
+            imageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -50),
+            imageView.heightAnchor.constraint(equalToConstant: width * 0.9),
+            imageView.widthAnchor.constraint(equalToConstant: width * 0.9)
+        ])
         self.view.sendSubviewToBack(imageView)
     }
 }
 
+    

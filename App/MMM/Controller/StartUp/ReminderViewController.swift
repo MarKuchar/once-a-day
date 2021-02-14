@@ -20,6 +20,7 @@ class ReminderViewController: UIViewController {
     @IBOutlet var topLb: UILabel!
     @IBOutlet var secondLb: UILabel!
     @IBOutlet var timeLb: UILabel!
+    @IBOutlet var imageBellow: UIImageView!
     
     @IBOutlet var timePicker: UIDatePicker!
     
@@ -52,6 +53,7 @@ class ReminderViewController: UIViewController {
             self.secondLb.alpha = 1
             self.timeLb.alpha = 1
             self.timePicker.alpha = 1
+            self.imageBellow.alpha = 1
         })
     }
     
