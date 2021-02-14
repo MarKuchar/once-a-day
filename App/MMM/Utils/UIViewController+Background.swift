@@ -22,7 +22,7 @@ extension UIViewController {
         view.addSubview(imageView)
         NSLayoutConstraint.activate([
             imageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            imageView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -50),
+            imageView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -width / 7),
             imageView.heightAnchor.constraint(equalToConstant: width * 0.9),
             imageView.widthAnchor.constraint(equalToConstant: width * 0.9)
         ])
