@@ -36,6 +36,7 @@ class ReminderViewController: UIViewController {
         super.viewDidLoad()
         animations()
         setupCounter()
+        askForPermission()
     }
     
     private func setupCounter() {
@@ -67,7 +68,6 @@ class ReminderViewController: UIViewController {
     
     @IBAction func setNotification(_ sender: Any) {
         self.center.removeAllPendingNotificationRequests()
-        
         let date = timePicker.date
         let components = Calendar.current.dateComponents([.hour, .minute], from: date)
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
@@ -77,7 +77,6 @@ class ReminderViewController: UIViewController {
         content.body = "Did you contribute to cleanliness today?"
         content.categoryIdentifier = "customIdentifier"
         content.sound = UNNotificationSound.default
-        
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         center.add(request)
@@ -91,9 +90,17 @@ class ReminderViewController: UIViewController {
     private func setTimeLb(date: Date) {
         let formatter = DateFormatter()
         formatter.dateFormat = "hh:mm a"
-
         let timeString = formatter.string(from: date)
         
         self.timeLb.text = timeString
+    }
+    
+    
+    private func askForPermission() {
+        self.center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if let error = error {
+                debugPrint(error)
+            }
+        }
     }
 }

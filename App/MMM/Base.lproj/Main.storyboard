@@ -166,7 +166,7 @@
                                                 <rect key="frame" x="0.0" y="151" width="331" height="216"/>
                                                 <color key="tintColor" red="0.42279206829999999" green="0.75237944160000003" blue="0.15696263590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
-                                                    <action selector="setTimeForNotification:" destination="gUQ-2o-Znb" eventType="valueChanged" id="gV9-ds-CVo"/>
+                                                    <action selector="setTimeForNotification:" destination="gUQ-2o-Znb" eventType="valueChanged" id="CuC-7D-Zxh"/>
                                                 </connections>
                                             </datePicker>
                                         </subviews>
@@ -663,7 +663,7 @@ and would not hesitate to pick up any rubbish and put it in the appropriate bin,
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2ar-Ob-XrK"/>
+        <segue reference="kas-KB-kN2"/>
         <segue reference="riE-OF-Hxj"/>
         <segue reference="748-rU-OV6"/>
     </inferredMetricsTieBreakers>

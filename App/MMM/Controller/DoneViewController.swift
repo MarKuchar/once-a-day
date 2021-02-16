@@ -78,6 +78,7 @@ class DoneViewController: UIViewController, SFSafariViewControllerDelegate, UIAd
                 self.flowerImage.alpha = 1
             }
         })
+    
     }
     
     private func updateWidget() {
