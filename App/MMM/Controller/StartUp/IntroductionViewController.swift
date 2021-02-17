@@ -33,6 +33,10 @@ class IntroductionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         UIView.animate(withDuration: 2.5, animations: {
             self.introLb.alpha = 1
             self.imageTop.alpha = 1

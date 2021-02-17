@@ -42,7 +42,6 @@ class CounterViewController: UIViewController, SFSafariViewControllerDelegate {
         super.viewDidLoad()
         let context = container.viewContext
         self.counter = ManagedCounter.saveOrGet(context: context)
-        registerLocal()
     }
     
     
@@ -65,18 +64,6 @@ class CounterViewController: UIViewController, SFSafariViewControllerDelegate {
             counter.setValue(num, forKey: "currentCount")
             counter.setValue(date, forKey: "todayDone")
             try? context.save()
-        }
-    }
-    
-    private func registerLocal() {
-        let center = UNUserNotificationCenter.current()
-        
-        center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
-            if granted {
-                print("Notification is granted!")
-            } else {
-                print("Notification is not granted")
-            }
         }
     }
     

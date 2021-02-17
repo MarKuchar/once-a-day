@@ -108,6 +108,7 @@
 		95B6ACBA25CFFCAD0097D6A3 /* OAD_widget_world.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B6ACB625CFFC4F0097D6A3 /* OAD_widget_world.swift */; };
 		95B6ACC025CFFCFE0097D6A3 /* OAD_widget_personal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B6ACBF25CFFCFE0097D6A3 /* OAD_widget_personal.swift */; };
 		95B6ACC625D000B40097D6A3 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B6ACC525D000B40097D6A3 /* Widgets.swift */; };
+		95B99D8E25DDD1D9006D0081 /* yButtonTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B99D8D25DDD1D9006D0081 /* yButtonTransparent.swift */; };
 		95C1F342255BAFF400B9123C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1F341255BAFF400B9123C /* CoreDataManager.swift */; };
 		95C667D825AFF3B5000FA27B /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C667D725AFF3B5000FA27B /* DoneViewController.swift */; };
 		95E4AB0D25D9DE9500170B2F /* Flowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4AB0C25D9DE9500170B2F /* Flowers.swift */; };
@@ -241,6 +242,7 @@
 		95B6ACB625CFFC4F0097D6A3 /* OAD_widget_world.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAD_widget_world.swift; sourceTree = "<group>"; };
 		95B6ACBF25CFFCFE0097D6A3 /* OAD_widget_personal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAD_widget_personal.swift; sourceTree = "<group>"; };
 		95B6ACC525D000B40097D6A3 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
+		95B99D8D25DDD1D9006D0081 /* yButtonTransparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yButtonTransparent.swift; sourceTree = "<group>"; };
 		95C1F341255BAFF400B9123C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		95C667D725AFF3B5000FA27B /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 		95E4AB0C25D9DE9500170B2F /* Flowers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowers.swift; sourceTree = "<group>"; };
@@ -469,6 +471,7 @@
 				95724ABD25B26F6300EF6088 /* yButton.swift */,
 				95724AF125B27DAF00EF6088 /* yButtonApp.swift */,
 				9598581425BE6E2D00E0B890 /* yButtonTip.swift */,
+				95B99D8D25DDD1D9006D0081 /* yButtonTransparent.swift */,
 				951360B425D480420019371A /* AppGroup+String.swift */,
 			);
 			path = Components;
@@ -744,6 +747,7 @@
 			files = (
 				95E4AB0D25D9DE9500170B2F /* Flowers.swift in Sources */,
 				95724AAC25B26E7B00EF6088 /* NavController+NavBar.swift in Sources */,
+				95B99D8E25DDD1D9006D0081 /* yButtonTransparent.swift in Sources */,
 				95660B8925B8F647001DAF3F /* ManagedCounter+CoreDataProperties.swift in Sources */,
 				953B08BB2556D1AB008F9D3E /* AppDelegate.swift in Sources */,
 				9598581525BE6E2D00E0B890 /* yButtonTip.swift in Sources */,

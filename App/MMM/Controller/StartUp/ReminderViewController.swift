@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class ReminderViewController: UIViewController {
+class ReminderViewController: UIViewController, UNUserNotificationCenterDelegate {
     
     private let container = CoreDataManager.shared.persistentContainer
     
@@ -36,7 +36,6 @@ class ReminderViewController: UIViewController {
         super.viewDidLoad()
         animations()
         setupCounter()
-        askForPermission()
     }
     
     private func setupCounter() {
@@ -68,18 +67,8 @@ class ReminderViewController: UIViewController {
     
     @IBAction func setNotification(_ sender: Any) {
         self.center.removeAllPendingNotificationRequests()
-        let date = timePicker.date
-        let components = Calendar.current.dateComponents([.hour, .minute], from: date)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
-        
-        let content = UNMutableNotificationContent()
-        content.title = "Your Once A Day reminder"
-        content.body = "Did you contribute to cleanliness today?"
-        content.categoryIdentifier = "customIdentifier"
-        content.sound = UNNotificationSound.default
-        
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        center.add(request)
+        self.center.delegate = self
+        self.askForPermission()
     }
     
     @IBAction func setTimeForNotification(_ sender: Any) {
@@ -101,6 +90,39 @@ class ReminderViewController: UIViewController {
             if let error = error {
                 debugPrint(error)
             }
+            if granted {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.registerNotification()
+                    self.performSegue(withIdentifier: "toApp", sender: nil)
+                }
+            }
+        }
+    }
+    
+    private func setContent() -> UNMutableNotificationContent {
+        let content = UNMutableNotificationContent()
+        content.title = "Your Once A Day reminder"
+        content.body = "Did you contribute to cleanliness today?"
+        content.categoryIdentifier = "customIdentifier"
+        content.sound = UNNotificationSound.default
+        return content
+    }
+    
+    private func registerNotification() {
+        let date = self.timePicker.date
+        let components = Calendar.current.dateComponents([.hour, .minute], from: date)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
+        let content = self.setContent()
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        self.center.add(request)
+    }
+    
+    @IBAction func showToast(_ sender: Any) {
+        UIView.animate(withDuration: 3) {
+            self.showToastReminder(message: "You always can set your reminder later in the app ✌️.",
+                                   font: UIFont(name: "NewYorkMedium-Semibold", size: 20)!)
+        } completion: { (_) in
+            self.performSegue(withIdentifier: "toApp", sender: nil)
         }
     }
 }

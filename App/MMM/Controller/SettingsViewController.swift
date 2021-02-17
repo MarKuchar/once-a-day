@@ -37,29 +37,23 @@ class SettingsViewController: UIViewController {
     
     
     @IBAction func setNotification(_ sender: Any) {
-        self.center.removeAllPendingNotificationRequests()
-        let date = timePicker.date
-        let components = Calendar.current.dateComponents([.hour, .minute], from: date)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
-        
-        let content = UNMutableNotificationContent()
-        content.title = "Your Once A Day reminder"
-        content.body = "Did you contribute to cleanliness today?"
-        content.categoryIdentifier = "customIdentifier"
-        content.sound = UNNotificationSound.default
-        
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        center.add(request)
-        
+        self.center.getNotificationSettings(completionHandler: { settings in
+            switch settings.authorizationStatus {
+                case .authorized, .provisional:
+                    self.registerNotification()
+                case .denied:
+                    self.requestAuth()
+                default :
+                    self.requestAuth()
+            }
+        })
         dismiss(animated: true, completion: nil)
     }
     
     private func setTimeLb(date: Date) {
         let formatter = DateFormatter()
         formatter.dateFormat = "hh:mm a"
-        
         let timeString = formatter.string(from: date)
-        
         self.timeLb.text = timeString
     }
     
@@ -89,4 +83,31 @@ class SettingsViewController: UIViewController {
             }
         }
     }
+    
+    private func requestAuth() {
+        self.center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+            if granted {
+                self.registerNotification()
+            }
+        }
+    }
+    
+    private func registerNotification() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.center.removeAllPendingNotificationRequests()
+            let date = self.timePicker.date
+            let components = Calendar.current.dateComponents([.hour, .minute], from: date)
+            let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
+            
+            let content = UNMutableNotificationContent()
+            content.title = "Your Once A Day reminder"
+            content.body = "Did you contribute to cleanliness today?"
+            content.categoryIdentifier = "customIdentifier"
+            content.sound = UNNotificationSound.default
+            
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            self.center.add(request)
+        }
+    }
 }
+
