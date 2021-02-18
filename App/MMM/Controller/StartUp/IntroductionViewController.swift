@@ -28,7 +28,7 @@ class IntroductionViewController: UIViewController {
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.backBarButtonItem?.tintColor = .yBtnColor
         self.isRevaled = false
-        self.introLb.text = "For those who want to contribute to protecting our environment, and would not hesitate to pick up any rubbish and put it in the appropriate bin..."
+        self.introLb.text = "If you would like to contribute to our environment, and therefore our own future, by taking at least one action each day towards cleanliness..."
     }
     
     override func viewDidLoad() {
@@ -68,7 +68,7 @@ class IntroductionViewController: UIViewController {
             self.imageTop.alpha = 0
         } completion: { _ in
             UIView.animate(withDuration: 2.2) {
-                self.introLb.text = "... this app will remind you to do so once a day, every single day."
+                self.introLb.text = "...this app will remind you to do so once a day, every single day."
                 self.introLb.alpha = 1
                 self.imageBottom.alpha = 1
                 self.isRevaled = true
