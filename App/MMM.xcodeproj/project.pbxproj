@@ -201,7 +201,7 @@
 		95089B0F25A8083200590B65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		951360AD25D47CB10019371A /* Once A Day.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Once A Day.entitlements"; sourceTree = "<group>"; };
 		951360B425D480420019371A /* AppGroup+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppGroup+String.swift"; sourceTree = "<group>"; };
-		951360E825D488F10019371A /* OAD-widgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OAD-widgetExtension.entitlements"; sourceTree = "<group>"; };
+		951360E825D488F10019371A /* OAD-widgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "OAD-widgetExtension.entitlements"; path = "../OAD-widgetExtension.entitlements"; sourceTree = "<group>"; };
 		9524DEDC25CB98A3002F3347 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		9524DEDE25CB98A3002F3347 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		9524DFBB25CCE412002F3347 /* OAD-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OAD-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,7 +209,6 @@
 		9524DFC125CCE412002F3347 /* OAD_widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OAD_widget.intentdefinition; sourceTree = "<group>"; };
 		9524DFC225CCE413002F3347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9524DFC425CCE413002F3347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9524DFD125CCE4AA002F3347 /* OAD-widgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OAD-widgetExtension.entitlements"; sourceTree = "<group>"; };
 		9524DFE425CCE556002F3347 /* CountEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountEntry.swift; sourceTree = "<group>"; };
 		952C2C5425B64C270094AD49 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		953B08B72556D1AA008F9D3E /* Once A Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Once A Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -370,7 +369,6 @@
 		953B08AE2556D1AA008F9D3E = {
 			isa = PBXGroup;
 			children = (
-				951360E825D488F10019371A /* OAD-widgetExtension.entitlements */,
 				953B08B92556D1AA008F9D3E /* MMM */,
 				9524DFBE25CCE412002F3347 /* OAD-widget */,
 				953B08B82556D1AA008F9D3E /* Products */,
@@ -392,7 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				951360AD25D47CB10019371A /* Once A Day.entitlements */,
-				9524DFD125CCE4AA002F3347 /* OAD-widgetExtension.entitlements */,
+				951360E825D488F10019371A /* OAD-widgetExtension.entitlements */,
 				9552473C25635B8800B059CB /* Utils */,
 				9552473825635B5000B059CB /* Supporting Files */,
 				9552473725635B4700B059CB /* Model */,
@@ -814,7 +812,8 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "OAD-widgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XF72A49733;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = PC4J6W84S8;
 				INFOPLIST_FILE = "OAD-widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -822,6 +821,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mm.onestep.OAD-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -838,7 +838,8 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "OAD-widgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XF72A49733;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = PC4J6W84S8;
 				INFOPLIST_FILE = "OAD-widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -846,6 +847,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mm.onestep.OAD-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -977,14 +979,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "MMM/Once A Day.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XF72A49733;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = PC4J6W84S8;
 				INFOPLIST_FILE = MMM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep;
 				PRODUCT_NAME = "Once A Day";
 				SWIFT_VERSION = 5.0;
@@ -999,14 +1002,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "MMM/Once A Day.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XF72A49733;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = PC4J6W84S8;
 				INFOPLIST_FILE = MMM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mm.onestep;
 				PRODUCT_NAME = "Once A Day";
 				SWIFT_VERSION = 5.0;
