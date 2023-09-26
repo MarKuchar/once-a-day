@@ -1,4 +1,4 @@
-# Daily Environmental Count iOS App
+# Once A Day
 
 ## Features
 
