@@ -2,23 +2,23 @@
 
 ## Features
 
-### 1. Daily Count
+### Daily Count
 - Add one count every day for each environmentally friendly action you take.
 - Encourages you to make a positive impact on the environment.
 
-### 2. iOS Widget
+### iOS Widget
 - Access your daily count directly from your iOS home screen with the included widget.
 - Provides a quick overview of your environmental contributions.
 
-### 3. Cloud Storage
+### Cloud Storage
 - Sync your daily counts across multiple devices using cloud storage.
 - Your counts are securely stored and accessible from anywhere.
 
-### 4. Accurate Counter
+### Accurate Counter
 - The app ensures accuracy by limiting you to one count per day for each action.
 - Keeps a precise record of your contributions.
 
-### 5. Core Data for Local Storage
+### Core Data for Local Storage
 - Utilizes Core Data for local storage, ensuring your data is always available even without an internet connection.
 - Offers a seamless experience both online and offline.
 
@@ -34,6 +34,5 @@
 3. Configure Cloud Storage:
   The app uses cloud storage (Firestore) to sync your counts across devices. 
 
-4. Build and Run:
-  Select your target device or simulator in Xcode.
-  Click the "Run" button (or press Cmd+R) to build and run the app.
+4. Select your target device or simulator in Xcode.
+5. Build and Run.
